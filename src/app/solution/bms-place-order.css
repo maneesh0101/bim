@@ -1,0 +1,72 @@
+.payDetails{
+  padding-left: 10px;
+  padding-top: 100px;
+}
+.place-order{
+  /* padding:5px; */
+}
+
+.place-order .product-dropdown{
+  width: 100px;
+}
+.place-order .product-tab{
+  width: 100px;
+}
+.place-order .table{
+  margin-bottom: -2px;
+}
+.place-order .table-heading{
+  background-color:#747676;
+  color: white;
+}
+.place-order .family {
+  background-color: #ccc;
+}
+.place-order .terms-condition{
+    padding-top: 100px;
+}
+.place-order .terms-condition .terms-condition-link{
+  text-decoration: underline;
+  color: #337AC6;
+  font-style: Arial;
+  font-size: 14px;
+  font-weight: 100;
+}
+.place-order .form-group{
+  margin-bottom: 0px;
+      text-align: center;
+}
+.place-order .payment-cycle{
+  width: 200px;
+}
+.place-order .tbl-heading-bgcolor {
+  line-height: 1;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.place-order .productlist {
+  padding-left:30px;
+  padding-right:30px;
+}
+.place-order .lr-border {
+  border-right: 1px solid #ddd;  
+  border-left: 1px solid #ddd;
+}
+.place-order .lr-border:last-child {
+  border-bottom:1px solid #ccc;
+}
+.place-order .bordered-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.place-order .datalist div{
+  padding-top:5px;
+  padding-bottom:5px;
+}
+.page-header_block {
+  margin-top:90px;
+}
+.header-link{
+
+  color: whitesmoke;
+}

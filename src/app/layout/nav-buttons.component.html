@@ -1,0 +1,42 @@
+<div class="row">
+  <div class="col-md-12 text-center">
+    <div class="bms-nav-img-box padding-top-20 padding-bottom-20">
+      <div class="nav-btn">
+        <div class="pull-left icon-box">
+          <a class="bms-anchor-btn" (click)="goto('step1')" [ngClass]="{'active':(step=='step1'),'handanchor':(hoverStep1==true)}">
+            <div>
+              <img class="bms-img" src="./assets/images/edit.png" *ngIf="step!='step1'">
+              <img class="bms-img" src="./assets/images/edit_active.png" *ngIf="step=='step1'">
+            </div>
+            <div class="text">Create your Account</div>
+          </a>
+        </div>
+        <div class="pull-left black-line">
+          <img class="bms-img" src="./assets/images/bms-nav-line.png">
+        </div>
+        <div class="pull-left icon-box">
+          <a class="bms-anchor-btn" (click)="goto('step2')" [ngClass]="{'active':(step=='step2'),'handanchor':(hoverStep2==true)}">
+            <div>
+              <img class="bms-img" src="./assets/images/profile.png" *ngIf="step!='step2'">
+              <img class="bms-img" src="./assets/images/profile_active.png" *ngIf="step=='step2'">
+            </div>
+            <div class="text">Create your Profile</div>
+          </a>
+        </div>
+        <div class="pull-left black-line">
+          <img class="bms-img" src="./assets/images/bms-nav-line.png">
+        </div>
+        <div class="pull-left icon-box">
+          <a class="bms-anchor-btn" (click)="goto('step3')" [ngClass]="{'active':(step=='step3'),'handanchor':(hoverStep3==true)}">
+            <div>
+              <img class="bms-img" src="./assets/images/login.png" *ngIf="step!='step3'">
+              <img class="bms-img" src="./assets/images/login_active.png" *ngIf="step=='step3'">
+            </div>
+            <div class="text">Verify and Login</div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

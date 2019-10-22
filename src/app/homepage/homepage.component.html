@@ -1,0 +1,74 @@
+<div class="container-fluid container-box-home">
+									<div class="left-menu-col">
+										<div id="slideMenu" class="slideMenu"><i class="fa fa-3x fa-chevron-circle-right"></i></div>
+									<app-leftmenu></app-leftmenu>
+									</div>
+					<img class="img img-responsive home-image" src="./assets/images/LandingPage.png">
+								<h3 class="homepage-layer-title">Entire networks in the hypervisor layer</h3>
+								<button class="btn btn-default contButton black-button homepage-cont-button">Continue</button>
+
+								<div class="col-sm-12 box">
+					<div class ="homepage-layer-accordian">
+					<div class="col-sm-12 accordian">
+									<a href="javascript:;" class="accr-a" (click)="vsAccordian.accr1=!vsAccordian.accr1">
+										<span class="glyphicon glyphicon-triangle-right"></span> Recently visited services
+									</a>
+									<div class="accr-data" [hidden]="vsAccordian.accr1">
+										<img class="accr-img" src="./assets/images/img-15x15.png">
+										<span><a href="javascript:;" class="accr-link">SD Wan - Viptela</a></span>
+									</div>
+								</div>
+								<div class="col-sm-12 accordian">
+									<a href="javascript:;" class="accr-a" (click)="vsAccordian.accr2=!vsAccordian.accr2">
+										<span class="glyphicon glyphicon-triangle-right"></span> All Services
+									</a>
+									<div class="accr-data" [hidden]="vsAccordian.accr2">
+										<img class="accr-img" src="./assets/images/img-15x15.png">
+										<span><a href="javascript:;" class="accr-link">SD Wan - Viptela</a></span>
+									</div>
+								</div>
+								<div class="col-sm-12 accordian">
+									<a href="javascript:;" class="accr-a"(click)="vsAccordian.accr3=!vsAccordian.accr3">
+										<span class="glyphicon glyphicon-triangle-right"></span> Saved Solutions
+									</a>
+									<div class="accr-data" [hidden]="vsAccordian.accr3">
+										<img class="accr-img" src="./assets/images/img-15x15.png">
+										<span><a href="javascript:;" class="accr-link">SD Wan - Viptela</a></span>
+									</div>
+								</div>
+							</div>
+				</div>
+</div>
+<div class="container-fluid">
+	<div class="row">
+	<div class="col-sm-12">
+		<div class="col-sm-8 build-solution-widget-component">
+			<h3 style="text-align: center;">Build a Solution</h3><br>
+		<build-solution-widget></build-solution-widget>
+		</div>
+		<div class="col-sm-2 ">
+		<special-offers-widget></special-offers-widget>	
+		</div>
+	</div>
+</div>
+<div class="row">
+<div class="col-sm-12 product-brands">
+		<div class="col-sm-8 product-brand-list">
+			<h3 class="products-title">Products By Brands</h3>
+		<br><br><br>
+		<div class="col-sm-3 product-brands-image text-center" >
+		<img class="img" src="./assets/images/viptela.png">
+		</div>
+		<div class="col-sm-3 product-brands-image text-center" >
+		<img class="img" src="./assets/images/aruba.png">
+		</div>
+		<div class="col-sm-3 product-brands-image text-center">
+		<img class="img" src="./assets/images/versa.png">
+		</div>
+		<div class="col-sm-3 product-brands-image text-center">
+		<img class="img" src="./assets/images/palato.png">
+		</div>
+		</div>
+		</div>
+	</div>
+</div>

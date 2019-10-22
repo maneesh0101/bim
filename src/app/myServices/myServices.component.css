@@ -1,0 +1,211 @@
+.div-width{
+  height:69px;
+}
+.heading-alignment {
+  margin-top:0px;
+  margin-bottom:0px;
+  padding-left: 10px;
+}
+.widget-height {
+    margin-top: 50px;
+    padding-left: 0px;
+}
+.well-margin {
+    margin-bottom: 10px;
+}
+.selectBox{
+  height: 25px;
+  font: bold;
+  padding:0px;
+}
+.form-control{
+  margin-top: 20px;
+  height: 28px;
+  width: auto;
+  border-radius: 0px;
+}
+.dropdown{
+  padding-bottom: 2px;
+  padding-left: 2px;
+}
+.row.radio-button {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.p0{
+    padding: 0px;
+}
+.btn-margin {
+    margin-left:15px;
+    margin-right: 5px;
+}
+.row-table {
+    padding-top: 10px;
+}
+th.tbl-heading-bgcolor{
+    padding: 5px;
+}
+.pagination{
+  border: 1px;
+}
+img{
+  height: 200px;
+  width: 350px;
+  padding-top: 20px;
+}
+.lr-border{
+  border-right: 1px solid #dcdcdc;
+  border-left: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  height: 25.5px;
+}
+a{ 
+  color: #333;
+  text-decoration: underline;
+  cursor: pointer !important;
+}
+.tab-heading{
+  padding-left: 15px;
+  padding-top:10px; 
+}
+.btn-group{
+  padding-bottom: 10px;
+}
+.graph{
+  padding-left: 10px;
+}
+.toggle-switch-btn input:checked + label {
+  background-color: #D52B1E;
+}
+.btn-default:focus,
+.btn-default:active,
+.dropdown-toggle
+.btn-default{
+  color: white;
+  background-color:#D52B1E;
+}
+.btn .btn-default .cls{
+  background-color: #D52B1E;
+  color: #fff;
+}
+
+:host >>> .nav-tabs.nav-justified>li>a {
+  border-bottom: transparent;
+  color:rgb(22, 22, 22);
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 12px;
+}
+:host >>> .nav {
+  padding-bottom: 20px;
+}
+:host >>> .nav-tabs>li {
+  font-size: 10px;
+  color:rgb(22, 22, 22);
+  cursor: default;
+  background-color: rgb(235, 232, 232);
+  border: 1px solid rgb(146, 144, 144);
+}
+:host >>> .nav-tabs>li.active {
+  color: #D52B1E!important;
+  background-color: #fff;
+  border-bottom-color: #fff;
+  border-top: 5px solid #D52B1E!important;
+}
+:host >>> .nav-tabs>li.active>a  {
+  border-bottom: 0px;
+  color: #D52B1E!important; 
+}
+.navbar-heading{
+     margin-left: 100px;
+    margin-top: 20px;
+}
+.header{
+     font-size: 20px;
+     font-weight: bold;
+     background-color: #747676;
+     color: #fff;
+     border-radius: 0px;
+    min-height: 70px;
+    font-family: Neue Haas;
+}
+.activeBtn {
+  background-color:#D52B1E!important;
+  color:#fff;
+}
+.page-content {
+ margin-left:-30px;
+}
+.panel-alignment{
+  padding-right: 0px;
+  padding-left: 15px;
+}
+.side-bar{
+  margin-top: -25px;
+  width:320px;
+  height:520px;
+  background-color:rgb(235, 232, 232);
+}
+.sideBar-alignment{
+  text-align: center;
+}
+.timeline{
+  text-decoration: underline;
+}
+.barChartCaption{
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #000000;
+}
+.chartBox{
+  border: 1px solid;
+  background-color: #d8dada;
+}
+.graph{
+  padding-top: 5px;
+  background-color: #fff;
+}
+.row-alignment{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.margin-left-alignment{
+  margin-left: -15px;
+}
+.table-alignment{
+  margin-top: -43px;
+}
+@media only screen and (max-width: 767px) {
+  .panel-alignment{
+    padding-right: 5px;
+    padding-left: 36px;
+  }
+  .btn-group{
+    padding-bottom: 20px;
+  }
+  :host >>> .nav {
+    padding-bottom: 10px;
+  }
+  .row-alignment{
+    margin-left: 0px;
+    margin-right: 17px;
+  }
+  .barcharts{
+    padding-top: 20px;
+    width: auto;
+  }
+   .side-bar{
+    margin-top: 20px;
+    width:auto;
+    height:530px;
+    background-color:rgb(235, 232, 232);
+  } 
+  .media-alignment{
+    padding-left: 50px;
+    padding-right: 20px;
+  }
+  .table-alignment{
+    margin-top: 0px;
+  }
+}

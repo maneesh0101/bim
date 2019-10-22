@@ -1,0 +1,24 @@
+<!-- <div class="header-link">
+        <a class="terms-condition-link" (click)="openModal(template)">Personalize My Solution</a>
+      </div> -->
+<button [disabled]="!enablePlaceOrderContinue" (click)="openModal(template)" class="btn btn-default contButton red-button pull-right place-order-btn">Place Order</button>
+<ng-template #template>
+    <div class="modal-header">
+        <h4 class="modal-title pull-left">Confirmation!</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <p>You are about to place the order</p>
+        <p>Are you sure you want to Continue ?</p>
+
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default btn-round red-button" (click)="modalRef.hide();save();">Place Order</button>
+            <button type="button" class="btn btn-default btn-round red-button" (click)="modalRef.hide()">Cancel Order</button>
+        </div>
+
+
+    </div>
+</ng-template>

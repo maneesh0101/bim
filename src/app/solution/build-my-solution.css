@@ -1,0 +1,26 @@
+.select-services input[type="number"]
+{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+}
+.select-services .subBox {
+    padding:0;
+    border: 0;
+}
+.select-services .item-table {
+    margin-bottom: 0;
+}
+.select-services .sub-item-table {
+    margin-bottom: 0;
+}
+.page-header_block {
+   margin-top: 90px;  
+}
+@media only screen and (max-width: 768px) {
+    .right-wrapper {
+        width: auto;
+        padding: 0;
+        margin-left:0px;
+    }
+}

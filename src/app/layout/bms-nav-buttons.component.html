@@ -1,0 +1,62 @@
+<div class="row">
+  <div class="col-md-12 text-center">
+    <div class="bms-nav-img-box padding-top-20 padding-bottom-20">
+      <div class="nav-btn">
+        <div class="pull-left icon-box">
+          <a class="bms-anchor-btn" (click)="goto('1')" [ngClass]="{'active':(stepNumber=='1'),'handanchor':(hoverStep1==true)}">
+            <div class="bms-btn-circle">
+              <img class="bms-img" src="./assets/images/bms-step-1.png">
+            </div>
+            <div class="text">Select Services</div>
+          </a>
+        </div>
+        <div class="pull-left black-line">
+            <img class="bms-img" src="./assets/images/bms-nav-line.png">
+        </div>
+        <div class="pull-left icon-box">
+          <a class="bms-anchor-btn" (click)="goto('2')" [ngClass]="{'active':(stepNumber=='2'),'handanchor':(hoverStep2==true)}">
+            <div class="bms-btn-circle">
+              <img class="bms-img" src="./assets/images/bms-step-2.png">
+            </div>
+            <div class="text">Bill of Material</div>
+          </a>
+        </div>
+        <div class="pull-left black-line">
+            <img class="bms-img" src="./assets/images/bms-nav-line.png">
+        </div>
+        <div class="pull-left icon-box">
+          <a class="bms-anchor-btn" (click)="goto('3')" [ngClass]="{'active':(stepNumber=='3'),'handanchor':(hoverStep3==true)}">
+            <div class="bms-btn-circle">
+              <img class="bms-img" src="./assets/images/bms-step-3.png">
+            </div>
+            <div class="text">Place Order</div>
+          </a>
+        </div>
+        <div class="pull-left black-line">
+            <img class="bms-img" src="./assets/images/bms-nav-line.png">
+        </div>
+        <div class="pull-left">
+          <a class="bms-anchor-btn" [ngClass]="{'active':(stepNumber=='4'),'handanchor':(hoverStep4==true)}">
+            <div class="bms-btn-circle">
+              <img class="bms-img" src="./assets/images/bms-step-4.png">
+            </div>
+            <div class="text">Track Order</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--<h3>
+    <b>Build My Solution - Branch in a Box</b>
+    <strong class="pull-right pagination-color"> {{stepNumber}} of 4</strong>
+  </h3>
+  <div class="well well-sm">Branch in a Box
+    <a class="pull-right title" href="#">Personalize My Solution</a>
+  </div>-->
+<!--<div class="nav-btn">
+    <button class="bms-steps-1-btn" [ngClass]="{'active':(stepNumber=='1'),'handanchor':(hoverStep1==true)}" (click)="goto('1')">Select Services</button>
+    <button class="bms-steps-btn" [ngClass]="{'active':(stepNumber=='2'),'handanchor':(hoverStep2==true)}" (click)="goto('2')">Bill of Material</button>
+    <button class="bms-steps-btn" [ngClass]="{'active':(stepNumber=='3'),'handanchor':(hoverStep3==true)}" (click)="goto('3')">Place Order</button>
+    <button class="bms-steps-btn" [ngClass]="{'active':(stepNumber=='4'),'handanchor':(hoverStep4==true)}">Track Order</button>
+  </div>-->

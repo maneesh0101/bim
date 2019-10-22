@@ -1,0 +1,2061 @@
+{
+	"T01": [
+		{
+			"prodcutId": "VZ00023",
+			"Family": "SDWAN",
+			"productName": "0-99 users",
+			"mandatory": "true",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"progress": "35",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Basic Config",
+					"mandatory": "true",
+					"solutionType": "Day 0 Config",
+					"duration": "1",
+					"progress": "5.6",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/22",
+					"actualEndDate": "2018/01/22",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"progress": "23",
+					"startDate": "2018/02/05",
+					"actualStartDate": "2018/02/05",
+					"endDate": "2018/02/07",
+					"actualEndDate": "2018/02/07",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Viptela - Complete - SM",
+					"mandatory": "true",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"progress": "20",
+					"startDate": "2018/02/08",
+					"actualStartDate": "2018/02/08",
+					"endDate": "2018/02/09",
+					"actualEndDate": "2018/02/09",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Adv Config",
+					"mandatory": "false",
+					"solutionType": "Day 1 Config",
+					"duration": "1",
+					"startDate": "2018/02/10",
+					"actualStartDate": "2018/02/10",
+					"endDate": "2018/02/10",
+					"actualEndDate": "2018/02/10",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00024",
+			"Family": "Managed LAN",
+			"productName": "LAN",
+			"mandatory": "false",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Cable and Connectors",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/02/12",
+					"actualStartDate": "2018/02/12",
+					"endDate": "2018/02/14",
+					"actualEndDate": "2018/02/14",
+					"status": "Yet to start"
+				},
+				{
+					"itemType": "service",
+					"itemName": "Wired LAN Monitoring",
+					"mandatory": "false",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/15",
+					"actualStartDate": "2018/02/15",
+					"endDate": "2018/02/16",
+					"actualEndDate": "2018/02/16",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00025",
+			"Family": "Primary Access",
+			"productName": "Primary",
+			"mandatory": "false",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/01/29",
+					"actualStartDate": "2018/01/29",
+					"endDate": "2018/01/31",
+					"actualEndDate": "2018/01/31",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "100 MBPs Local Loop",
+					"mandatory": "false",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/01",
+					"actualStartDate": "2018/02/01",
+					"endDate": "2018/02/02",
+					"actualEndDate": "2018/02/02",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00025",
+			"Family": "Backup Access",
+			"productName": "Backup",
+			"mandatory": "false",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/01/29",
+					"actualStartDate": "2018/01/29",
+					"endDate": "2018/01/31",
+					"actualEndDate": "2018/01/31",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "100 MBPs Local Loop",
+					"mandatory": "false",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/01",
+					"actualStartDate": "2018/02/01",
+					"endDate": "2018/02/02",
+					"actualEndDate": "2018/02/02",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00025",
+			"Family": "Access",
+			"productName": "Static IP",
+			"mandatory": "false",
+			"items": [
+				{
+					"itemName": "Static IP services",
+					"mandatory": "false",
+					"solutionType": "Commissioning",
+					"duration": "1",
+					"startDate": "2018/02/02",
+					"actualStartDate": "2018/02/02",
+					"endDate": "2018/02/02",
+					"actualEndDate": "2018/02/02",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00030",
+			"Family": "Managed Sec",
+			"productName": "0-99 Basic Security",
+			"mandatory": "false",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/02/09",
+					"actualStartDate": "2018/02/09",
+					"endDate": "2018/02/01",
+					"actualEndDate": "2018/02/01",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Surveillance Service",
+					"mandatory": "false",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/02",
+					"actualStartDate": "2018/02/02",
+					"endDate": "2018/02/24",
+					"actualEndDate": "2018/02/24",
+					"status": "Yet to start"
+				}
+			]
+		}
+	],
+	"T02": [
+		{
+			"prodcutId": "VZ00023",
+			"Family": "SDWAN",
+			"productName": "0-99 users",
+			"mandatory": "true",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Basic Config",
+					"mandatory": "true",
+					"solutionType": "Day 0 Config",
+					"duration": "1",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/22",
+					"actualEndDate": "2018/01/22",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/02/05",
+					"actualStartDate": "2018/02/05",
+					"endDate": "2018/02/07",
+					"actualEndDate": "2018/02/07",
+					"status": "Yet to start"
+				},
+				{
+					"itemType": "service",
+					"itemName": "Viptela - Complete - SM",
+					"mandatory": "true",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/08",
+					"actualStartDate": "2018/02/08",
+					"endDate": "2018/02/09",
+					"actualEndDate": "2018/02/09",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Adv Config",
+					"mandatory": "false",
+					"solutionType": "Day 1 Config",
+					"duration": "1",
+					"startDate": "2018/02/10",
+					"actualStartDate": "2018/02/10",
+					"endDate": "2018/02/10",
+					"actualEndDate": "2018/02/10",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00023",
+			"Family": "Managed WiFi",
+			"productName": "Managed Wifi",
+			"mandatory": "true",
+			"items": [
+				{
+					"itemName": "WiFi Gateway uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Beacons",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "SSID",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/02/12",
+					"actualStartDate": "2018/02/12",
+					"endDate": "2018/02/14",
+					"actualEndDate": "2018/02/14",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Managed WiFi",
+					"mandatory": "true",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/15",
+					"actualStartDate": "2018/02/15",
+					"endDate": "2018/02/16",
+					"actualEndDate": "2018/02/16",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Service Management",
+					"mandatory": "true",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/15",
+					"actualStartDate": "2018/02/15",
+					"endDate": "2018/02/16",
+					"actualEndDate": "2018/02/16",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00024",
+			"Family": "Managed LAN",
+			"productName": "LAN",
+			"mandatory": "false",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Cable and Connectors",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/02/12",
+					"actualStartDate": "2018/02/12",
+					"endDate": "2018/02/14",
+					"actualEndDate": "2018/02/14",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Wired LAN Monitoring",
+					"mandatory": "false",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/15",
+					"actualStartDate": "2018/02/15",
+					"endDate": "2018/02/16",
+					"actualEndDate": "2018/02/16",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00025",
+			"Family": "Primary Access",
+			"productName": "Primary",
+			"mandatory": "false",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/01/29",
+					"actualStartDate": "2018/01/29",
+					"endDate": "2018/01/31",
+					"actualEndDate": "2018/01/31",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "100 MBPs Local Loop",
+					"mandatory": "false",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/01",
+					"actualStartDate": "2018/02/01",
+					"endDate": "2018/02/02",
+					"actualEndDate": "2018/02/02",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00025",
+			"Family": "Backup Access",
+			"productName": "Backup",
+			"mandatory": "false",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/01/29",
+					"actualStartDate": "2018/01/29",
+					"endDate": "2018/01/31",
+					"actualEndDate": "2018/01/31",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "100 MBPs Local Loop",
+					"mandatory": "false",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/01",
+					"actualStartDate": "2018/02/01",
+					"endDate": "2018/02/02",
+					"actualEndDate": "2018/02/02",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00025",
+			"Family": "Access",
+			"productName": "Static IP",
+			"mandatory": "false",
+			"items": [
+				{
+					"itemName": "Static IP services",
+					"mandatory": "false",
+					"solutionType": "Commissioning",
+					"duration": "1",
+					"startDate": "2018/02/02",
+					"actualStartDate": "2018/02/02",
+					"endDate": "2018/02/02",
+					"actualEndDate": "2018/02/02",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00030",
+			"Family": "Managed Sec",
+			"productName": "0-99 Basic Security",
+			"mandatory": "false",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/02/09",
+					"actualStartDate": "2018/02/09",
+					"endDate": "2018/02/01",
+					"actualEndDate": "2018/02/01",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Surveillance Service",
+					"mandatory": "false",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/02",
+					"actualStartDate": "2018/02/02",
+					"endDate": "2018/02/24",
+					"actualEndDate": "2018/02/24",
+					"status": "Yet to start"
+				}
+			]
+		}
+	],
+	"T03": [
+		{
+			"prodcutId": "VZ00023",
+			"Family": "SDWAN",
+			"productName": "0-99 users",
+			"mandatory": "true",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Basic Config",
+					"mandatory": "true",
+					"solutionType": "Day 0 Config",
+					"duration": "1",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/22",
+					"actualEndDate": "2018/01/22",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/02/05",
+					"actualStartDate": "2018/02/05",
+					"endDate": "2018/02/07",
+					"actualEndDate": "2018/02/07",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Viptela - Complete - SM",
+					"mandatory": "true",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/08",
+					"actualStartDate": "2018/02/08",
+					"endDate": "2018/02/09",
+					"actualEndDate": "2018/02/09",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Adv Config",
+					"mandatory": "false",
+					"solutionType": "Day 1 Config",
+					"duration": "1",
+					"startDate": "2018/02/10",
+					"actualStartDate": "2018/02/10",
+					"endDate": "2018/02/10",
+					"actualEndDate": "2018/02/10",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "AAR Services",
+					"mandatory": "true",
+					"solutionType": "Commissioning",
+					"duration": "1",
+					"startDate": "2018/02/12",
+					"actualStartDate": "2018/02/12",
+					"endDate": "2018/02/12",
+					"actualEndDate": "2018/02/12",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00023",
+			"Family": "Managed WiFi",
+			"productName": "Managed Wifi",
+			"mandatory": "true",
+			"items": [
+				{
+					"itemName": "WiFi Gateway uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Beacons",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "SSID",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/02/12",
+					"actualStartDate": "2018/02/12",
+					"endDate": "2018/02/14",
+					"actualEndDate": "2018/02/14",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Managed WiFi",
+					"mandatory": "true",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/15",
+					"actualStartDate": "2018/02/15",
+					"endDate": "2018/02/16",
+					"actualEndDate": "2018/02/16",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Service Management",
+					"mandatory": "true",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/15",
+					"actualStartDate": "2018/02/15",
+					"endDate": "2018/02/16",
+					"actualEndDate": "2018/02/16",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00024",
+			"Family": "Managed LAN",
+			"productName": "LAN",
+			"mandatory": "false",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Cable and Connectors",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/02/12",
+					"actualStartDate": "2018/02/12",
+					"endDate": "2018/02/14",
+					"actualEndDate": "2018/02/14",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Wired LAN Monitoring",
+					"mandatory": "false",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/15",
+					"actualStartDate": "2018/02/15",
+					"endDate": "2018/02/16",
+					"actualEndDate": "2018/02/16",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00025",
+			"Family": "Primary Access",
+			"productName": "Primary",
+			"mandatory": "false",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/01/29",
+					"actualStartDate": "2018/01/29",
+					"endDate": "2018/01/31",
+					"actualEndDate": "2018/01/31",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "100 MBPs Local Loop",
+					"mandatory": "false",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/01",
+					"actualStartDate": "2018/02/01",
+					"endDate": "2018/02/02",
+					"actualEndDate": "2018/02/02",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00025",
+			"Family": "Backup Access",
+			"productName": "Backup",
+			"mandatory": "false",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/01/29",
+					"actualStartDate": "2018/01/29",
+					"endDate": "2018/01/31",
+					"actualEndDate": "2018/01/31",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "100 MBPs Local Loop",
+					"mandatory": "false",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/01",
+					"actualStartDate": "2018/02/01",
+					"endDate": "2018/02/02",
+					"actualEndDate": "2018/02/02",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00025",
+			"Family": "Access",
+			"productName": "Static IP",
+			"mandatory": "false",
+			"items": [
+				{
+					"itemName": "Static IP services",
+					"mandatory": "false",
+					"solutionType": "Commissioning",
+					"duration": "1",
+					"startDate": "2018/02/02",
+					"actualStartDate": "2018/02/02",
+					"endDate": "2018/02/02",
+					"actualEndDate": "2018/02/02",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00030",
+			"Family": "Managed Sec",
+			"productName": "0-99 Basic Security",
+			"mandatory": "false",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/02/09",
+					"actualStartDate": "2018/02/09",
+					"endDate": "2018/02/01",
+					"actualEndDate": "2018/02/01",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Surveillance Service",
+					"mandatory": "false",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/02",
+					"actualStartDate": "2018/02/02",
+					"endDate": "2018/02/24",
+					"actualEndDate": "2018/02/24",
+					"status": "Yet to start"
+				}
+			]
+		}
+	],
+	"T04": [
+		{
+			"prodcutId": "VZ00023",
+			"Family": "SDWAN",
+			"productName": "0-99 users",
+			"mandatory": "true",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Basic Config",
+					"mandatory": "true",
+					"solutionType": "Day 0 Config",
+					"duration": "1",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/22",
+					"actualEndDate": "2018/01/22",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/02/05",
+					"actualStartDate": "2018/02/05",
+					"endDate": "2018/02/07",
+					"actualEndDate": "2018/02/07",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Viptela - Complete - SM",
+					"mandatory": "true",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/08",
+					"actualStartDate": "2018/02/08",
+					"endDate": "2018/02/09",
+					"actualEndDate": "2018/02/09",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Adv Config",
+					"mandatory": "false",
+					"solutionType": "Day 1 Config",
+					"duration": "1",
+					"startDate": "2018/02/10",
+					"actualStartDate": "2018/02/10",
+					"endDate": "2018/02/10",
+					"actualEndDate": "2018/02/10",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "AAR Services",
+					"mandatory": "true",
+					"solutionType": "Commissioning",
+					"duration": "1",
+					"startDate": "2018/02/12",
+					"actualStartDate": "2018/02/12",
+					"endDate": "2018/02/12",
+					"actualEndDate": "2018/02/12",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "SCI Services",
+					"mandatory": "true",
+					"solutionType": "Commissioning",
+					"duration": "1",
+					"startDate": "2018/02/12",
+					"actualStartDate": "2018/02/12",
+					"endDate": "2018/02/12",
+					"actualEndDate": "2018/02/12",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00023",
+			"Family": "Managed WiFi",
+			"productName": "Managed Wifi",
+			"mandatory": "true",
+			"items": [
+				{
+					"itemName": "WiFi Gateway uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Beacons",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "SSID",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/02/12",
+					"actualStartDate": "2018/02/12",
+					"endDate": "2018/02/14",
+					"actualEndDate": "2018/02/14",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Managed WiFi",
+					"mandatory": "true",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/15",
+					"actualStartDate": "2018/02/15",
+					"endDate": "2018/02/16",
+					"actualEndDate": "2018/02/16",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Service Management",
+					"mandatory": "true",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/15",
+					"actualStartDate": "2018/02/15",
+					"endDate": "2018/02/16",
+					"actualEndDate": "2018/02/16",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00024",
+			"Family": "Managed LAN",
+			"productName": "LAN",
+			"mandatory": "false",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Cable and Connectors",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/02/12",
+					"actualStartDate": "2018/02/12",
+					"endDate": "2018/02/14",
+					"actualEndDate": "2018/02/14",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Wired LAN Monitoring",
+					"mandatory": "false",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/15",
+					"actualStartDate": "2018/02/15",
+					"endDate": "2018/02/16",
+					"actualEndDate": "2018/02/16",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00025",
+			"Family": "Primary Access",
+			"productName": "Primary",
+			"mandatory": "false",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/01/29",
+					"actualStartDate": "2018/01/29",
+					"endDate": "2018/01/31",
+					"actualEndDate": "2018/01/31",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "100 MBPs Local Loop",
+					"mandatory": "false",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/01",
+					"actualStartDate": "2018/02/01",
+					"endDate": "2018/02/02",
+					"actualEndDate": "2018/02/02",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00025",
+			"Family": "Backup Access",
+			"productName": "Backup",
+			"mandatory": "false",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/01/29",
+					"actualStartDate": "2018/01/29",
+					"endDate": "2018/01/31",
+					"actualEndDate": "2018/01/31",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "100 MBPs Local Loop",
+					"mandatory": "false",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/01",
+					"actualStartDate": "2018/02/01",
+					"endDate": "2018/02/02",
+					"actualEndDate": "2018/02/02",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00025",
+			"Family": "Access",
+			"productName": "Static IP",
+			"mandatory": "false",
+			"items": [
+				{
+					"itemName": "Static IP services",
+					"mandatory": "false",
+					"solutionType": "Commissioning",
+					"duration": "1",
+					"startDate": "2018/02/02",
+					"actualStartDate": "2018/02/02",
+					"endDate": "2018/02/02",
+					"actualEndDate": "2018/02/02",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00030",
+			"Family": "Managed Sec",
+			"productName": "0-99 Basic Security",
+			"mandatory": "false",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/02/09",
+					"actualStartDate": "2018/02/09",
+					"endDate": "2018/02/01",
+					"actualEndDate": "2018/02/01",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Surveillance Service",
+					"mandatory": "false",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/02",
+					"actualStartDate": "2018/02/02",
+					"endDate": "2018/02/24",
+					"actualEndDate": "2018/02/24",
+					"status": "Yet to start"
+				}
+			]
+		}
+	],
+	"T05": [
+		{
+			"prodcutId": "VZ00023",
+			"Family": "SDWAN",
+			"productName": "0-99 users",
+			"mandatory": "true",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Basic Config",
+					"mandatory": "true",
+					"solutionType": "Day 0 Config",
+					"duration": "1",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/22",
+					"actualEndDate": "2018/01/22",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/02/05",
+					"actualStartDate": "2018/02/05",
+					"endDate": "2018/02/07",
+					"actualEndDate": "2018/02/07",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Viptela - Complete - SM",
+					"mandatory": "true",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/08",
+					"actualStartDate": "2018/02/08",
+					"endDate": "2018/02/09",
+					"actualEndDate": "2018/02/09",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Adv Config",
+					"mandatory": "false",
+					"solutionType": "Day 1 Config",
+					"duration": "1",
+					"startDate": "2018/02/10",
+					"actualStartDate": "2018/02/10",
+					"endDate": "2018/02/10",
+					"actualEndDate": "2018/02/10",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "AAR Services",
+					"mandatory": "true",
+					"solutionType": "Commissioning",
+					"duration": "1",
+					"startDate": "2018/02/12",
+					"actualStartDate": "2018/02/12",
+					"endDate": "2018/02/12",
+					"actualEndDate": "2018/02/12",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "SCI Services",
+					"mandatory": "true",
+					"solutionType": "Commissioning",
+					"duration": "1",
+					"startDate": "2018/02/12",
+					"actualStartDate": "2018/02/12",
+					"endDate": "2018/02/12",
+					"actualEndDate": "2018/02/12",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Hosted DC Custom SCI",
+					"mandatory": "true",
+					"solutionType": "Commissioning",
+					"duration": "1",
+					"startDate": "2018/02/12",
+					"actualStartDate": "2018/02/12",
+					"endDate": "2018/02/12",
+					"actualEndDate": "2018/02/12",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00023",
+			"Family": "Managed WiFi",
+			"productName": "Managed Wifi",
+			"mandatory": "true",
+			"items": [
+				{
+					"itemName": "WiFi Gateway uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Beacons",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "SSID",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/02/12",
+					"actualStartDate": "2018/02/12",
+					"endDate": "2018/02/14",
+					"actualEndDate": "2018/02/14",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Managed WiFi",
+					"mandatory": "true",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/15",
+					"actualStartDate": "2018/02/15",
+					"endDate": "2018/02/16",
+					"actualEndDate": "2018/02/16",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Service Management",
+					"mandatory": "true",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/15",
+					"actualStartDate": "2018/02/15",
+					"endDate": "2018/02/16",
+					"actualEndDate": "2018/02/16",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00024",
+			"Family": "Managed LAN",
+			"productName": "LAN",
+			"mandatory": "false",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Cable and Connectors",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/02/12",
+					"actualStartDate": "2018/02/12",
+					"endDate": "2018/02/14",
+					"actualEndDate": "2018/02/14",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Wired LAN Monitoring",
+					"mandatory": "false",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/15",
+					"actualStartDate": "2018/02/15",
+					"endDate": "2018/02/16",
+					"actualEndDate": "2018/02/16",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00025",
+			"Family": "Primary Access",
+			"productName": "Primary",
+			"mandatory": "false",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/01/29",
+					"actualStartDate": "2018/01/29",
+					"endDate": "2018/01/31",
+					"actualEndDate": "2018/01/31",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "100 MBPs Local Loop",
+					"mandatory": "false",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/01",
+					"actualStartDate": "2018/02/01",
+					"endDate": "2018/02/02",
+					"actualEndDate": "2018/02/02",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00025",
+			"Family": "Backup Access",
+			"productName": "Backup",
+			"mandatory": "false",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/01/29",
+					"actualStartDate": "2018/01/29",
+					"endDate": "2018/01/31",
+					"actualEndDate": "2018/01/31",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "100 MBPs Local Loop",
+					"mandatory": "false",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/01",
+					"actualStartDate": "2018/02/01",
+					"endDate": "2018/02/02",
+					"actualEndDate": "2018/02/02",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00025",
+			"Family": "Access",
+			"productName": "Static IP",
+			"mandatory": "false",
+			"items": [
+				{
+					"itemName": "Static IP services",
+					"mandatory": "false",
+					"solutionType": "Commissioning",
+					"duration": "1",
+					"startDate": "2018/02/02",
+					"actualStartDate": "2018/02/02",
+					"endDate": "2018/02/02",
+					"actualEndDate": "2018/02/02",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00030",
+			"Family": "Managed Sec",
+			"productName": "0-99 Basic Security",
+			"mandatory": "false",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/02/09",
+					"actualStartDate": "2018/02/09",
+					"endDate": "2018/02/01",
+					"actualEndDate": "2018/02/01",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Surveillance Service",
+					"mandatory": "false",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/02",
+					"actualStartDate": "2018/02/02",
+					"endDate": "2018/02/24",
+					"actualEndDate": "2018/02/24",
+					"status": "Yet to start"
+				}
+			]
+		}
+	],
+	"T06": [
+		{
+			"prodcutId": "VZ00023",
+			"Family": "SDWAN",
+			"productName": "0-99 users",
+			"mandatory": "true",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Basic Config",
+					"mandatory": "true",
+					"solutionType": "Day 0 Config",
+					"duration": "1",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/22",
+					"actualEndDate": "2018/01/22",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/02/05",
+					"actualStartDate": "2018/02/05",
+					"endDate": "2018/02/07",
+					"actualEndDate": "2018/02/07",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Viptela - Complete - SM",
+					"mandatory": "true",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/08",
+					"actualStartDate": "2018/02/08",
+					"endDate": "2018/02/09",
+					"actualEndDate": "2018/02/09",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Adv Config",
+					"mandatory": "false",
+					"solutionType": "Day 1 Config",
+					"duration": "1",
+					"startDate": "2018/02/10",
+					"actualStartDate": "2018/02/10",
+					"endDate": "2018/02/10",
+					"actualEndDate": "2018/02/10",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "AAR Services",
+					"mandatory": "true",
+					"solutionType": "Commissioning",
+					"duration": "1",
+					"startDate": "2018/02/12",
+					"actualStartDate": "2018/02/12",
+					"endDate": "2018/02/12",
+					"actualEndDate": "2018/02/12",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "SCI Services",
+					"mandatory": "true",
+					"solutionType": "Commissioning",
+					"duration": "1",
+					"startDate": "2018/02/12",
+					"actualStartDate": "2018/02/12",
+					"endDate": "2018/02/12",
+					"actualEndDate": "2018/02/12",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Hosted DC Custom SCI",
+					"mandatory": "true",
+					"solutionType": "Commissioning",
+					"duration": "1",
+					"startDate": "2018/02/12",
+					"actualStartDate": "2018/02/12",
+					"endDate": "2018/02/12",
+					"actualEndDate": "2018/02/12",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00023",
+			"Family": "Managed WiFi",
+			"productName": "Managed Wifi",
+			"mandatory": "true",
+			"items": [
+				{
+					"itemName": "WiFi Gateway uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Beacons",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "SSID",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/02/12",
+					"actualStartDate": "2018/02/12",
+					"endDate": "2018/02/14",
+					"actualEndDate": "2018/02/14",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Managed WiFi",
+					"mandatory": "true",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/15",
+					"actualStartDate": "2018/02/15",
+					"endDate": "2018/02/16",
+					"actualEndDate": "2018/02/16",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Service Management",
+					"mandatory": "true",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/15",
+					"actualStartDate": "2018/02/15",
+					"endDate": "2018/02/16",
+					"actualEndDate": "2018/02/16",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00053",
+			"Family": "UCaaS",
+			"productName": "Managed Wifi",
+			"mandatory": "true",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "User Equipment",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Reception Equipment",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Conference Equipment",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/02/12",
+					"actualStartDate": "2018/02/12",
+					"endDate": "2018/02/14",
+					"actualEndDate": "2018/02/14",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Managed voice",
+					"mandatory": "true",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/15",
+					"actualStartDate": "2018/02/15",
+					"endDate": "2018/02/16",
+					"actualEndDate": "2018/02/16",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Service Management",
+					"mandatory": "true",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/15",
+					"actualStartDate": "2018/02/15",
+					"endDate": "2018/02/16",
+					"actualEndDate": "2018/02/16",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00024",
+			"Family": "Managed LAN",
+			"productName": "LAN",
+			"mandatory": "false",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Cable and Connectors",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/02/12",
+					"actualStartDate": "2018/02/12",
+					"endDate": "2018/02/14",
+					"actualEndDate": "2018/02/14",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Wired LAN Monitoring",
+					"mandatory": "false",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/15",
+					"actualStartDate": "2018/02/15",
+					"endDate": "2018/02/16",
+					"actualEndDate": "2018/02/16",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00025",
+			"Family": "Primary Access",
+			"productName": "Primary",
+			"mandatory": "false",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/01/29",
+					"actualStartDate": "2018/01/29",
+					"endDate": "2018/01/31",
+					"actualEndDate": "2018/01/31",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "100 MBPs Local Loop",
+					"mandatory": "false",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/01",
+					"actualStartDate": "2018/02/01",
+					"endDate": "2018/02/02",
+					"actualEndDate": "2018/02/02",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00025",
+			"Family": "Backup Access",
+			"productName": "Backup",
+			"mandatory": "false",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/01/29",
+					"actualStartDate": "2018/01/29",
+					"endDate": "2018/01/31",
+					"actualEndDate": "2018/01/31",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "100 MBPs Local Loop",
+					"mandatory": "false",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/01",
+					"actualStartDate": "2018/02/01",
+					"endDate": "2018/02/02",
+					"actualEndDate": "2018/02/02",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00025",
+			"Family": "Access",
+			"productName": "Static IP",
+			"mandatory": "false",
+			"items": [
+				{
+					"itemName": "Static IP services",
+					"mandatory": "false",
+					"solutionType": "Commissioning",
+					"duration": "1",
+					"startDate": "2018/02/02",
+					"actualStartDate": "2018/02/02",
+					"endDate": "2018/02/02",
+					"actualEndDate": "2018/02/02",
+					"status": "Yet to start"
+				}
+			]
+		},
+		{
+			"prodcutId": "VZ00030",
+			"Family": "Managed Sec",
+			"productName": "0-99 Basic Security",
+			"mandatory": "false",
+			"items": [
+				{
+					"itemName": "uCPE",
+					"mandatory": "true",
+					"solutionType": "Fulfillment",
+					"duration": "5",
+					"startDate": "2018/01/22",
+					"actualStartDate": "2018/01/22",
+					"endDate": "2018/01/26",
+					"actualEndDate": "2018/01/26",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Installation Service",
+					"mandatory": "false",
+					"solutionType": "Installation",
+					"duration": "3",
+					"startDate": "2018/02/09",
+					"actualStartDate": "2018/02/09",
+					"endDate": "2018/02/01",
+					"actualEndDate": "2018/02/01",
+					"status": "Yet to start"
+				},
+				{
+					"itemName": "Surveillance Service",
+					"mandatory": "false",
+					"solutionType": "Commissioning",
+					"duration": "2",
+					"startDate": "2018/02/22",
+					"actualStartDate": "2018/02/22",
+					"endDate": "2018/02/24",
+					"actualEndDate": "2018/02/24",
+					"status": "Yet to start"
+				}
+			]
+		}
+	]
+}

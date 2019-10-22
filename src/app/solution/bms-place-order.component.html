@@ -1,0 +1,87 @@
+<!-- Page Content -->
+<div class="container-fluid">
+	<div class="row page-header_block">
+		<div class="col-md-12">
+			<div class="col-md-6">
+				<h3>Build My Solution - Branch in a Box</h3>
+			</div>
+			<div class="col-md-3 header-link">
+				<bms-personalize-my-solution-popup></bms-personalize-my-solution-popup>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-1" style="margin-left: -15px;">
+			<app-leftmenu></app-leftmenu>
+		</div>
+		<div class="col-md-11 right-wrapper">
+			<div class="row">
+				<div class="col-md-9">
+					<app-bms-nav-buttons [stepNumber]="stepNumber"></app-bms-nav-buttons>
+					<div class="panel panel-default">
+						<div class="panel-body place-order">
+							<div class="row">
+								<div class="col-md-12">
+									<strong>Shipping Details :</strong>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 productlist">
+									<div class="row tbl-heading-bgcolor">
+										<div class="col-md-3">Resources</div>
+										<div class="col-md-3">Quantity</div>
+										<div class="col-md-3">Name</div>
+										<div class="col-md-3">Address</div>
+									</div>
+									<div *ngFor="let bom of bomData">
+										<div class="family row datalist">
+											<div class="col-md-12">
+												{{bom.Family}}
+											</div>
+										</div>
+										<div *ngFor="let item of bom.items" class="row lr-border">
+											<div *ngIf="item.itemType=='resource' && item.shippabledefault !='NA' " class="bordered-item datalist">
+												<div class="col-md-3">{{item.itemName}}</div>
+												<div class="col-md-3">{{item.quantity}}</div>
+												<div class="col-md-3">{{accName}}</div>
+												<div class="col-md-3">{{item.address}}</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-12">
+									<div class="payDetails">
+										<strong>Payment Details</strong>
+										<p>Select Payment Cycle :
+											<select name="" class="payment-cycle">
+												<option>Monthly</option>
+												<option>Quarterly</option>
+												<option>Yearly</option>
+											</select>
+										</p>
+									</div>
+									<div class="terms-condition">
+										<label>
+											<input type="checkbox" value="" [(ngModel)]="model.chkAgree" #chkAgree="ngModel" name="chkAgree">
+										</label>
+										<!--<span class="terms-condition-link" (click)="showDialog = !showDialog"> I agree to all terms and conditions.</span>-->
+										<agree-bms-place-order-overlay></agree-bms-place-order-overlay>
+									</div>
+									<place-order-alert-popup [enablePlaceOrderContinue]="model.chkAgree"></place-order-alert-popup>
+									<!-- <button [disabled]="!model.chkAgree" (click)="save()" class="btn btn-default contButton red-button pull-right place-order-btn">Place Order</button> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 sunburst-chart">
+					<sunburst-chart [inputBomTemplate]="bomTemplate" [inputBomTemplateData]="bomTemplateData"></sunburst-chart>
+				</div>
+				<!--END : page starts -->
+			</div>
+		</div>
+	</div>

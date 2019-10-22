@@ -1,0 +1,54 @@
+<!-- Page Content -->
+<div class="container-fluid container-box">
+	<div class="row">
+		<div class = "col-sm-12 signin-padding">
+		<div class="col-sm-6">
+			<div  class="left-para">
+				
+				<h3 class="heading"><b>Lorel ipsum</b></h3>
+				
+					<p>
+						Lorem ipsum dolor sit amet,consectetur dipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					</p>
+					<p>Ut enim ad minim veniam, quis nostrud xercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					</p>
+					<p>Duis aute irure olor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+			
+		</div>
+		<div class="col-sm-6">
+			<form class="signInForm bpform" name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+				<fieldset class="formHeader">
+					<h4 class="form-title">Sign In</h4>
+					<alertMsg></alertMsg>
+					<div class="form-group" [ngClass]="{'has-input-error': ((username.touched || f.submitted) && username.errors)}">
+						<label>Email/Account Name</label>
+						<input type="text" #username="ngModel" pattern="^(\w+ ?)(?=.).*$" class="form-control" name="username" [(ngModel)]="model.username" required maxlength="20">
+						<div class="error-msg-box">
+							<div *ngIf="(username.touched || f.submitted) && username.errors && username.errors.required">
+							*Email/Account Name is a required field
+							</div>
+						</div>
+					</div>
+					<div class="form-group" [ngClass]="{'has-input-error': ((password.touched || f.submitted) && password.errors)}">
+						<label>Password</label>
+						<input type="password" class="form-control" required [(ngModel)]="model.password" name="password" reverse="true" #password="ngModel">
+						<div class="error-msg-box">
+							<div *ngIf="(password.touched || f.submitted) && password.errors && password.errors.required">
+								*Password is a required field
+							</div>
+						</div>
+					</div>
+					<button class="btn btn-default contButton black-button">Sign in</button>
+					<i *ngIf="loading" class="fa fa-spinner fa-spin fa-lg"></i>
+					<hr class="line">
+					<div class="link">
+						<a  [routerLink]="['/step-01']" id="link" >Create a new BIM PaaS account</a>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+		</div>
+	</div>
+</div>

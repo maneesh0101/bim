@@ -1,0 +1,156 @@
+.navbar.top-nav-bar {
+    margin-bottom:0px;
+}
+.my-automation{
+    font-family: "Neue Haas";
+}
+.my-automation ul.policies-stack li{
+    border:1px solid #ccc;
+    background-color: #f6f6f6;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+}
+.my-automation ul.policies-stack li a{
+    color: #333;
+}
+.my-automation .policies-stack-content {
+    padding-left: 0;
+}
+.my-automation .policies-stack-content .heading {
+    color:#fff;
+    background-color:#747676;
+    padding:10px;
+    color: #ffffff;
+    font-family: "Neue Haas Grotesk Display Std 65 Medium","Neue Haas Grotesk Display Std";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+.my-automation .policies-stack-content .content{
+    border:1px solid #ccc;
+    background-color: #f6f6f6;
+    height: 207px;
+    padding:10px;
+}
+:host >>> .my-automation .tabset ul li{
+
+}
+:host >>> .my-automation .tabset ul li a {
+    color: #333;
+}
+:host >>> .my-automation .tabset ul li a.active {
+    border-top: 3px solid #D52B1E!important;
+    border-radius: 0;
+    font-weight: bold;
+}
+:host >>> .my-automation .tabset .tab-content {
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    padding: 10px;
+}
+
+.my-automation ul.policies-stack li.active {
+    border:0;
+}
+.my-automation ul.policies-stack li.active a{
+    background: url('../../assets/images/policies-active-bg.png');
+    z-index: 9;
+    width: 312px;
+    color:#fff;
+    background-position: -16px 0px;
+    background-repeat: no-repeat;
+    border-radius: 0px;    
+}
+
+.my-automation .red-button {
+    height: auto;
+    padding: 0px 20px 0px 20px;
+    color: #fff;
+    font-weight: 100;
+}
+.my-automation .tbl-heading-bgcolor {
+    padding:10px;
+}
+.my-automation .configuration-heading {
+    background-color: #ccc;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+    color: #000000;   
+    padding:10px;
+}
+.my-automation .bordered-item {
+    border-bottom:1px solid #ccc;
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+    padding:10px;
+}
+.my-automation .subcriteria-heading {
+    padding-top:10px;
+    padding-bottom:20px;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;    
+}
+.page-content{
+     margin-left: 80px;
+     font-family: Neue Haas;
+}
+.navbar-heading{
+     margin-left: 100px;
+    margin-top: 20px;
+}
+.header{
+     font-size: 20px;
+     font-weight: bold;
+     background-color: #747676;
+     color: #fff;
+     border-radius: 0px;
+    min-height: 70px;
+    font-family: Neue Haas;
+}
+.bom-image {
+    width:992px;
+}
+.criteria-dropdown {
+    width:100%;
+}
+@media screen and (max-width: 767px) and (min-width: 320px) {
+   
+    .my-automation ul.policies-stack li.active a{
+       background-position: 0px;
+   } 
+   .my-automation .policies-stack-content {
+       margin-top: 20px;
+   }
+   .my-automation .red-button {
+       padding: 0px 10px 0px 10px;
+   }
+   :host >>>.my-automation .tabset ul li {
+       width: 35% !important;
+   }
+   .my-automation ul.policies-stack li {
+       width: 90%;
+   }
+   .page-content{
+    margin-left: 10px;
+    }
+    .my-automation .policies-stack-content .content {
+        height:  400px;
+    }
+    .tick-circle-checkbox input[type="radio"] ~ label, .tick-circle-checkbox input[type="checkbox"] ~ label {
+        width:100%;
+    }
+    .tick-circle-checkbox {
+        width: 100% !important;
+    }
+    .tick-circle-checkbox-success {
+        width: 100% !important;
+    }
+    .bom-image {width:100%;}
+    .tbl-heading-bgcolor , .mobwidth{width:400%;}
+    :host >>> .my-automation .tabset .tab-content {overflow-x: scroll !important;}
+}
+

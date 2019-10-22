@@ -1,0 +1,123 @@
+legend.formheading {
+    width: 175px;
+    height: 31px;
+}
+.expiry-input {
+    padding-left: 0;
+    padding-right: 0;
+}
+.expiry-input select {
+  height: 27px;
+  font-size: 11px;
+  display:inline;
+}
+.expiry-input select.month {
+width:60px;
+}
+.expiry-input select.year {
+width:80px;
+}
+.country-state {
+  padding-left: 0;
+}
+.country-state select {
+  height: 27px;
+  font-size: 11px;
+  width:100px;
+}
+.country-state .state {
+  width: 166px;
+}
+.form-group{
+  margin-left: 20px;
+}
+.security-field{
+  width: 100px;
+}
+.ccrForm{
+  margin-left: -15px;
+}
+.formHeader{
+  max-width: 385px;
+  padding:.35em .625em .75em!important;
+  margin:0 2px;
+  border: 1px solid silver!important;
+  background-color: rgba(246, 246, 246, 1);
+  box-shadow: 3px 3px grey;
+}
+.form-title
+{
+  text-align: center;
+}
+.page-center{
+  margin-left: auto;
+  margin-right: auto;
+}
+   
+
+
+
+
+#formHeader{
+  /* width: 482px; */
+
+  padding:.35em .625em .75em!important;
+  margin:0 2px;
+  background-color: white;
+  border: 1px solid silver!important;
+  margin-bottom: 10em;
+}
+
+
+#verificationMsg{
+      padding-left: 23px;
+}
+#inputCode{
+
+  height: 25px;
+  width: 150px;
+  margin-top: 28px;
+  margin-left: 140px;
+  text-align: center;
+}
+
+
+
+
+
+.selectBox{
+  width: 80px;
+  height: 30px;
+
+  display: inline-block;
+}
+
+
+.btn-round{
+      width: 200px;
+      height: 30px;
+      border-radius: 17px;
+      color: white;
+      background-color: #d52b1e;
+}
+
+#submitButton{
+  height: 30px;
+    margin-bottom: 35px;
+    margin-left: 30px;
+    width: 270px;
+}
+#stateZipField{
+  width: 150px;
+}
+.creditCard{
+  width: 72px;
+  display: inline-block;
+}
+#error{
+  border-bottom: 6px solid red;
+   background-color: lightgrey;
+}
+label{
+  font-weight: 200;
+}

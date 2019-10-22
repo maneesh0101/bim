@@ -1,0 +1,197 @@
+body {
+    overflow-x: hidden;
+}
+.server-img {
+     width:273px;
+}
+ .verizon-service {
+     color: #333333;
+}
+ .verizon-service .panel-body{
+     padding-top:0px;
+}
+ .verizon-service .links a{
+     font-size: 16px;
+     text-decoration: underline;
+     padding-left: 10px;
+}
+ .verizon-service .searchInputGroup {
+     width:80%;
+     padding-left: 0px;
+}
+ .verizon-service .searchInputGroup .search-input {
+     box-shadow: none;
+}
+ .verizon-service .accordian {
+     padding-top: 20px;
+}
+ .verizon-service .accordian a {
+     text-decoration:none;
+     font-size: 16px;
+     color: #333333;
+     font-family: 'Arial';
+     font-weight: 400;
+}
+ .verizon-service .accordian a.accr-a {
+     margin-left: -3px;
+}
+ .verizon-service .accordian a.accr-link {
+     color: #337AC6;
+}
+ .verizon-service .accordian .accr-data {
+     padding: 20px 0px;
+}
+ .verizon-service .accordian img.accr-img {
+     margin-bottom: 5px;
+}
+ .table{
+     vertical-align: middle;
+}
+ th{
+     background-color: #747676;
+     color: whitesmoke;
+     vertical-align: middle;
+}
+/* satish code */
+.fa-15x{font-size: 1.5em;}
+ table,tr,td,th {
+     border:1px solid #ddd;
+     border-collapse:collapse;
+}
+ table {
+     width:100%;
+}
+ .mar-t-30{
+    margin-top: 30px
+}
+ select {
+    width:auto;
+    height: 30px;
+     font-family: 'Neue Haas';
+     font-weight: 400;
+     font-style: normal;
+     font-size: 13px;
+     text-decoration: none;
+     color: #000000;
+     padding:0px;
+}
+ .tick {
+     border:1px solid #ddd;
+     height: 400px;
+}
+ .bg-white{
+    background-color:#fff;
+}
+ .dataTable th a{
+     color:#fff;
+}
+ .integration {
+     width:15px;
+     height:14px;
+     cursor:pointer;
+}
+ .p-0 {
+    padding: 0px;
+}
+ .bdr-green{
+    border-left: 3px solid green;
+}
+ .pad-6 td,th{
+     padding: 6px;
+}
+ .tableHead {
+    font-family: 'Neue Haas';
+     font-weight: 700;
+     font-style: normal;
+     font-size: 16px;
+}
+ .alertMsg{
+     background-color: #fff;
+     line-height: 2;
+     margin: 12px;
+     height: 56px;
+}
+ .alertMsg i {
+     padding-top: 13px;
+}
+ .col-xs-1-5, .col-sm-1-5, .col-md-1-5, .col-lg-1-5 {
+     position: relative;
+     min-height: 1px;
+     width: 20%;
+     float: left;
+}
+ .tableOrg table tr th, .tableOrg table tr td {
+     text-align: center;
+     padding: 0;
+     border-top: 1px solid #ddd;
+}
+ .m-b-8{
+    margin-bottom: 8px;
+}
+ .header{
+     font-size: 20px;
+     font-weight: bold;
+     background-color: #747676;
+     color: #fff;
+     border-radius: 0px;
+    min-height: 70px;
+    font-family: Neue Haas;
+}
+ .heading{
+     margin: 0;
+     font-size: 20px;
+     font-weight: bold;
+     text-align: center;
+     padding:15px 15px 0px 15px;
+     font-family: Neue Haas;
+}
+ .p-b-20{
+    padding-bottom:15px;
+}
+
+.navbar-heading{
+     margin-left: 100px;
+    margin-top: 8px;
+}
+.alerttable{
+    background-color:#eee;
+    min-height:510px;
+    position: relative;
+    top: -38px;
+    }
+.inviteBtn {
+    padding: 0px 6px 0px 5px;
+
+}
+.gaugeMobile, .ticketMobile{
+    display: none;
+}
+.chartHeight{height: 200px;}
+.inviteText {margin-top: 5px; font-size:14px;}
+@media screen and (max-width: 899px) and (min-width: 320px) {
+.col-xs-1-5, .col-sm-1-5, .col-md-1-5, .col-lg-1-5 {
+    position: relative;
+    min-height: 1px;
+    width: 100%;
+    clear:both;
+}
+.tableOrg{width:auto!important;}
+.tick {border:none;border-top:1px solid #ddd;}
+.alerttable{top:0px;}
+.page-content,.page-content{margin:0!important}
+.gaugeMobile, .ticketMobile{display: block;}
+.gaugeDesk, .ticketDesk{display: none;}
+:host >>>.carousel-control{background-image: none !important;display: none !important;}
+:host >>>.carousel-control-prev-icon{display: none !important;}
+:host >>>.carousel-control-next-icon{display: none !important;}
+:host >>>.carousel-indicators{bottom:-10px;}   
+:host >>>.mobPad .carousel-indicators{bottom:-34px;}
+:host >>>.carousel-indicators li{border-color: grey;height:10px;width:15px;margin-right: 5px;} 
+:host >>>.carousel-indicators li.active{border-color: grey;background-color: grey;height:11px;width:16px;margin-right: 5px;}
+.alertMsg{line-height: 1.4;}
+.mobPad{padding-bottom: 30px;}
+.alerttable{min-height:0;}
+.inviteText{font-size: 12px;}
+.tableOrg select{width: 65px;} 
+select option { font-size: 13px;}  
+}

@@ -1,0 +1,81 @@
+<!-- Page Content -->
+<div class="container-fluid">
+	<div class="row page-header_block">
+		<div class="col-md-12">
+			<div class="col-md-6">
+				<h3>Build My Solution - Branch in a Box</h3>
+			</div>
+			<div class="col-md-3 header-link">
+				<bms-personalize-my-solution-popup></bms-personalize-my-solution-popup>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-1" style="margin-left: -15px;">
+			<app-leftmenu></app-leftmenu>
+		</div>
+		<div class="col-md-11 right-wrapper">
+			<!--page starts HERE -->
+			<div class="row">
+				<div class="col-md-9">
+					<app-bms-nav-buttons [stepNumber]="stepNumber"></app-bms-nav-buttons>
+					<div class="panel panel-default bill-of-material">
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-12 padding-bottom-20">
+									<img class="bom-image" src="./assets/images/{{bomTemplateImage}}">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 productlist">
+									<div class="row tbl-heading-bgcolor">
+										<div class="col-md-3">Items</div>
+										<div class="col-md-1">Quantity</div>
+										<div class="col-md-2">Unit Cost ($)</div>
+										<div class="col-md-2">NRC ($)</div>
+										<div class="col-md-2">Unit Monthly Recurring ($)</div>
+										<div class="col-md-2">Monthly Recurring ($)</div>
+									</div>
+									<div *ngFor="let bom of bomData">
+										<div class="family row">
+											<div class="col-md-12">
+												{{bom.Family}}
+											</div>
+										</div>
+										<div *ngFor="let item of bom.items" class="row bordered-item">
+											<div class="col-md-3">{{item.itemName}}</div>
+											<div class="col-md-1">{{item.quantity}}</div>
+											<div class="col-md-2">{{item.unitOneTimeCharge}}</div>
+											<div class="col-md-2">{{item.oneTimeCharge}}</div>
+											<div class="col-md-2">{{item.unitMonthlyRecurring}}</div>
+											<div class="col-md-2">{{item.monthlyRecurring}}</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											Total
+										</div>
+										<div class="col-md-6">
+											<div class="pull-right">{{calculatedTotal}}</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 navbtn">
+									<button class="btn red-button pull-right" (click)="save()">Continue</button>
+									<button class="btn grey-button pull-right">Save as offer</button>
+									<button class="btn grey-button pull-right">Print</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 sunburst-chart">
+					<sunburst-chart [inputBomTemplate]="bomTemplate" [inputBomTemplateData]="bomTemplateData"></sunburst-chart>
+				</div>
+				<!--END : page starts -->
+			</div>
+		</div>
+	</div>

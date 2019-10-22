@@ -1,0 +1,36 @@
+<a class="header-link" (click)="openModal(personalizeTemplate)">Personalize My Solution</a>
+
+<ng-template #personalizeTemplate>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Personalize My Solution</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>
+      We want to make it easier for everyone to find information and access resources across our websites. Listed below, you can
+      find terms for using Verizon’s websites. You can also view specific terms for Verizon Wireless websites, as well as
+      terms for Verizon business customers.</p>
+
+    <strong>Acceptance of terms</strong>
+
+    <p>
+      This Web site and other Internet Web sites operated or controlled by subsidiaries and affiliates of Verizon Communications
+      Inc. ("Site(s)") include content, text, information, advertising, data, audio/visual materials, "applets," and software
+      (collectively, "Content"), as well as communication tools, access to email services (through Verizon or other email
+      providers), online directories, administrative services, download areas, discussion forums, search, account management
+      tools, access to certain content (e.g., news, weather, stocks and sports), certain diagnostic tools, games and other
+      information ("Services"). The Services may themselves contain Content, and Content and Services are sometimes collectively
+      referred to as the "Resources".</p>
+
+
+
+   
+
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default btn-round red-button" (click)="modalRef.hide()">Close</button>
+    </div>
+
+  </div>
+</ng-template>

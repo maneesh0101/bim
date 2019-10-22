@@ -1,0 +1,27 @@
+<div class="panel panel-default panel-custom">
+    <div class="panel-heading-custom">Bill of Material</div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="row total-cost">
+                <button class="btn btn-primary" type="button" (click)="setCostType('MRC')">
+                    MRC
+                    <span class="badge">{{calculatedTotal}}</span>
+                </button>
+                <button class="btn btn-primary" type="button" (click)="setCostType('NRC')">
+                    NRC
+                    <span class="badge">{{calculatedTotalnrc}}</span>
+                </button>
+            </div>
+            <div class="col-md-12">
+                <div style="display: block">
+                    <div>
+                        <nvd3 [options]="options" [data]="data" config="{refreshDataOnly: false, deepWatchDataDepth: 0}"></nvd3>
+                        <div class="sunBurstToolText"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</div>

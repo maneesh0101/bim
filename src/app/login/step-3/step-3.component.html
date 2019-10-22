@@ -1,0 +1,32 @@
+<div class="container-fluid container-box">
+	<app-nav-buttons [step]="step"></app-nav-buttons>
+	<div class="row">
+
+       <div class="col-sm-12 page-center">
+		  	<div class="col-sm-4"></div>
+		  	<div class="col-sm-4">
+     		 <form class="verifyForm bpform" #f="ngForm" novalidate (ngSubmit)="f.form.valid">
+				<fieldset id="formHeader">
+					<h4 class="form-title">Verify and Login</h4>
+					<p class="verificationMsg">
+						Your registration is complete. Verification code has been sent to your mobile. Please enter the 4-digit verification code.
+					</p>
+					<div class="form-group text-center" [ngClass]="{'has-input-error': ((verCode.touched || f.submitted) && verCode.errors)}">
+						<input (keyup)="save(f.form.valid)" type="password" pattern="^[0-9]{4,4}$" class="form-control inputCode" name="verCode" placeholder="XXXX"
+						 [(ngModel)]="model.verCode" #verCode="ngModel" required maxlength="4">
+						 <i *ngIf="loading" class="fa fa-spinner fa-spin fa-lg"></i>
+						<div class="error-msg-box text-center">
+							<div *ngIf="(verCode.touched || f.submitted) && verCode.invalid">
+								*Only digits allowed
+							</div>
+						</div>
+					</div>
+					<alertMsg></alertMsg>
+				</fieldset>
+			</form>
+      		</div>
+       		<div class ="col-sm-4"></div>
+  		</div>
+  </div>
+</div>
+

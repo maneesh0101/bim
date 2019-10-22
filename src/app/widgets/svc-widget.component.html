@@ -1,0 +1,81 @@
+<form (ngSubmit)="f.form.valid && save()" #f="ngForm">
+  <div class="svcbox">
+    <div *ngFor="let level1 of svc">
+      <div class="row level1div">
+        <div class="col-md-12">
+          <input type="checkbox" [(ngModel)]="model[level1.model]['chk_'+level1.model]" name="chk_{{level1.model}}" (change)="determineBOMTemplate()"
+            *ngIf="level1.elementType=='checkbox'"> {{level1.label}}
+        </div>
+      </div>
+      <div *ngIf="level1.child && model[level1.model]['chk_'+level1.model]" class="row level1divchild">
+        <div class="col-md-12">
+          <div *ngFor="let level2 of level1.child.yes">
+            <div class="row level2div">
+              <div class="col-md-6">
+                {{level2.label}}
+              </div>
+              <div class="col-md-6">
+                <div *ngIf="level2.elementType=='radio'" class="btn-group toggle-switch-btn">
+                  <input type="radio" id="switch_left_{{level1.model}}_{{level2.model}}" [(ngModel)]="model[level1.model][level2.model]" name="radneedves_{{level1.model}}_{{level2.model}}"
+                    value="yes" (change)="determineBOMTemplate()" />
+                  <label for="switch_left_{{level1.model}}_{{level2.model}}">Yes</label>
+                  <input type="radio" [disabled]="level2.disabled" id="switch_right_{{level1.model}}_{{level2.model}}" [(ngModel)]="model[level1.model][level2.model]"
+                    name="radneedves_{{level1.model}}_{{level2.model}}" value="no" (change)="determineBOMTemplate()" />
+                  <label for="switch_right_{{level1.model}}_{{level2.model}}">No</label>
+                </div>
+              </div>
+            </div>
+            <div *ngIf="model[level1.model][level2.model]=='yes'">
+              <div *ngFor="let yesLevel1 of level2.child.yes">
+                <div class="row level3div">
+                  <div class="col-md-6">
+                    {{yesLevel1.label}}
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" [(ngModel)]="model[level1.model]['needVes']['yes'][yesLevel1.model]" name="{{yesLevel1.model}}" *ngIf="yesLevel1.elementType=='number'"
+                      min="0" placeholder="Enter here">
+                    <input type="checkbox" [(ngModel)]="model[level1.model]['needVes']['yes'][yesLevel1.model]" name="{{yesLevel1.model}}" *ngIf="yesLevel1.elementType=='checkbox'">
+                    <select [(ngModel)]="model[level1.model]['needVes']['yes'][yesLevel1.model]" name="{{yesLevel1.model}}" *ngIf="yesLevel1.elementType=='select'">
+                      <option *ngFor="let val of yesLevel1.elementValues" [value]="val.value">{{val.name}}</option>
+                    </select>
+                  </div>
+                </div>
+                <div *ngIf="yesLevel1.child && model[level1.model]['needVes']['yes'][yesLevel1.model]">
+                  <div *ngFor="let yesLevel2 of yesLevel1.child.yes" class="row level4div">
+                    <div class="col-md-6">
+                      {{yesLevel2.label}}
+                    </div>
+                    <div class="col-md-6">
+                      <select [(ngModel)]="model[level1.model]['needVes']['yes'][yesLevel2.model]" name="{{yesLevel2.model}}" *ngIf="yesLevel2.elementType=='select'">
+                        <option *ngFor="let val of yesLevel2.elementValues" [value]="val.value">{{val.name}}</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div *ngIf="model[level1.model][level2.model]=='no'">
+              <div *ngFor="let noLevel1 of level2.child.no">
+                <div class="row level3div">
+                  <div class="col-md-6">
+                    {{noLevel1.label}}
+                  </div>
+                  <div class="col-md-6">
+                    <select [(ngModel)]="model[level1.model]['needVes']['no'][noLevel1.model]" name="{{noLevel1.model}}" *ngIf="noLevel1.elementType=='select'">
+                      <option *ngFor="let val of noLevel1.elementValues" [value]="val.value">{{val.name}}</option>
+                    </select>
+                    <input type="checkbox" [(ngModel)]="model[level1.model]['needVes']['no'][noLevel1.model]" name="{{noLevel1.model}}" *ngIf="noLevel1.elementType=='checkbox'">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--level1.child-->
+    </div>
+    <!--level1-->
+  </div>
+  <button class="btn btn-default contButton red-button pull-right">Continue</button>
+</form>

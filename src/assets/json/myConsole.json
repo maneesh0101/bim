@@ -1,0 +1,84 @@
+{"T01":[
+{
+    "name": "Retail in a Box",
+    "y": 40,
+    "color": "#FFB83A"
+},
+{
+    "name": "Data center in a Box",
+    "y": 10,
+    "color": "#FF2B25"
+},
+{
+    "name": "Call center in a Box",
+    "y": 20,
+    "color": "#F15A25"
+},
+{
+    "name": "Branch in a Box",
+    "y": 30,
+    "color": "#F8931F"
+}],
+"T02":[
+{
+    "name": "Order Received",
+    "y": 18,
+    "color": "#D97EDD"
+},
+{
+    "name": "Commissioning",
+    "y": 10,
+    "color": "#E89DBB"
+},
+{
+    "name": "Installation",
+    "y": 10,
+    "color": "#23B574"
+},
+{
+    "name": "Order Delivered",
+    "y": 10,
+    "color": "#01A89E"
+},
+{
+    "name": "Out for Delivery",
+    "y": 20,
+    "color": "#29AAE3"
+},
+{
+    "name": "Order Shipped",
+    "y": 15,
+    "color": "#0071BD"
+},
+{
+    "name": "Ready for Shipment",
+    "y": 17,
+    "color": "#8B71DC"
+}],
+"T03":[
+{
+    "name": "Montgomery,Alabama",
+    "y": 30,
+    "color": "#2E3192"
+},
+{
+    "name": "Ashburn,Virginia",
+    "y": 15,
+    "color": "#998675"
+},
+{
+    "name": "Dallas,Texas",
+    "y": 15,
+    "color": "#C7B199"
+},
+{
+    "name": "Rockville,Maryland",
+    "y": 20,
+    "color": "#DED9B1"
+},
+{
+    "name": "San Deigo,California",
+    "y": 20,
+    "color": "#ED1B24"
+}]
+}

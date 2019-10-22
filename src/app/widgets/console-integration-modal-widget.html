@@ -1,0 +1,130 @@
+<span>
+  <img src="./assets/images/integration.png" (click)="openIntegrationModal(template)" class="integration" style="height: 15px;">
+</span>
+
+<ng-template #template>
+
+  <div class="modal-header">
+    <h4 class="modal-title pull-left"></h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+
+    <div class="col-md-12 ">
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a href="javascript:;" (click)="vsAccordian.accr1=!vsAccordian.accr1;vsAccordian.accr2=vsAccordian.accr3">API</a>
+            </h4>
+          </div>
+          <div id="collapse1" class="panel-collapse " [hidden]="vsAccordian.accr1">
+            <div class="panel-body">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>API Name</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>URL</td>
+                    <td>
+                      <input type="text" class="form-control" id="usr">
+                    </td>
+                    <tr>
+                      <td>Header</td>
+                      <td>
+                        <input type="text" class="form-control" id="usr">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Body</td>
+                      <td>
+                        <input type="text" class="form-control" id="usr">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Authentication Token</td>
+                      <td>
+                        <input type="text" class="form-control" id="usr">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Sample Request</td>
+                      <td>
+                        <input type="text" class="form-control" id="usr">
+                      </td>
+                    </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a href="javascript:;" (click)="vsAccordian.accr2=!vsAccordian.accr2;vsAccordian.accr1=vsAccordian.accr3">CSI</a>
+            </h4>
+          </div>
+          <div id="collapse2" class="panel-collapse " [hidden]="vsAccordian.accr2">
+            <div class="panel-body">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>API Name</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>URL</td>
+                    <td>
+                      <input type="text" class="form-control" id="usr">
+                    </td>
+                    <tr>
+                      <td>Header</td>
+                      <td>
+                        <input type="text" class="form-control" id="usr">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Body</td>
+                      <td>
+                        <input type="text" class="form-control" id="usr">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Authentication Token</td>
+                      <td>
+                        <input type="text" class="form-control" id="usr">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Sample Request</td>
+                      <td>
+                        <input type="text" class="form-control" id="usr">
+                      </td>
+                    </tr>
+
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="modal-footer" style="border:none;">
+
+  </div>
+
+</ng-template>

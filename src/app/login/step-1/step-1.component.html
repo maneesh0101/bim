@@ -1,0 +1,132 @@
+<!-- Page Content -->
+<!-- Page Content -->
+<div class="container-fluid container-box">
+	<div class="col-sm-12">
+	<app-nav-buttons [step]="step"></app-nav-buttons>
+	
+</div>
+	<div class="row">
+		<div class="col-sm-12">
+		<div class="col-sm-6">
+		
+		<div class="left-para">
+			<h3 class="heading"><b>Lorel ipsum</b></h3>
+			<br>
+				<p>
+					Lorem ipsum dolor sit amet,consectetur dipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+				<p>Ut enim ad minim veniam, quis nostrud xercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+				<p>Duis aute irure olor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<p>Ut enim ad minim veniam, quis nostrud xercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+			</div>
+		</div>
+	
+		<div class="col-sm-6">
+			<form (ngSubmit)="f.form.valid && save()" #f="ngForm" class="bpform">
+				<fieldset class="formHeader">
+					<h4 class="form-title">Create a new account</h4>
+					<alertMsg></alertMsg>
+					<div class="form-group" [ngClass]="{'has-input-error': ((customerAccountName.touched || f.submitted) && customerAccountName.errors)}">
+						<label for="">Preferred Account Name</label>
+						<input type="text" class="form-control"  name="customerAccountName" [(ngModel)]="model.customerAccountName" #customerAccountName="ngModel" required  minlength="6" maxlength="20" pattern="^(\w+ ?)(?=.*[a-zA-Z])([a-zA-Z0-9\.\-\_\#\@]+)$">
+						<div class="error-msg-box">
+							<div *ngIf="(customerAccountName.touched || f.submitted) && customerAccountName.errors && customerAccountName.errors.required">
+									*Account Name is a required field
+							</div>
+							<div *ngIf="(customerAccountName.touched || f.submitted) && customerAccountName.errors && customerAccountName.errors.pattern">
+									*Only alphabets, digits and -_.#@ are allowed
+							</div>
+							<div *ngIf="(customerAccountName.touched || f.submitted) && customerAccountName.errors && customerAccountName.errors.minlength">
+									*Account Name must be 6 character long
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group" [ngClass]="{'has-input-error': ((customerEmailId.touched || f.submitted) && customerEmailId.errors)}">
+						<label>Email</label>
+						<input type="email" class="form-control" name="customerEmailId" [(ngModel)]="model.customerEmailId" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$" #customerEmailId="ngModel" maxlength="80" required>
+						<div class="error-msg-box">
+							<div *ngIf="(customerEmailId.touched || f.submitted) && customerEmailId.errors && customerEmailId.errors.required">
+									*Email is a required field
+							</div>
+							<div *ngIf="(customerEmailId.touched || f.submitted) && customerEmailId.errors && customerEmailId.errors.pattern">
+									*Please enter valid email address
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group" [ngClass]="{'has-input-error': ((password.touched || f.submitted) && password.errors)}">
+						<label>Password</label>
+						<input type="password" class="form-control" name="password" (focus)="passwordFocus=true" (blur)="passwordFocus=false" [(ngModel)]="model.password" #password="ngModel" required minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*#$*()_+-=\[\]{}|?&]{8,}">
+						<div class="popover-wrapper margin-left-10">
+								<div *ngIf="passwordFocus" class="popover bottom popover-custom">
+									<div class="arrow"></div>
+									<div class="popover-content">
+										<div>
+											<span class="info-msg-text">Your password must:</span>
+										</div>
+										<!--Password popup-->
+										<div class="padding-top-10">
+											<i *ngIf="password.errors && (password.errors.required || password.errors.minlength)" class="fa fa-check-circle-o fa-lg red-icon pull-left red-tick-icon" aria-hidden="true"></i>
+											<i class="fa fa-check-circle fa-lg green-icon pull-left" aria-hidden="true"></i>
+											<div class="margin-left-20">
+												<span>be a minimum of 8 or more characters.</span>
+											</div>
+										</div>
+											<div class="padding-top-10">
+												<i *ngIf="password.errors && (password.errors.required || password.errors.pattern)" class="fa fa-check-circle-o fa-lg red-icon pull-left red-tick-icon" aria-hidden="true"></i>
+												<i class="fa fa-check-circle fa-lg green-icon pull-left" aria-hidden="true"></i>
+												<div class="margin-left-20">
+													<span>include a minimum of three of the following mix of character types: uppercase, lowercase, numbers, non-alphanumeric symbols, for example !@#$%^&amp;*()_+-=[]&#123;&#125;|'</span>
+												</div>
+											</div>
+											<div class="padding-top-10">
+												<i *ngIf="password.errors && (password.errors.required || (model.password==model.username || model.password==model.customerAccountName))" class="fa fa-check-circle-o fa-lg red-icon pull-left red-tick-icon" aria-hidden="true"></i>
+												<i class="fa fa-check-circle fa-lg green-icon pull-left" aria-hidden="true"></i>
+												<div class="margin-left-20">
+													<span>not be identical to your BIM account name or customerAccountName address</span>
+												</div>
+											</div>
+										</div>
+								</div>
+						</div>
+
+						<div class="error-msg-box">
+							<div *ngIf="(password.touched || f.submitted) && password.errors">
+									*Invalid Password
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group" [ngClass]="{'has-input-error': ((confirmPassword.touched || f.submitted) && confirmPassword.errors)}">
+						<label for="">Confirm password</label>
+						<input type="password" class="form-control" name="confirmPassword" [(ngModel)]="model.confirmPassword" #confirmPassword="ngModel" required minlength="8">
+						<div class="error-msg-box">
+							<div *ngIf="(confirmPassword.touched || f.submitted) && confirmPassword.errors && confirmPassword.errors.required">
+								*Confirm password is a required field
+							</div>
+							<div *ngIf="(confirmPassword.touched || f.submitted) && model.confirmPassword!=model.password && !confirmPassword.hasError('required')">
+								*The passwords are not equal
+							</div>
+							<span *ngIf="confirmPassword.hasError('required')"></span>
+
+						</div>
+					</div>
+
+					<button [disabled]="loading" class="btn btn-default contButton black-button">Continue</button>
+					<i *ngIf="loading" class="fa fa-spinner fa-spin fa-lg"></i>
+					<hr class="line">
+					<div class="link">
+						<a class="agreelink" [routerLink]="['/sign-in']">Sign in to an existing BIM PaaS account</a>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+		
+</div>
+</div>
+</div>
+

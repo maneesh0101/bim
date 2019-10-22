@@ -1,0 +1,53 @@
+
+<div class="left-menu-box">
+  <ul class="nav nav-pills nav-stacked">
+    <li>
+      <a [routerLink]="['/dashboard']" [ngClass]="activeclass1" (mouseover)="activeclass1='activemenu'" (mouseout)="activeclass1=''">
+        <span class="imgspan">
+          <img src="./assets/images/icon-dashboard.png">
+        </span>
+        <span class="textspan">My Console</span>
+      </a>
+    </li>
+    <li>
+      <a href="javascript:;" [ngClass]="activeclass2" (mouseover)="activeclass2='activemenu'" (mouseout)="activeclass2=''">
+        <span class="imgspan">
+          <img src="./assets/images/icon-solution.png">
+        </span>
+        <span class="textspan">My Solutions</span>
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="['/my-services']" [ngClass]="activeclass3" (mouseover)="activeclass3='activemenu'" (mouseout)="activeclass3=''">
+        <span class="imgspan">
+          <img src="./assets/images/icon-computer.png">
+        </span>
+        <span class="textspan">Solution Insights</span>
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="['/my-automation']" [ngClass]="activeclass4" (mouseover)="activeclass4='activemenu'" (mouseout)="activeclass4=''">
+        <span class="imgspan">
+          <img src="./assets/images/icon-automation.png">
+        </span>
+        <span class="textspan">My Automation</span>
+      </a>
+    </li>
+    <li>
+      <a href="javascript:;" [ngClass]="activeclass5" (mouseover)="activeclass5='activemenu'" (mouseout)="activeclass5=''">
+        <span class="imgspan">
+          <img src="./assets/images/icon-bill.png">
+        </span>
+        <span class="textspan">Bill and Payment</span>
+      </a>
+    </li>
+    <li>
+      <a href="javascript:;" [ngClass]="activeclass6" (mouseover)="activeclass6='activemenu'" (mouseout)="activeclass6=''">
+        <span class="imgspan">
+          <img src="./assets/images/icon-profile.png">
+        </span>
+        <span class="textspan">My Account</span>
+      </a>
+    </li>
+  </ul>
+</div>

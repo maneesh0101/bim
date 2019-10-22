@@ -1,0 +1,212 @@
+<div class="container-fluid container-box">
+	<app-nav-buttons [step]="step"></app-nav-buttons>
+	<div class="row">
+		<div class="col-sm-4"></div>
+		<div class="col-sm-4">
+			<form class="ccrForm bpform" (ngSubmit)="f.form.valid && save()" #f="ngForm" novalidate>
+				<fieldset class="formHeader">
+					<h4 class="form-title">Verify and Login</h4>
+					<alertMsg></alertMsg>
+					<div class="form-group" [ngClass]="{'has-input-error': ((creditCardHolderName.touched || f.submitted) && creditCardHolderName.errors)}">
+						<label>Cardholder's Name</label>
+						<input type="text" pattern="^[A-Za-z ]{0,40}" class="form-control" name="creditCardHolderName" placeholder="Enter Name" [(ngModel)]="model.creditCardHolderName"
+						 #creditCardHolderName="ngModel" required maxlength="40">
+						<div class="error-msg-box">
+							<div *ngIf="(creditCardHolderName.touched || f.submitted) && creditCardHolderName.errors && creditCardHolderName.errors.required">
+								*Cardholder's name is a required field
+							</div>
+							<div *ngIf="(creditCardHolderName.touched || f.submitted) && creditCardHolderName.errors && creditCardHolderName.errors.pattern">
+								*Only alphabets allowed in cardholder's name
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group" [ngClass]="{'has-input-error': ((ccrNum1.touched || ccrNum2.touched || ccrNum3.touched || ccrNum4.touched) || f.submitted) && (ccrNum1.errors || ccrNum2.errors || ccrNum3.errors || ccrNum4.errors)}">
+						<label>Credit Card Number</label>
+						<br/>
+						<div>
+							<input type="text" minlength="4" maxlength="4" required pattern="^[0-9]{4,4}$" class="form-control creditCard" name="ccrNum1"
+							 placeholder="xxxx" [(ngModel)]="model.ccrNum1" #ccrNum1="ngModel" />
+							<input type="text" minlength="4" maxlength="4" required pattern="^[0-9]{4,4}$" class="form-control creditCard" name="ccrNum2"
+							 placeholder="xxxx" [(ngModel)]="model.ccrNum2" #ccrNum2="ngModel" />
+							<input type="text" minlength="4" maxlength="4" required pattern="^[0-9]{4,4}$" class="form-control creditCard" name="ccrNum3"
+							 placeholder="xxxx" [(ngModel)]="model.ccrNum3" #ccrNum3="ngModel" />
+							<input type="text" minlength="4" maxlength="4" required pattern="^[0-9]{4,4}$" class="form-control creditCard" name="ccrNum4"
+							 placeholder="xxxx" [(ngModel)]="model.ccrNum4" #ccrNum4="ngModel" />
+						</div>
+						<div class="error-msg-box">
+							<span *ngIf="((ccrNum1.touched || f.submitted) && ccrNum1.errors && ccrNum1.errors.required) ||
+							((ccrNum2.touched || f.submitted) && ccrNum2.errors && ccrNum2.errors.required) ||
+							((ccrNum3.touched || f.submitted) && ccrNum3.errors && ccrNum3.errors.required) ||
+							((ccrNum4.touched || f.submitted) && ccrNum4.errors && ccrNum4.errors.required)
+							">*Credit card number is a required field. </span>
+							<span *ngIf="((ccrNum1.touched || f.submitted) && ccrNum1.errors && ccrNum1.errors.pattern) ||
+							((ccrNum2.touched || f.submitted) && ccrNum2.errors && ccrNum2.errors.pattern) ||
+							((ccrNum3.touched || f.submitted) && ccrNum3.errors && ccrNum3.errors.pattern) ||
+							((ccrNum4.touched || f.submitted) && ccrNum4.errors && ccrNum4.errors.pattern)
+							">*Only digits are allowed.</span>
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<div class="col-md-5 expiry-input">
+							<label>Expiration Date</label>
+							<br/>
+							<span [ngClass]="{'has-input-error': ((expMonth.touched || f.submitted) && expMonth.errors)}">
+								<select class="form-control month" name="expMonth" placeholder="MM" [(ngModel)]="model.expMonth" #expMonth="ngModel" required>
+									<option value="1">01</option>
+									<option value="2">02</option>
+									<option value="3">03</option>
+									<option value="4">04</option>
+									<option value="5">05</option>
+									<option value="6">06</option>
+									<option value="7">07</option>
+									<option value="8">08</option>
+									<option value="9">09</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+								</select>
+							</span>
+							<span [ngClass]="{'has-input-error': ((expYear.touched || f.submitted) && expYear.errors)}">
+								<select class="form-control year" name="expYear" placeholder="MM" [(ngModel)]="model.expYear" #expYear="ngModel" required
+								 (change)="monthYearValidation(this.expYear.value,this.expMonth.value)">
+									<option *ngFor="let year of yearList;" value="{{year}}">{{year}}</option>
+								</select>
+							</span>
+							<div class="error-msg-box">
+								<div *ngIf="(expMonth.touched || f.submitted) && expMonth.errors && expMonth.errors.required ||
+								(expYear.touched || f.submitted) && expYear.errors && expYear.errors.required
+								">*Date is a required field</div>
+								<div *ngIf="expCcCheckError && !expMonth.errors">*Please select future date</div>
+							</div>
+						</div>
+						<div class="col-md-7" [ngClass]="{'has-input-error': ((securityCode.touched || f.submitted) && securityCode.errors)}">
+							<label>Security Code</label>
+							<br/>
+							<input type="password" class="form-control security-field" name="securityCode" placeholder="XXX" [(ngModel)]="model.securityCode"
+							 #securityCode="ngModel" required maxlength="3" pattern="^[0-9]{3,3}$">
+							<div class="error-msg-box">
+								<div *ngIf="(securityCode.touched || f.submitted) && securityCode.errors && securityCode.errors.required">
+									*Security code is a required field
+								</div>
+								<div *ngIf="(securityCode.touched || f.submitted) && securityCode.errors && securityCode.errors.pattern">
+									*Only Numbers Allowed
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" value="Y" (change)="toggleDiffBillAddr($event)"> Billing address is different than mailing address
+							</label>
+						</div>
+					</div>
+
+					<div *ngIf="!diffBillAddr">
+						<div class="form-group row" [ngClass]="{'has-input-error': ((address1.touched || f.submitted) && address1.errors)}">
+							<label>Address Line 1</label>
+							<input type="text" class="form-control" name="address1" placeholder=" Enter Address" [(ngModel)]="model.address1" #address1="ngModel"
+							 required maxlength="255" pattern="[A-Za-z0-9'\.\-\s\,]{0,255}$">
+							<div class="error-msg-box">
+								<div *ngIf="(address1.touched || f.submitted) && address1.errors && address1.errors.required">
+									*Address is a required field
+								</div>
+								<div *ngIf="(address1.touched || f.submitted) && address1.errors && address1.errors.pattern">
+									*Alphabets, digits and special characters -., are allowed
+								</div>
+							</div>
+						</div>
+
+						<div class="row form-group" [ngClass]="{'has-input-error': ((address2.touched || f.submitted) && address2.errors)}">
+							<label>Address Line 2</label>
+							<input type="text" class="form-control" name="address2" placeholder=" Enter Address" [(ngModel)]="model.address2" #address2="ngModel"
+							 maxlength="255" pattern="[A-Za-z0-9'\.\-\s\,]{0,255}$">
+							<div class="error-msg-box">
+								<div *ngIf="(address2.touched || f.submitted) && address2.errors && address2.errors.pattern">
+									*Alphabets, digits and special characters (-., ) are allowed
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group" [ngClass]="{'has-input-error': ((zipcode.touched || f.submitted) && zipcode.errors)}">
+							<label>Zipcode</label>
+							<input type="text" class="form-control" name="zipcode" placeholder=" Enter Zipcode" [(ngModel)]="model.zipcode" #zipcode="ngModel"
+							 required maxlength="5" pattern="^[0-9]{0,5}$">
+							<div class="error-msg-box">
+								<div *ngIf="(zipcode.touched || f.submitted) && zipcode.errors && zipcode.errors.required">
+									*ZIP is a required field
+								</div>
+								<div *ngIf="(zipcode.touched || f.submitted) && zipcode.errors && zipcode.errors.pattern">
+									*Only digits are allowed
+								</div>
+							</div>
+						</div>
+
+						<div class="row form-group" [ngClass]="{'has-input-error': ((country.touched || f.submitted) && country.errors)}">
+							<div class="col-md-4 country-state">
+								<label>Country</label>
+								<br>
+								<select [(ngModel)]="model.country" (change)="onSelect($event.target.value)" #country="ngModel" name="country" class="form-control country-select"
+								 required>
+									<option *ngFor="let ctry of countries" value={{ctry.id}}>{{ctry.name}}</option>
+								</select>
+								<div class="error-msg-box">
+									<div *ngIf="(country.touched || f.submitted) && !country.valid">
+										*Country is a required field
+									</div>
+								</div>
+							</div>
+							<div class="col-md-8 country-state">
+								<label>State</label>
+								<div *ngIf="model.country!='US'" [ngClass]="{'has-input-error': ((state.touched || f.submitted) && state.errors)}">
+									<input type="text" class="form-control state" name="state" placeholder=" Enter State Name" [(ngModel)]="model.state" #state="ngModel"
+									 required maxlength="40" pattern="^[a-zA-Z ]{0,40}$">
+									<div class="error-msg-box">
+										<div *ngIf="(state.touched || f.submitted) && state.errors && state.errors.required">
+											*State name is a required field.
+										</div>
+										<div *ngIf="(state.touched || f.submitted) && state.errors && state.errors.pattern">
+											*Please enter a valid state name.
+										</div>
+									</div>
+								</div>
+								<div *ngIf="model.country=='US'" [ngClass]="{'has-input-error': ((stateDropdown.touched || f.submitted) && stateDropdown.errors)}">
+									<select [(ngModel)]="model.stateDropdown" #stateDropdown="ngModel" name="stateDropdown" class="form-control state" required>
+										<option *ngFor="let ste of states " value={{ste.abbr}}>{{ste.name}}-{{ste.abbr}}</option>
+									</select>
+									<div class="error-msg-box">
+										<div *ngIf="(stateDropdown.touched || f.submitted) && stateDropdown.invalid">*State is a required field</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="row form-group" [ngClass]="{'has-input-error': ((city.touched || f.submitted) && city.errors)}">
+							<label>City</label>
+							<input type="text" class="form-control" name="city" placeholder=" Enter City Name" [(ngModel)]="model.city" #city="ngModel"
+							 required maxlength="40" pattern="^[a-zA-Z ]{0,40}$">
+							<div class="error-msg-box">
+								<div *ngIf="(city.touched || f.submitted) && city.errors && city.errors.required">
+									*City is a required field
+								</div>
+								<div *ngIf="(city.touched || f.submitted) && city.errors && city.errors.pattern">
+									*Only alphabets are allowed
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!--END : [hidden]="diffBillAddr" -->
+
+					<div class="col-md-2"></div>
+					<button [disabled]="loading" class="btn btn-default btn-round">Submit</button>
+					<i *ngIf="loading" class="fa fa-spinner fa-spin fa-lg"></i>
+				</fieldset>
+			</form>
+		</div>
+		<div class="col-sm-4"></div>
+	</div>
+</div>

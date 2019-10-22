@@ -1,0 +1,21 @@
+{
+	"Header":{
+	},
+	"Data":{
+		"id": "23423423432",
+		"AccountName": "Alpha Data Corporation",
+		"Email": "validEmail@abc.com",
+		"name" : "Full name",
+		"companyName" : "Name of the company",
+		"Address": {
+			"address1": "22001 Loudoun County parkway",
+			"address2": "apt#100",
+			"city": "Ashuburn",
+			"state": "VA",
+			"zipcode": "22001",
+			"Country": "US"
+		},
+		"verificationCode": "2343",
+		"phoneNumber": "(703) 123 4567"	
+	}
+}

@@ -1,0 +1,996 @@
+[
+	{
+		"label": "Do you have Voice Requirements for your Branch?",
+		"questionId": "1",
+		"solutionType": "branchInABox",
+		"elementType": "checkbox",
+		"elementValues": [
+			{
+				"value": "True",
+				"name": "true"
+			}
+		],
+		"elementDefaultValue": "",
+		"model": "svc_1",
+		"child": {
+			"yes": [
+				{
+					"label": "Do you need VES Services?",
+					"questionId": "2",
+					"elementType": "radio",
+					"model": "radNeedVes",
+					"elementDefaultValue": "no",
+					"child": {
+						"yes": [
+							{
+								"label": "Number of Users",
+								"elementType": "number",
+								"elementValue": "",
+								"elementDefaultValue": "",
+								"model": "userNumber"
+							},
+							{
+								"label": "Number of Conference Areas",
+								"elementType": "number",
+								"elementValue": "",
+								"elementDefaultValue": "",
+								"model": "conferenceAreas"
+							},
+							{
+								"label": "Number of Receptions",
+								"elementType": "number",
+								"model": "receptions",
+								"elementValue": "",
+								"elementDefaultValue": ""
+							},
+							{
+								"label": "Number of Common Areas (Pantry, Mail Rooms etc)",
+								"elementType": "number",
+								"model": "commonAreas",
+								"elementValue": "",
+								"elementDefaultValue": ""
+							},
+							{
+								"label": "Do you already have equipment",
+								"elementType": "checkbox",
+								"model": "alreadyHaveEquipment",
+								"elementValue": "",
+								"elementDefaultValue": "",
+								"child": {
+									"yes": [
+										{
+											"label": "Select Equipment",
+											"elementDefaultValue": "CISCO",
+											"model": "selectEquipment",
+											"elementType": "select",
+											"elementValues": [
+												{
+													"value": "CISCO",
+													"name": "CISCO"
+												},
+												{
+													"value": "JP",
+													"name": "JP"
+												},
+												{
+													"value": "Other",
+													"name": "Other"
+												}
+											]
+										}
+									]
+								}
+							}
+						],
+						"no": [
+							{
+								"label": "Number of Users",
+								"elementType": "select",
+								"model": "userNumber",
+								"elementDefaultValue": "99",
+								"elementValues": [
+									{
+										"value": "99",
+										"name": "0-99"
+									},
+									{
+										"value": "499",
+										"name": "100-499"
+									},
+									{
+										"value": "500",
+										"name": "500+"
+									}
+								]
+							},
+							{
+								"label": "Number of Conference Areas",
+								"elementType": "select",
+								"model": "conferenceAreas",
+								"elementDefaultValue": "2",
+								"elementValues": [
+									{
+										"value": "2",
+										"name": "2"
+									},
+									{
+										"value": "3",
+										"name": "3"
+									},
+									{
+										"value": "4",
+										"name": "4"
+									},
+									{
+										"value": "5",
+										"name": "5"
+									},
+									{
+										"value": "6",
+										"name": "6"
+									},
+									{
+										"value": "7",
+										"name": "7"
+									},
+									{
+										"value": "8",
+										"name": "8"
+									},
+									{
+										"value": "9",
+										"name": "9"
+									},
+									{
+										"value": "10",
+										"name": "10"
+									}
+								]
+							},
+							{
+								"label": "Number of Receptions",
+								"elementType": "select",
+								"model": "receptions",
+								"elementValues": [
+									{
+										"value": "2",
+										"name": "2"
+									},
+									{
+										"value": "3",
+										"name": "3"
+									},
+									{
+										"value": "4",
+										"name": "4"
+									},
+									{
+										"value": "5",
+										"name": "5"
+									},
+									{
+										"value": "6",
+										"name": "6"
+									},
+									{
+										"value": "7",
+										"name": "7"
+									},
+									{
+										"value": "8",
+										"name": "8"
+									},
+									{
+										"value": "9",
+										"name": "9"
+									},
+									{
+										"value": "10",
+										"name": "10"
+									}
+								],
+								"elementDefaultValue": "2"
+							},
+							{
+								"label": "Number of Common Areas (Pantry, Mail Rooms etc)",
+								"elementType": "select",
+								"model": "commonAreas",
+								"elementDefaultValue": "",
+								"elementValues": [
+									{
+										"value": "2",
+										"name": "2"
+									},
+									{
+										"value": "3",
+										"name": "3"
+									},
+									{
+										"value": "4",
+										"name": "4"
+									},
+									{
+										"value": "5",
+										"name": "5"
+									},
+									{
+										"value": "6",
+										"name": "6"
+									},
+									{
+										"value": "7",
+										"name": "7"
+									},
+									{
+										"value": "8",
+										"name": "8"
+									},
+									{
+										"value": "9",
+										"name": "9"
+									},
+									{
+										"value": "10",
+										"name": "10"
+									}
+								]
+							},
+							{
+								"label": "What is the name of your voice carrier?",
+								"elementDefaultValue": "Other",
+								"model": "voiceCarrier",
+								"elementType": "select",
+								"elementValues": [
+									{
+										"value": "AT&T",
+										"name": "AT&T"
+									},
+									{
+										"value": "Comcast",
+										"name": "Comcast"
+									},
+									{
+										"value": "Other",
+										"name": "Other"
+									}
+								]
+							},
+							{
+								"label": "Do you need intelligent Routing for Voice?",
+								"questionId": "3",
+								"solutionType": "branchInABox",
+								"elementType": "checkbox",
+								"elementValue": "yes",
+								"model": "svc_3",
+								"elementValues": [
+									{
+										"value": "yes",
+										"name": "yes"
+									},
+									{
+										"value": "no",
+										"name": "no"
+									}
+								]
+							}
+						]
+					}
+				}
+			],
+			"no": [
+				{}
+			]
+		}
+	},
+	{
+		"label": "Do you have Wired LAN Requirements for your Branch?",
+		"questionId": "4",
+		"solutionType": "branchInABox",
+		"elementType": "checkbox",
+		"elementValues": [
+			{
+				"value": "True",
+				"name": "true"
+			}
+		],
+		"elementDefaultValue": "",
+		"model": "svc_2",
+		"child": {
+			"yes": [
+				{
+					"label": "Do you need VES Services?",
+					"questionId": "5",
+					"elementType": "radio",
+					"model": "radNeedVes",
+					"elementDefaultValue": "no",
+					"child": {
+						"yes": [
+							{
+								"label": "Number of Users",
+								"elementType": "number",
+								"elementValue": "",
+								"elementDefaultValue": "",
+								"model": "userNumber"
+							},
+							{
+								"label": "Number of Conference Areas",
+								"elementType": "number",
+								"elementValue": "",
+								"elementDefaultValue": "",
+								"model": "conferenceAreas"
+							},
+							{
+								"label": "Number of Receptions",
+								"elementType": "number",
+								"model": "receptions",
+								"elementValue": "",
+								"elementDefaultValue": ""
+							},
+							{
+								"label": "Number of Common Areas (Pantry, Mail Rooms etc)",
+								"elementType": "number",
+								"model": "commonAreas",
+								"elementValue": "",
+								"elementDefaultValue": ""
+							},
+							{
+								"label": "Do you already have equipment",
+								"elementType": "checkbox",
+								"model": "alreadyHaveEquipment",
+								"elementValue": "",
+								"elementDefaultValue": "",
+								"child": {
+									"yes": [
+										{
+											"label": "Select Equipment",
+											"elementDefaultValue": "CISCO",
+											"model": "selectEquipment",
+											"elementType": "select",
+											"elementValues": [
+												{
+													"value": "CISCO",
+													"name": "CISCO"
+												},
+												{
+													"value": "JP",
+													"name": "JP"
+												},
+												{
+													"value": "Other",
+													"name": "Other"
+												}
+											]
+										}
+									]
+								}
+							},
+							{
+								"label": "Do you need a Tech come out for Installation?",
+								"elementType": "checkbox",
+								"model": "techInstallation",
+								"elementValue": "",
+								"elementDefaultValue": "",
+								"elementValues": [
+									{
+										"value": "yes",
+										"name": "yes"
+									},
+									{
+										"value": "no",
+										"name": "no"
+									}
+								]
+							}
+						],
+						"no": [
+							{
+								"label": "Number of Users",
+								"elementType": "select",
+								"model": "userNumber",
+								"elementDefaultValue": "99",
+								"elementValues": [
+									{
+										"value": "99",
+										"name": "0-99"
+									},
+									{
+										"value": "499",
+										"name": "100-499"
+									},
+									{
+										"value": "500",
+										"name": "500+"
+									}
+								]
+							},
+							{
+								"label": "Number of Conference Areas",
+								"elementType": "select",
+								"model": "conferenceAreas",
+								"elementDefaultValue": "2",
+								"elementValues": [
+									{
+										"value": "2",
+										"name": "2"
+									},
+									{
+										"value": "3",
+										"name": "3"
+									},
+									{
+										"value": "4",
+										"name": "4"
+									},
+									{
+										"value": "5",
+										"name": "5"
+									},
+									{
+										"value": "6",
+										"name": "6"
+									},
+									{
+										"value": "7",
+										"name": "7"
+									},
+									{
+										"value": "8",
+										"name": "8"
+									},
+									{
+										"value": "9",
+										"name": "9"
+									},
+									{
+										"value": "10",
+										"name": "10"
+									}
+								]
+							},
+							{
+								"label": "Number of Receptions",
+								"elementType": "select",
+								"model": "receptions",
+								"elementValues": [
+									{
+										"value": "2",
+										"name": "2"
+									},
+									{
+										"value": "3",
+										"name": "3"
+									},
+									{
+										"value": "4",
+										"name": "4"
+									},
+									{
+										"value": "5",
+										"name": "5"
+									},
+									{
+										"value": "6",
+										"name": "6"
+									},
+									{
+										"value": "7",
+										"name": "7"
+									},
+									{
+										"value": "8",
+										"name": "8"
+									},
+									{
+										"value": "9",
+										"name": "9"
+									},
+									{
+										"value": "10",
+										"name": "10"
+									}
+								],
+								"elementDefaultValue": "2"
+							},
+							{
+								"label": "Number of Common Areas (Pantry, Mail Rooms etc)",
+								"elementType": "select",
+								"model": "commonAreas",
+								"elementDefaultValue": "",
+								"elementValues": [
+									{
+										"value": "2",
+										"name": "2"
+									},
+									{
+										"value": "3",
+										"name": "3"
+									},
+									{
+										"value": "4",
+										"name": "4"
+									},
+									{
+										"value": "5",
+										"name": "5"
+									},
+									{
+										"value": "6",
+										"name": "6"
+									},
+									{
+										"value": "7",
+										"name": "7"
+									},
+									{
+										"value": "8",
+										"name": "8"
+									},
+									{
+										"value": "9",
+										"name": "9"
+									},
+									{
+										"value": "10",
+										"name": "10"
+									}
+								]
+							},
+							{
+								"label": "What is the name of your LAN Provider?",
+								"elementDefaultValue": "Other",
+								"model": "lanProvider",
+								"elementType": "select",
+								"elementValues": [
+									{
+										"value": "AT&T",
+										"name": "AT&T"
+									},
+									{
+										"value": "Comcast",
+										"name": "Comcast"
+									},
+									{
+										"value": "Other",
+										"name": "Other"
+									}
+								]
+							}
+						]
+					}
+				}
+			],
+			"no": [
+				{}
+			]
+		}
+	},
+	{
+		"label": "Do you have WiFi Requirements for your Branch?",
+		"questionId": "6",
+		"solutionType": "branchInABox",
+		"elementType": "checkbox",
+		"elementValues": [
+			{
+				"value": "True",
+				"name": "true"
+			}
+		],
+		"elementDefaultValue": "",
+		"model": "svc_3",
+		"child": {
+			"yes": [
+				{
+					"label": "Do you need VES Services?",
+					"questionId": "7",
+					"elementType": "radio",
+					"model": "radNeedVes",
+					"elementDefaultValue": "no",
+					"child": {
+						"yes": [
+							{
+								"label": "Number of Floors Areas",
+								"elementType": "select",
+								"model": "floorNumber",
+								"elementDefaultValue": "2",
+								"elementValues": [
+									{
+										"value": "2",
+										"name": "2"
+									},
+									{
+										"value": "3",
+										"name": "3"
+									},
+									{
+										"value": "4",
+										"name": "4"
+									},
+									{
+										"value": "5",
+										"name": "5"
+									},
+									{
+										"value": "6",
+										"name": "6"
+									},
+									{
+										"value": "7",
+										"name": "7"
+									},
+									{
+										"value": "8",
+										"name": "8"
+									},
+									{
+										"value": "9",
+										"name": "9"
+									},
+									{
+										"value": "10",
+										"name": "10"
+									}
+								]
+							},
+							{
+								"label": "Average SqFt Area of each Floor",
+								"elementType": "select",
+								"model": "areasOfEachFloor",
+								"elementDefaultValue": "99",
+								"elementValues": [
+									{
+										"value": "2k",
+										"name": "0-2k"
+									},
+									{
+										"value": "10k",
+										"name": "2k-10k"
+									},
+									{
+										"value": "50k",
+										"name": "10k-50k"
+									}
+								]
+							},
+							{
+								"label": "Number of permanent Users",
+								"elementType": "select",
+								"model": "permanentUserNumber",
+								"elementDefaultValue": "99",
+								"elementValues": [
+									{
+										"value": "99",
+										"name": "0-99"
+									},
+									{
+										"value": "499",
+										"name": "100-499"
+									},
+									{
+										"value": "500",
+										"name": "500+"
+									}
+								]
+							},
+							{
+								"label": "Number of visitors",
+								"elementType": "select",
+								"model": "visitorsNumber",
+								"elementDefaultValue": "99",
+								"elementValues": [
+									{
+										"value": "99",
+										"name": "0-99"
+									},
+									{
+										"value": "499",
+										"name": "100-499"
+									},
+									{
+										"value": "500",
+										"name": "500+"
+									}
+								]
+							},
+							{
+								"label": "Number of SSIDs",
+								"elementType": "select",
+								"model": "ssidsNumber",
+								"elementDefaultValue": "2",
+								"elementValues": [
+									{
+										"value": "2",
+										"name": "2"
+									},
+									{
+										"value": "3",
+										"name": "3"
+									},
+									{
+										"value": "4",
+										"name": "4"
+									},
+									{
+										"value": "5",
+										"name": "5"
+									},
+									{
+										"value": "6",
+										"name": "6"
+									},
+									{
+										"value": "7",
+										"name": "7"
+									},
+									{
+										"value": "8",
+										"name": "8"
+									},
+									{
+										"value": "9",
+										"name": "9"
+									},
+									{
+										"value": "10",
+										"name": "10"
+									}
+								]
+							},
+							{
+								"label": "Do you need a Tech come out for Installation?",
+								"elementType": "checkbox",
+								"model": "techInstallation",
+								"elementValue": "",
+								"elementDefaultValue": "",
+								"elementValues": [
+									{
+										"value": "yes",
+										"name": "yes"
+									},
+									{
+										"value": "no",
+										"name": "no"
+									}
+								]
+							}
+						],
+						"no": [
+							{
+								"label": "Number of permanent Users",
+								"elementType": "select",
+								"model": "permanentUserNumber",
+								"elementDefaultValue": "99",
+								"elementValues": [
+									{
+										"value": "99",
+										"name": "0-99"
+									},
+									{
+										"value": "499",
+										"name": "100-499"
+									},
+									{
+										"value": "500",
+										"name": "500+"
+									}
+								]
+							},
+							{
+								"label": "Number of visitors",
+								"elementType": "select",
+								"model": "visitorsNumber",
+								"elementDefaultValue": "99",
+								"elementValues": [
+									{
+										"value": "99",
+										"name": "0-99"
+									},
+									{
+										"value": "499",
+										"name": "100-499"
+									},
+									{
+										"value": "500",
+										"name": "500+"
+									}
+								]
+							},
+							{
+								"label": "Number of SSIDs",
+								"elementType": "select",
+								"model": "ssidsNumber",
+								"elementDefaultValue": "2",
+								"elementValues": [
+									{
+										"value": "2",
+										"name": "2"
+									},
+									{
+										"value": "3",
+										"name": "3"
+									},
+									{
+										"value": "4",
+										"name": "4"
+									},
+									{
+										"value": "5",
+										"name": "5"
+									},
+									{
+										"value": "6",
+										"name": "6"
+									},
+									{
+										"value": "7",
+										"name": "7"
+									},
+									{
+										"value": "8",
+										"name": "8"
+									},
+									{
+										"value": "9",
+										"name": "9"
+									},
+									{
+										"value": "10",
+										"name": "10"
+									}
+								]
+							}
+						]
+					}
+				}
+			],
+			"no": [
+				{}
+			]
+		}
+	},
+	{
+		"label": "Do you have WAN App Access Requirements for your Branch?",
+		"questionId": "8",
+		"solutionType": "branchInABox",
+		"elementType": "checkbox",
+		"elementValues": [
+			{
+				"value": "True",
+				"name": "true"
+			}
+		],
+		"elementDefaultValue": "",
+		"model": "svc_4",
+		"child": {
+			"yes": [
+				{
+					"label": "Own Data Centers Remote Access?",
+					"questionId": "9",
+					"elementType": "radio",
+					"model": "radOwnDataCenterRemoteAccess",
+					"elementDefaultValue": "no",
+					"child": {
+						"yes": [
+							{
+								"label": "Number of Concurrent Users",
+								"elementType": "select",
+								"model": "concurrentUsersOwnDataCenterRemoteAccess",
+								"elementValues": [
+									{
+										"value": "99",
+										"name": "0-99"
+									},
+									{
+										"value": "499",
+										"name": "100-499"
+									},
+									{
+										"value": "500",
+										"name": "500+"
+									}
+								],
+								"elementDefaultValue": "99"
+							}
+						]
+					}
+				},
+				{
+					"label": "AWS Hosted Remote Access?",
+					"questionId": "10",
+					"elementType": "radio",
+					"model": "radAwsHostedRemoteAccess",
+					"elementDefaultValue": "no",
+					"child": {
+						"yes": [
+							{
+								"label": "Number of Concurrent Users",
+								"elementType": "select",
+								"model": "concurrentUsersAwsHostedRemoteAccess",
+								"elementValues": [
+									{
+										"value": "99",
+										"name": "0-99"
+									},
+									{
+										"value": "499",
+										"name": "100-499"
+									},
+									{
+										"value": "500",
+										"name": "500+"
+									}
+								],
+								"elementDefaultValue": "99"
+							}
+						]
+					}
+				},
+				{
+					"label": "SFDC Hosted Remote Access?",
+					"questionId": "11",
+					"elementType": "radio",
+					"model": "radSfdcHostedRemoteAccess",
+					"elementDefaultValue": "no",
+					"child": {
+						"yes": [
+							{
+								"label": "Number of Concurrent Users",
+								"elementType": "select",
+								"model": "concurrentUsersSfdcHostedRemoteAccess",
+								"elementValues": [
+									{
+										"value": "99",
+										"name": "0-99"
+									},
+									{
+										"value": "499",
+										"name": "100-499"
+									},
+									{
+										"value": "500",
+										"name": "500+"
+									}
+								],
+								"elementDefaultValue": "99"
+							}
+						]
+					}
+				},
+				{
+					"label": "Internet Based Application Access (Mandatory, Minimum)",
+					"questionId": "12",
+					"elementType": "radio",
+					"model": "radInternetBasedApplicationAccess",
+					"elementDefaultValue": "yes",
+					"disabled": true,
+					"child": {
+						"yes": [
+							{
+								"label": "Number of Concurrent Users",
+								"elementType": "select",
+								"model": "concurrentUsersInternetBasedApplicationAccess",
+								"elementValues": [
+									{
+										"value": "99",
+										"name": "0-99"
+									},
+									{
+										"value": "499",
+										"name": "100-499"
+									},
+									{
+										"value": "500",
+										"name": "500+"
+									}
+								],
+								"elementDefaultValue": "99"
+							}
+						]
+					}
+				}
+			],
+			"no": [
+				{}
+			]
+		}
+	}
+]

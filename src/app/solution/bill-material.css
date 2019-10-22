@@ -1,0 +1,32 @@
+.bill-of-material {
+    line-height: 2;
+}
+.bill-of-material .tbl-heading-bgcolor {
+    line-height: 1;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.bill-of-material .productlist {
+    padding-left:30px;
+    padding-right:30px;
+}
+.bill-of-material .family {
+    background-color: #ccc;
+}
+.bill-of-material .navbtn {
+    padding:10px;
+}
+.bill-of-material .navbtn .btn{
+    margin-left:10px;
+}
+.bill-of-material .bordered-item {
+    border-bottom:1px solid #ccc;
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+}
+.bill-of-material .bom-image {
+    width:100%;
+}
+.page-header_block {
+    margin-top:90px;
+}

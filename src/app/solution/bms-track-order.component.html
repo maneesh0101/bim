@@ -1,0 +1,64 @@
+<!-- Page Content -->
+<div class="container-fluid">
+	<div class="row page-header_block">
+		<div class="col-md-12">
+			<div class="col-md-6">
+				<h3>Build My Solution - Branch in a Box</h3>
+			</div>
+			<div class="col-md-3 header-link">
+				<bms-personalize-my-solution-popup></bms-personalize-my-solution-popup>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-1" style="margin-left: -15px;">
+			<app-leftmenu></app-leftmenu>
+		</div>
+		<div class="col-md-11 right-wrapper track-order">
+			<div class="row">
+				<div class="col-md-9">
+					<app-bms-nav-buttons [stepNumber]="stepNumber"></app-bms-nav-buttons>
+					<gantt></gantt>
+					<!--<div class="panel panel-default">
+							<div class="panel-body">
+								<gantt></gantt>
+								<div class="tabset">
+									<div class="row tbl-heading-bgcolor datalist">
+										<div class="col-md-2">Solution Type</div>
+										<div class="col-md-2">Reference CFS</div>
+										<div class="col-md-1">Duration</div>
+										<div class="col-md-1">Start Date</div>
+										<div class="col-md-2">Actual Start Date</div>
+										<div class="col-md-1">End Date</div>
+										<div class="col-md-2">Actual End Date</div>
+										<div class="col-md-1">Status</div>
+									</div>
+									<div *ngFor="let bom of trackOrder">
+										<div class="family row datalist">
+											<div class="col-md-12">
+												{{bom.Family}}
+											</div>
+										</div>
+										<div *ngFor="let item of bom.items" class="row bordered-item datalist">
+											<div class="col-md-2">{{item.solutionType}}</div>
+											<div class="col-md-2">{{item.itemName}}</div>
+											<div class="col-md-1">{{item.duration}}</div>
+											<div class="col-md-1">{{item.startDate}}</div>
+											<div class="col-md-2 text-center">{{item.actualStartDate}}</div>
+											<div class="col-md-1">{{item.endDate}}</div>
+											<div class="col-md-2 text-center">{{item.actualEndDate}}</div>
+											<div class="col-md-1">{{item.status}}</div>
+										</div>
+									</div>											
+								</div>
+							</div>
+						</div>-->
+				</div>
+				<div class="col-md-3 sunburst-chart">
+						<sunburst-chart [inputBomTemplate]="bomTemplate" [inputBomTemplateData]="bomTemplateData"></sunburst-chart>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

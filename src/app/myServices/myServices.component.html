@@ -1,0 +1,120 @@
+<!-- Page Content -->
+<div class="container-fluid myServiceContainer">
+	<div class="row page-header_block">
+		<div class="col-md-12">
+			<h3 class="heading-alignment">Solution Insights</h3>
+		</div>
+	</div>
+	<div class="row myService">
+		<div class="col-md-1 margin-left-alignment">
+			<app-leftmenu></app-leftmenu>
+		</div>
+		<div class="col-md-11 page-content">
+			<div class="row padding-top-5">
+				<div class="col-md-9 panel-alignment">
+					<div class="panel panel-default panel-custom my-service">
+						<div class="panel-body">
+							<select class="form-control dropdown" [(ngModel)]="model.serDropdown" #serDropdown="ngModel" name="serDropdown">
+								<option *ngFor="let val of itemList" [value]="val.value">{{val.name}}</option>
+							</select>
+							<div class="row radio-button">
+								<div class="col-md-2 p0">
+									<input type="radio" class="btn-margin" name="item-btn" value="wifi" (click)="callFunction('wifi');dataElement='data'" checked>WiFi
+								</div>
+								<div class="col-md-2 p0">
+									<input type="radio" class="btn-margin" name="item-btn" value="network" (click)="callFunction('network')">Network
+								</div>
+								<div class="col-md-2 p0">
+									<input type="radio" class="btn-margin" name="item-btn" value="voice" (click)="callFunction('voice')">Voice
+								</div>
+								<div class="col-md-2 p0">
+									<input type="radio" class="btn-margin" name="item-btn" value="cloudApp" (click)="callFunction('cloudApp')">Cloud App
+								</div>
+								<div class="col-md-4 p0">
+									<input type="radio" class="btn-margin" name="item-btn" value="dcApp" (click)="callFunction('dcApp')">DC App
+								</div>
+							</div>
+							<tabset [justified]="true">
+								<tab *ngFor="let item of slaData; let index = index" (select)="dataElement='data';timeline='Last 10 hour';slaTabClick(item.label)"
+								 heading="{{item.label}}{{space}}{{item.UoM}}">
+									<div class="row tab-heading">
+										<div class="row hidden-md">
+											<div class="col-md-6"></div>
+											<div class="col-md-6 text-center">
+												<div class="btn-group">
+													<button [ngClass]="{'activeBtn':(dataElement=='data')}" type="button" class="btn btn-default" value="graphData1" (click)="dataElement='data';timeline='Last 10 hour';slaTabClick(item.label);">
+														<b>10 Hours</b>
+													</button>
+													<button [ngClass]="{'activeBtn':(dataElement=='data2')}" type="button" class="btn btn-default" value="graphData2" (click)="dataElement='data2';timeline='Last 10 days';slaTabClick(item.label);">
+														<b>10 Days</b>
+													</button>
+												</div>
+											</div>
+										</div>
+										<div class="row-alignment">
+											<div class="col-md-6">
+												<div class="row table-alignment">
+													<div class="col-md-12">
+
+														<div class="row tbl-heading-bgcolor">
+															<div class="col-md-4 col-xs-4 lr-border">Time Line</div>
+															<div class="col-md-4 col-xs-4 lr-border">Threshold</div>
+															<div class="col-md-4 col-xs-4 lr-border">Actual</div>
+														</div>
+														<div *ngFor="let value of item.labelData">
+
+															<div *ngFor="let record of value[dataElement]" class="row lr-border">
+																<div class="col-md-4 col-xs-4 lr-border timeline">
+																	<a (click)="getConsumptionDetails(record)"> {{record.time}}</a>
+																</div>
+																<div class="col-md-4 col-xs-4 lr-border">{{record.capacity}}</div>
+																<div class="col-md-4 col-xs-4 lr-border">{{record.actual}}</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+
+											<div class="col-md-6 col-xs-12">
+												<div class="barcharts">
+													<div class="chartBox">
+														<div class="barChartCaption">{{barChartCaption}}</div>
+														<div *ngIf="barChartData[0].data.length>0">
+															<canvas class="graph" baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend"
+															 [chartType]="barChartType" [colors]="lineChartColors" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
+															</canvas>
+														</div>
+													</div>
+												</div>
+												<!-- <pagination-controls class="pagination" (pageChange)="pageNo = $event"></pagination-controls> -->
+											</div>
+										</div>
+									</div>
+								</tab>
+							</tabset>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-xs-12 media-alignment">
+					<div class="panel panel-default panel-custom side-bar">
+						<div class="panel-body">
+							<h4 class="sideBar-alignment">Consumption Details</h4>
+							<div class="alert alert-danger" *ngIf="!specificTimeline">
+								<p>Please Select the Timeline to Display Consumption Details!</p>
+							</div>
+
+							<div *ngIf="specificTimeline">
+								<ul>
+									<li>Timeline: {{ specificTimeline.time }}</li>
+									<li>Threshold: {{ specificTimeline.capacity }}</li>
+									<li>Actual: {{ specificTimeline.actual }}</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

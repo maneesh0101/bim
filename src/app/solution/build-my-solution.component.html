@@ -1,0 +1,43 @@
+<!-- Page Content -->
+<div class="container-fluid">
+	<div class="row page-header_block">
+		<div class="col-md-12">
+			<div class="col-md-1">
+				<div id="slideMenu" class="slideMenu">
+					<i class="fa fa-3x fa-chevron-circle-right"></i>
+				</div>
+
+			</div>
+			<div class="col-md-6">
+				<h3>Build My Solution - Branch in a Box</h3>
+			</div>
+			<div class="col-md-3 header-link">
+				<bms-personalize-my-solution-popup></bms-personalize-my-solution-popup>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-1 margin-left-minus-15">
+			<app-leftmenu></app-leftmenu>
+		</div>
+		<div class="col-md-11 right-wrapper">
+			<div class="row ">
+				<div class="col-md-9">
+					<app-bms-nav-buttons [stepNumber]="stepNumber"></app-bms-nav-buttons>
+					<div class="panel panel-default">
+						<div class="panel-body select-services">
+							<svc-widget (bomTemplateEventEmitterFunc)="getBOMTemplateFromWidget($event)"></svc-widget>
+						</div>
+						<!--END : <div class="panel-body">-->
+					</div>
+				</div>
+
+				<div class="col-md-3 sunburst-chart">
+					<div *ngIf='bomTemplate'>
+						<sunburst-chart [inputBomTemplate]="bomTemplate" [inputBomTemplateData]="bomTemplateData"></sunburst-chart>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>

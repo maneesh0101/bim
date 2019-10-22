@@ -1,0 +1,46 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" (click)="toggleState()">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <button type="button" class="navbar-toggle collapsed search-button-mobile" (click)="toggleSearchbar()">
+        <span class="glyphicon glyphicon-search"></span>
+      </button>
+    <a class="navbar-brand" [routerLink]="['/homepage']">Hello World<img class="img img-responsive logo" src="./assets/images/sublogo01.png"></a>
+    </div>
+
+    <div class="collapse navbar-collapse" [ngClass]="{ 'in': isIn }">
+      <ul class="nav navbar-nav navbar-left sub-logo">
+       
+        <li><a href="javascript:;">Solutions</a></li>
+        <li><a href="javascript:;">Products</a></li>
+        <li><a href="javascript:;">Market Place</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class=""><a href="javascript:;">Welcome {{loggedInUser.username}}</a></li>
+        <li class=""><a href="javascript:;" (click)="signOut()">Sign Out</a></li>
+        <br>
+         <li>
+           <div class="input-group searchInputGroup search-bar-hidden">
+              <input type="text" class="form-control search-input" placeholder="search" />
+              <span class="input-group-addon search-icon">
+                  <i class="fa fa-search"></i>
+              </span>
+          </div>
+         </li>
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container search-container text-center" [ngClass]="{ 'search-mobile': searchMobile }">
+  <div class="input-group searchInputGroup">
+              <input type="text" class="form-control search-input" placeholder="search" />
+              <span class="input-group-addon search-icon">
+                  <i class="fa fa-search"></i>
+              </span>
+          </div>
+</div>

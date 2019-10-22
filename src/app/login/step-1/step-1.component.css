@@ -1,0 +1,126 @@
+.pwd-msg{
+  padding-left: 10px;
+  font-size:12px;
+}
+.error-msg-box {
+  padding-left:10px;
+}
+.link{
+  padding-top: 0px;
+  padding-bottom: 18px;
+  text-align: center;
+}
+.link a
+{
+  color: black;
+}
+.form-control{
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
+
+.formHeader{
+  max-width: 385px;
+  padding:.35em .625em .75em!important;
+  margin:0 2px;
+  border: 1px solid silver!important;
+  background-color: rgba(246, 246, 246, 1);
+  box-shadow: 3px 3px grey;
+}
+.form-title
+{
+  text-align: center;
+}
+.left-para{
+  width: 340px;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+}
+.left-para .heading{
+  margin-top: auto;
+  text-align: center;
+}
+legend.formheading {
+    width: 221px;
+}
+.contButton{
+  margin-left: 85px;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  width: 200px;
+  height: 30px;
+}
+
+label{
+  margin-left: 34px;
+  margin-bottom: 5px;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+
+.notice {
+    padding: 15px;
+    background-color: #fafafa;
+    border-left: 6px solid #7f7f84;
+    margin-bottom: 10px;
+      margin-left: 10px;
+    -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+       -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+            box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+}
+.notice-danger {
+    border-color: #d73814;
+}
+.notice-danger>strong {
+    color: #d73814;
+}
+small.text-danger {
+  margin-left: 10px;
+}
+.infoHeader{
+  margin-top: 0px;
+}
+.col-md-4{
+  padding-right: 17px;
+  padding-left: 17px;
+}
+
+::placeholder {
+  opacity: 1;
+ /* Firefox /Chrome */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  padding-bottom: 10px;
+ line-height:12px;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+
+}
+@media only screen and (max-width: 768px) {
+    /* tablets and desktop */
+    .left-para{
+  max-width:500px;
+  font-size: 13px;
+  font-weight: 100;
+  text-align: justify;  
+}
+.bpform .formHeader{
+  margin-left: auto;
+  margin-right: auto;
+} 
+}
+@media only screen and (max-width: 565px) {
+.contButton {
+    margin-left: 50px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    width: 200px;
+    height: 30px;
+}
+}

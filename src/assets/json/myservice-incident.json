@@ -1,0 +1,98 @@
+[
+    {
+        "Severity": "High",
+        "AlarmID": "2342",
+        "ServiceIdentifier":"test1",
+		"AlarmType":"test1",
+		"AlarmCause":"test1",
+		"CircuitType":"test1"
+    },
+    {
+        "Severity": "Moderate",
+        "AlarmID": "2555",
+		"ServiceIdentifier":"test2",
+		"AlarmType":"test2",
+		"AlarmCause":"test2",
+		"CircuitType":"test2"
+    },
+    {
+        "Severity": "Low",
+        "AlarmID": "5433",
+		"ServiceIdentifier":"test3",
+		"AlarmType":"test3",
+		"AlarmCause":"test3",
+		"CircuitType":"test3"
+    },
+    {
+        "Severity": "Moderate",
+        "AlarmID": "1276",
+		"ServiceIdentifier":"test4",
+		"AlarmType":"test4",
+		"AlarmCause":"test4",
+		"CircuitType":"test4"
+    },
+    {
+        "Severity": "High",
+        "AlarmID": "2443",
+		"ServiceIdentifier":"test5",
+		"AlarmType":"test5",
+		"AlarmCause":"test5",
+		"CircuitType":"test5"
+    },
+    {
+        "Severity": "Low",
+        "AlarmID": "1343",
+		"ServiceIdentifier":"test6",
+		"AlarmType":"test6",
+		"AlarmCause":"test6",
+		"CircuitType":"test6"
+    },
+    {
+        "Severity": "High",
+        "AlarmID": "1237",
+		"ServiceIdentifier":"test7",
+		"AlarmType":"test7",
+		"AlarmCause":"test7",
+		"CircuitType":"test7"
+    },
+    {
+        "Severity": "Low",
+        "AlarmID": "9807",
+		"ServiceIdentifier":"test8",
+		"AlarmType":"test8",
+		"AlarmCause":"test8",
+		"CircuitType":"test8"
+    },
+    {
+        "Severity": "Moderate",
+        "AlarmID": "5642",
+		"ServiceIdentifier":"test9",
+		"AlarmType":"test9",
+		"AlarmCause":"test9",
+		"CircuitType":"test9"
+    },
+    {
+        "Severity": "Moderate",
+        "AlarmID": "1244",
+		"ServiceIdentifier":"test10",
+		"AlarmType":"test10",
+		"AlarmCause":"test10",
+		"CircuitType":"test10"
+    },
+    {
+        "Severity": "High",
+        "AlarmID": "9876",
+		"ServiceIdentifier":"test11",
+		"AlarmType":"test11",
+		"AlarmCause":"test11",
+		"CircuitType":"test11"
+    },
+    {
+        "Severity": "Low",
+        "AlarmID": "1765",
+		"ServiceIdentifier":"test12",
+		"AlarmType":"test12",
+		"AlarmCause":"test12",
+		"CircuitType":"test12"
+    }
+]

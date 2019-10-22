@@ -1,0 +1,262 @@
+<div class="wrapper">
+		<div class="row">
+			<div class="col-md-12">
+				<nav class="navbar navbar-default header">
+					<div class="container-fluid">
+						<div class="navbar-header navbar-heading">My Automation</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-1">
+				<app-leftmenu></app-leftmenu>
+			</div>
+			<div class="col-md-11 page-content">
+				<div class="row padding-top-5">
+					<div class="col-md-12">
+						<div class="panel panel-default panel-custom my-automation">
+							<div class="panel-body">
+								<alertMsg></alertMsg>
+								<div class="row">
+									<div class="col-md-3 form-group">
+										<select [(ngModel)]="model.mySolution" #mySolution="ngModel" name="mySolution" class="form-control">
+											<option value="0">Select My Solution</option>
+											<option value="My Branch in a Box">My Branch in a Box</option>
+											<option value="My Retail in a Box">My Retail in a Box</option>
+											<option value="My Call Center in a Box">My Call Center in a Box</option>
+											<option value="My Data Center in a Box">My Data Center in a Box</option>
+										</select>
+									</div>
+									<div class="col-md-3 form-group">
+										<select [(ngModel)]="model.category" #category="ngModel" name="category" class="form-control">
+											<option value="0">Select Category</option>
+											<option value="Routers">Routers</option>
+											<option value="Switches">Switches</option>
+											<option value="Firewall">Firewall</option>
+											<option value="Servers">Servers</option>
+										</select>
+									</div>
+									<div class="col-md-3 form-group">
+										<select [(ngModel)]="model.device" #device="ngModel" name="device" class="form-control">
+											<option value="0">Select Device</option>
+											<option value="Router 1">Router 1</option>
+											<option value="Router 2">Router 2</option>
+											<option value="Router 3">Router 3</option>
+											<option value="Router 4">Router 4</option>
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="border text-center">
+											<img class="bom-image" src="./assets/images/bom-image-t6.png" />
+										</div>
+									</div>
+								</div>
+								<div class="row padding-top-20">
+									<div class="col-md-3">
+										<ul class="nav nav-pills nav-stacked policies-stack">
+											<li *ngFor="let policy of policyData" (click)="clickPolicyfamily(policy.family)" [ngClass]="{'active':(seletectPolicyfamily==policy.family)}">
+												<a href="javascript:;">{{policy.family}}</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-md-9 policies-stack-content">
+										<div class="heading">Co-manage Policies</div>
+										<div class="content">
+											<div *ngFor="let cmp of selectedCoManagePolicy.policies; let icmp = index" class="tick-circle-checkbox pull-left">
+												<div class="tick-circle-checkbox-success">
+													<input type="checkbox" (change)="selectPolicies($event,cmp)" [(ngModel)]="model.policies[cmp.policy]" #policies_p1="ngModel"
+													 name="checkbox" id="checkbox_{{icmp}}" />
+													<label for="checkbox_{{icmp}}">{{cmp.policy}}</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row padding-top-20">
+									<div class="col-md-12">
+										<div class="pull-right">
+											<button href="javascript:;" class="btn red-button">Launch</button>
+										</div>
+										<div class="tabset">
+											<tabset>
+												<tab heading="Selected Policies">
+													<div class="container-fluid">
+														<div class="row tbl-heading-bgcolor">
+															<div class="col-md-1 col-xs-1">Family</div>
+															<div class="col-md-2 col-xs-2">Selected Policies</div>
+															<div class="col-md-1 col-xs-1">Configure</div>
+															<div class="col-md-1 col-xs-1">Test</div>
+															<div class="col-md-1 col-xs-1">Status</div>
+															<div class="col-md-3 col-xs-3">Conditions Applied</div>
+															<div class="col-md-1 col-xs-1">Date Created</div>
+															<div class="col-md-1 col-xs-1">Date Updated</div>
+															<div class="col-md-1 col-xs-1"></div>
+														</div>
+														<div *ngFor="let scmp of listSelectedPolicy.policies; let scmpIndex=index" class="row mobwidth">
+															<div class="col-md-12 col-xs-12">
+																<div class="row bordered-item">
+																	<div class="col-md-1 col-xs-1">{{listSelectedPolicy.family}}</div>
+																	<div class="col-md-2 col-xs-2">{{scmp.policy}}</div>
+																	<div class="col-md-1  col-xs-1 text-center">
+																		<a (click)="openSubCriteriaBox(scmp.policy)" href="javascript:;">
+																			<i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i>
+																		</a>
+																	</div>
+																	<div class="col-md-1  col-xs-1">
+																		<button (click)="openTestBox(scmp.policy)" class="btn red-button">Test</button>
+																	</div>
+																	<div class="col-md-1  col-xs-1 text-center">
+																		<i *ngIf="scmp.status=='Active'" (click)="scmp.status='Inactive'" class="fa fa-check-circle fa-lg green-icon hand-cursor"
+																		 aria-hidden="true"></i>
+																		<i *ngIf="scmp.status!='Active'" (click)="scmp.status='Active'" class="fa fa-times-circle fa-lg red-icon hand-cursor" aria-hidden="true"></i>
+																	</div>
+																	<div class="col-md-3 col-xs-3">{{scmp.conditionApplied}}</div>
+																	<div class="col-md-1 col-xs-1">{{scmp.dataCreated}}</div>
+																	<div class="col-md-1 col-xs-1">{{scmp.dataUpdated}}</div>
+																	<div class="col-md-1 col-xs-1">
+																		<a href="javascript:;" (click)="removePolicies(scmp)">
+																			<i class="fa fa-trash-o fa-lg" aria-hidden="true"></i>
+																		</a>
+																	</div>
+																</div>
+																<div *ngIf="openSubCriteria==scmp.policy" class="row bordered-item">
+																	<div class="cold-md-12  col-xs-12">
+																		<div class="container-fluid">
+																			<div class="row subcriteria-heading">
+																				<div class="col-md-6  col-xs-6">
+																					Configuration
+																				</div>
+																				<div class="col-md-6 col-xs-6">
+																					<button (click)="closeSubCriteriaBox()" class="btn white-button pull-right">Close</button>
+																				</div>
+																			</div>
+																			<div class="row configuration-heading">
+																				<div class="col-md-3  col-xs-3">Criteria</div>
+																				<div class="col-md-2 col-xs-2">Operation</div>
+																				<div class="col-md-2 col-xs-2">Attribute</div>
+																				<div class="col-md-2 col-xs-2">Subcriteria</div>
+																				<div class="col-md-2 col-xs-2">Actions</div>
+																				<div class="col-md-1 col-xs-1">
+																					<img src="./assets/images/adbtn_black.png" />
+																				</div>
+																			</div>
+																			<!-- Criteria BOX : START -->
+																			<div class="row bordered-item">
+																				<div class="col-md-3  col-xs-3">
+																					<select (change)="selectCriteria(scmp.policy)" [(ngModel)]="model.criteria[listSelectedPolicy.family][scmp.policy]" #criteria="ngModel"
+																					 name="criteria" class="criteria-dropdown">
+																						<option *ngFor="let criteria of scmp['configuration']" [value]="criteria.name">{{criteria.name}}</option>
+																					</select>
+																				</div>
+																				<div class="col-md-2  col-xs-2">
+																					<select (change)="selectOperation(scmp.policy)" [(ngModel)]="model.operation[listSelectedPolicy.family][scmp.policy]" #operation="ngModel"
+																					 name="operation" class="">
+																						<option *ngFor="let operation of operations[listSelectedPolicy.family][scmp.policy][model.criteria[listSelectedPolicy.family][scmp.policy]]"
+																						 [value]="operation.value">{{operation.value}}</option>
+																					</select>
+																				</div>
+																				<div class="col-md-2  col-xs-2">
+																					<select [disabled]="false" (change)="selectAttribute(scmp.policy)" [(ngModel)]="model.attribute[listSelectedPolicy.family][scmp.policy]" #attribute="ngModel" name="attribute"
+																					 class="">
+																						<option *ngFor="let attribute of attributes[listSelectedPolicy.family][scmp.policy][model.criteria[listSelectedPolicy.family][scmp.policy]]" [value]="attribute.paramName">{{attribute.paramName}}</option>
+																					</select>
+																				</div>
+																				<div class="col-md-2  col-xs-2">
+																					<div *ngFor="let subCriteria of subCriterias[listSelectedPolicy.family][scmp.policy][model.criteria[listSelectedPolicy.family][scmp.policy]]; let subCriteriaIndex = index">
+																						<input type="checkbox" [(ngModel)]="model.subCriteria[listSelectedPolicy.family][scmp.policy][subCriteriaIndex]" #policies_p1="ngModel"
+																						 name="checkbox" />{{subCriteria.attribute}}
+																					</div>
+																				</div>
+																				<div class="col-md-2  col-xs-2">
+																					Request Add Capacity/Buy Capacity
+																				</div>
+																				<div class="col-md-1 col-xs-1">
+																					<a href="javascript:;">
+																						<i class="fa fa-trash-o fa-lg" aria-hidden="true"></i>
+																					</a>
+																				</div>
+																			</div>
+																			<!-- END : Criteria BOX -->
+																		</div>
+																	</div>
+																</div>
+																<div *ngIf="openTest==scmp.policy" class="row bordered-item">
+																	<div class="cold-md-12  col-xs-12">
+																		<div class="container-fluid">
+																			<div class="row subcriteria-heading">
+																				<div class="col-md-6 col-xs-6">
+																					Test Results
+																				</div>
+																				<div class="col-md-6 col-xs-6">
+																					<button (click)="closeTestBox()" class="btn white-button pull-right">Close</button>
+																				</div>
+																			</div>
+																			<div class="row border padding-top-10 padding-bottom-10">
+																				<div class="col-md-12 col-xs-12">
+																					<p>
+																						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+																						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+																						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+																						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+																						laborum.
+																					</p>
+																					<p>
+																						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+																						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+																						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+																						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+																						laborum.
+																					</p>
+																					<p>
+																						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+																						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+																						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+																						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+																						laborum.
+																					</p>
+																					<p>
+																						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+																						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+																						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+																						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+																						laborum.
+																					</p>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</tab>
+												<tab heading="Policy Details">
+													<div class="row">
+														<div class="col-md-12  col-xs-12">
+															<p>Lorem ipsum dolor sit amet,consectetur dipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore
+																magna aliqua.
+															</p>
+															<p>Ut enim ad minim veniam, quis nostrud xercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+															</p>
+															<p>Duis aute irure olor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+																sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+															</p>
+															<p>Ut enim ad minim veniam, quis nostrud xercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+															</p>
+														</div>
+													</div>
+												</tab>
+											</tabset>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>

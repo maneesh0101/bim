@@ -1,0 +1,188 @@
+.server-img {
+  width:273px;
+}
+.verizon-service {
+  color: #333333;
+}
+.verizon-service .panel-body{
+  padding-top:0px;
+}
+.verizon-service .links a{
+  font-size: 16px;
+  text-decoration: underline;
+  padding-left: 10px;
+}
+.verizon-service .searchInputGroup {
+  width:80%;
+  padding-left: 0px;
+}
+.verizon-service .searchInputGroup .search-input  {
+  box-shadow: none;
+}
+
+.verizon-service .accordian {
+  padding-top: 20px;
+}
+.homepage-layer-accordian
+{
+  width: 250px;
+}
+.verizon-service .accordian a {
+  text-decoration:none;
+  font-size: 16px;
+  color: #333333;
+  font-family: 'Neue Haas Grotesk Display Std 65 Medium', 'Neue Haas Grotesk Display Std';
+  font-weight: 400;
+}
+.verizon-service .accordian a.accr-a {
+  margin-left: -3px;
+}
+.verizon-service .accordian a.accr-link {
+  color: #337AC6;
+}
+.accordian a.accr-link {
+  color: white;
+  
+}
+.accordian a {
+  color: white;
+  font-size: 15px;
+}
+.box .accordian
+{
+  top: 15px;
+  left: 700px;
+  float: right;
+}
+.verizon-service .accordian .accr-data {
+  padding: 20px 0px;
+}
+.verizon-service .accordian img.accr-img {
+  margin-bottom: 5px;
+}
+.homepage-cont-button
+{
+    position: absolute;
+    z-index: 20;
+    text-align: center;
+    margin-top: -150px;
+    margin-left: 1000px;
+    background-color: #fff;
+    color: black;
+}
+
+.homepage-layer-title
+{
+
+    border-width: 0px;
+    position: absolute;
+    left: 907px;
+    top: 140px;
+    width: 357px;
+    height: 25px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 0;
+
+}
+.homepage-header_block
+{
+ 
+  margin: 0px;
+  margin-top: 90px;
+  /* margin-left: -15px;
+  margin-right: -15px; */
+}
+.home-image{
+  height: 250px;
+}
+.box{
+    border-width: 0px;
+    position: absolute;
+    top: 240px;
+    width: 100%;
+    height: 100px;
+    background-color:#170f0f85;
+    
+}
+.build-solution-widget-component{
+  margin-left: 60px;
+}
+.solution-box a{
+  color: #d03f6e;
+}
+.product-brands{
+  background-color:rgba(216, 212, 212, 1);
+  min-height: 200px;
+  margin-top: 60px;
+}
+.product-brand-list{
+margin-left: 45px;
+margin-top: 20px;
+}
+.product-brands-image{
+  margin-top: -35px;
+}
+.container-box-home{
+  padding-top: 90px;
+   padding-left: 0;
+   padding-right: 0;
+}
+.products-title{
+  text-align:center;
+  margin-top: 15px;
+  margin-bottom: 15px ;
+}
+@media only screen and (max-width: 767px) {
+ 
+ .homepage-layer-title{
+    border-width: 0px;
+    position: absolute;
+    left: 30px;
+    top: 140px;
+    width: 357px;
+    height: 25px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 0;
+}
+.homepage-cont-button{
+    position: absolute;
+    z-index: 20;
+    text-align: center;
+    margin-top: -150px;
+    margin-left: 45px;
+    background-color: #fff;
+    color: black;
+    height: 25px;
+    width: 160px;
+}
+.box .accordian
+{
+  top: 15px;
+  left: 30px;
+  float: left;
+  font-size: 12px;
+}
+.product-brands{
+margin-top: 750px;
+}
+.product-brands{
+margin-left:0;
+}
+.specialoffers-widget .panel-default {
+    position: relative;
+    }
+.product-brands-image{
+  margin-top:10px;
+}
+.build-solution-widget-component{
+    margin-left: 0;
+}
+.products-title{
+  text-align:center;
+  margin-top: 15px;
+  margin-bottom: 15px ;
+}
+
+}

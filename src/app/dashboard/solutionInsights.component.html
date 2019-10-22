@@ -1,0 +1,43 @@
+<div class="panel panel-default panel-custom">
+   <div class="heading">Solutions Insights 
+        <console-integration-modal-widget></console-integration-modal-widget>
+    </div>
+   <div class="panel-body mobPad">
+      <div class="row gaugeDesk">
+         <div class="col-md-1-5 col-xs-12 p-0">
+            <div class="consumption chartHeight"></div>
+         </div>
+         <div class="col-md-1-5 col-xs-12 p-0">
+            <div class="users chartHeight"></div>
+         </div>
+         <div class="col-md-1-5 p-0 col-xs-12">
+            <div class="alarm chartHeight"></div>
+         </div>
+         <div class="col-md-1-5 p-0 col-xs-12">
+            <div class="svcii chartHeight"></div>
+         </div>
+         <div class="col-md-1-5 p-0 col-xs-12" >
+            <div class="billlusage chartHeight"></div>
+         </div>
+      </div>
+
+
+      <carousel class="gaugeMobile" [interval]=false>
+          <slide>
+              <div class="consumption chartHeight"></div>
+            </slide>
+          <slide>
+              <div class="users chartHeight"></div>
+            </slide>
+          <slide>
+              <div class="alarm chartHeight"></div>
+            </slide>
+            <slide>
+              <div class="svcii chartHeight"></div>
+            </slide>
+            <slide>
+              <div class="billlusage chartHeight"></div>
+            </slide>
+        </carousel>
+   </div>
+</div>

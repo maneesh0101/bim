@@ -1,0 +1,14 @@
+<div class="panel panel-default panel-custom  products-widget alerttable">
+   <div class="heading">
+       Alarm and Alerts
+       <console-integration-modal-widget></console-integration-modal-widget>
+    </div>
+   <div class="panel-body" >
+      <div  *ngFor="let data of errordata">
+         <div class="alertMsg">
+            <div class="col-xs-2"><i class="fa fa-2x " aria-hidden="true" [ngClass]="(data.step=='step1')?'fa-exclamation-triangle':'fa-times-circle'" [style.color]="(data.step=='step1')?'orange':'red'" ></i></div>
+            <div class="col-xs-9">{{data.Success}}</div>
+         </div>
+      </div>
+   </div>
+</div>

@@ -1,0 +1,3752 @@
+{
+	"wifi": [
+		{
+			"label": "Surge",
+			"UoM": "(Users)",
+			"labelData": [
+				{
+					"timeline": "Last 10 hour",
+					"data": [
+						{
+							"time": "1300",
+							"capacity": "99",
+							"actual": "120"
+						},
+						{
+							"time": "1200",
+							"capacity": "99",
+							"actual": "110"
+						},
+						{
+							"time": "1100",
+							"capacity": "99",
+							"actual": "100"
+						},
+						{
+							"time": "1000",
+							"capacity": "99",
+							"actual": "90"
+						},
+						{
+							"time": "0900",
+							"capacity": "99",
+							"actual": "125"
+						},
+						{
+							"time": "0800",
+							"capacity": "99",
+							"actual": "115"
+						},
+						{
+							"time": "0700",
+							"capacity": "99",
+							"actual": "75"
+						},
+						{
+							"time": "0600",
+							"capacity": "99",
+							"actual": "102"
+						},
+						{
+							"time": "0500",
+							"capacity": "99",
+							"actual": "105"
+						},
+						{
+							"time": "0400",
+							"capacity": "99",
+							"actual": "80"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Surge (last 10 hrs)"
+						},
+						"labels": [
+							"1300",
+							"1200",
+							"1100",
+							"1000",
+							"0900",
+							"0800",
+							"0700",
+							"0600",
+							"0500",
+							"0400"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									120,
+									110,
+									100,
+									90,
+									125,
+									115,
+									75,
+									102,
+									105,
+									80
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									99,
+									99,
+									99,
+									99,
+									99,
+									99,
+									99,
+									99,
+									99,
+									99
+								],
+								"fill": false
+							}
+						]
+					}
+				},
+				{
+					"timeline": "Last 10 days",
+					"data2": [
+						{
+							"time": "Feb-5",
+							"capacity": "99",
+							"actual": "80"
+						},
+						{
+							"time": "Feb-4",
+							"capacity": "99",
+							"actual": "105"
+						},
+						{
+							"time": "Feb-3",
+							"capacity": "99",
+							"actual": "102"
+						},
+						{
+							"time": "Feb-2",
+							"capacity": "99",
+							"actual": "75"
+						},
+						{
+							"time": "Feb-1",
+							"capacity": "99",
+							"actual": "60"
+						},
+						{
+							"time": "Jan-31",
+							"capacity": "99",
+							"actual": "70"
+						},
+						{
+							"time": "Jan-30",
+							"capacity": "99",
+							"actual": "90"
+						},
+						{
+							"time": "Jan-29",
+							"capacity": "99",
+							"actual": "100"
+						},
+						{
+							"time": "Jan-28",
+							"capacity": "99",
+							"actual": "110"
+						},
+						{
+							"time": "Jan-27",
+							"capacity": "99",
+							"actual": "120"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Surge (last 10 days)"
+						},
+						"labels": [
+							"Feb-5",
+							"Feb-4",
+							"Feb-3",
+							"Feb-2",
+							"Feb-1",
+							"Jan-31",
+							"Jan-30",
+							"Jan-29",
+							"Jan-28",
+							"Jan-27"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									80,
+									105,
+									102,
+									75,
+									60,
+									70,
+									90,
+									100,
+									110,
+									120
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									99,
+									99,
+									99,
+									99,
+									99,
+									99,
+									99,
+									99,
+									99,
+									99
+								],
+								"fill": false
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"label": "Time To Connect",
+			"UoM": "(ms)",
+			"labelData": [
+				{
+					"timeline": "Last 10 hour",
+					"data": [
+						{
+							"time": "1300",
+							"capacity": "10",
+							"actual": "8"
+						},
+						{
+							"time": "1200",
+							"capacity": "10",
+							"actual": "12"
+						},
+						{
+							"time": "1100",
+							"capacity": "10",
+							"actual": "11"
+						},
+						{
+							"time": "1000",
+							"capacity": "10",
+							"actual": "7"
+						},
+						{
+							"time": "0900",
+							"capacity": "10",
+							"actual": "6"
+						},
+						{
+							"time": "0800",
+							"capacity": "10",
+							"actual": "9"
+						},
+						{
+							"time": "0700",
+							"capacity": "10",
+							"actual": "12"
+						},
+						{
+							"time": "0600",
+							"capacity": "10",
+							"actual": "10"
+						},
+						{
+							"time": "0500",
+							"capacity": "10",
+							"actual": "11"
+						},
+						{
+							"time": "0400",
+							"capacity": "10",
+							"actual": "5"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Time To Connect (last 10 hrs)"
+						},
+						"labels": [
+							"1300",
+							"1200",
+							"1100",
+							"1000",
+							"0900",
+							"0800",
+							"0700",
+							"0600",
+							"0500",
+							"0400"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									8,
+									12,
+									11,
+									7,
+									6,
+									9,
+									12,
+									10,
+									11,
+									5
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									10,
+									10,
+									10,
+									10,
+									10,
+									10,
+									10,
+									10,
+									10,
+									10
+								],
+								"fill": false
+							}
+						]
+					}
+				},
+				{
+					"timeline": "Last 10 days",
+					"data2": [
+						{
+							"time": "Feb-5",
+							"capacity": "10",
+							"actual": "4"
+						},
+						{
+							"time": "Feb-4",
+							"capacity": "10",
+							"actual": "9"
+						},
+						{
+							"time": "Feb-3",
+							"capacity": "10",
+							"actual": "6"
+						},
+						{
+							"time": "Feb-2",
+							"capacity": "10",
+							"actual": "7"
+						},
+						{
+							"time": "Feb-1",
+							"capacity": "10",
+							"actual": "6"
+						},
+						{
+							"time": "Jan-31",
+							"capacity": "10",
+							"actual": "9"
+						},
+						{
+							"time": "Jan-30",
+							"capacity": "10",
+							"actual": "12"
+						},
+						{
+							"time": "Jan-29",
+							"capacity": "10",
+							"actual": "10"
+						},
+						{
+							"time": "Jan-28",
+							"capacity": "10",
+							"actual": "11"
+						},
+						{
+							"time": "Jan-27",
+							"capacity": "10",
+							"actual": "5"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Time To Connect (last 10 days)"
+						},
+						"labels": [
+							"Feb-5",
+							"Feb-4",
+							"Feb-3",
+							"Feb-2",
+							"Feb-1",
+							"Jan-31",
+							"Jan-30",
+							"Jan-29",
+							"Jan-28",
+							"Jan-27"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									4,
+									9,
+									6,
+									7,
+									6,
+									9,
+									12,
+									10,
+									11,
+									5
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									10,
+									10,
+									10,
+									10,
+									10,
+									10,
+									10,
+									10,
+									10,
+									10
+								],
+								"fill": false
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"label": "Failed Connects",
+			"UoM": "(%)",
+			"labelData": [
+				{
+					"timeline": "Last 10 hour",
+					"data": [
+						{
+							"time": "1300",
+							"capacity": "4",
+							"actual": "2"
+						},
+						{
+							"time": "1200",
+							"capacity": "4",
+							"actual": "3"
+						},
+						{
+							"time": "1100",
+							"capacity": "4",
+							"actual": "7"
+						},
+						{
+							"time": "1000",
+							"capacity": "4",
+							"actual": "8"
+						},
+						{
+							"time": "0900",
+							"capacity": "4",
+							"actual": "4"
+						},
+						{
+							"time": "0800",
+							"capacity": "4",
+							"actual": "3"
+						},
+						{
+							"time": "0700",
+							"capacity": "4",
+							"actual": "2"
+						},
+						{
+							"time": "0600",
+							"capacity": "4",
+							"actual": "1"
+						},
+						{
+							"time": "0500",
+							"capacity": "4",
+							"actual": "5"
+						},
+						{
+							"time": "0400",
+							"capacity": "4",
+							"actual": "6"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Failed Connects (last 10 hrs)"
+						},
+						"labels": [
+							"1300",
+							"1200",
+							"1100",
+							"1000",
+							"0900",
+							"0800",
+							"0700",
+							"0600",
+							"0500",
+							"0400"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									2,
+									3,
+									7,
+									8,
+									4,
+									3,
+									2,
+									1,
+									5,
+									6
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									4,
+									4,
+									4,
+									4,
+									4,
+									4,
+									4,
+									4,
+									4,
+									4
+								],
+								"fill": false
+							}
+						]
+					}
+				},
+				{
+					"timeline": "Last 10 days",
+					"data2": [
+						{
+							"time": "Feb-5",
+							"capacity": "4",
+							"actual": "6"
+						},
+						{
+							"time": "Feb-4",
+							"capacity": "4",
+							"actual": "5"
+						},
+						{
+							"time": "Feb-3",
+							"capacity": "4",
+							"actual": "1"
+						},
+						{
+							"time": "Feb-2",
+							"capacity": "4",
+							"actual": "2"
+						},
+						{
+							"time": "Feb-1",
+							"capacity": "4",
+							"actual": "3"
+						},
+						{
+							"time": "Jan-31",
+							"capacity": "4",
+							"actual": "4"
+						},
+						{
+							"time": "Jan-30",
+							"capacity": "4",
+							"actual": "8"
+						},
+						{
+							"time": "Jan-29",
+							"capacity": "4",
+							"actual": "7"
+						},
+						{
+							"time": "Jan-28",
+							"capacity": "4",
+							"actual": "3"
+						},
+						{
+							"time": "Jan-27",
+							"capacity": "4",
+							"actual": "2"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Failed Connects (last 10 days)"
+						},
+						"labels": [
+							"Feb-5",
+							"Feb-4",
+							"Feb-3",
+							"Feb-2",
+							"Feb-1",
+							"Jan-31",
+							"Jan-30",
+							"Jan-29",
+							"Jan-28",
+							"Jan-27"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									6,
+									5,
+									1,
+									2,
+									3,
+									4,
+									8,
+									7,
+									3,
+									2
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									4,
+									4,
+									4,
+									4,
+									4,
+									4,
+									4,
+									4,
+									4,
+									4
+								],
+								"fill": false
+							}
+						]
+					}
+				}
+			]
+		}
+	],
+	"network": [
+		{
+			"label": "Surge",
+			"UoM": "(Users)",
+			"labelData": [
+				{
+					"timeline": "Last 10 hour",
+					"data": [
+						{
+							"time": "1300",
+							"capacity": "99",
+							"actual": "80"
+						},
+						{
+							"time": "1200",
+							"capacity": "99",
+							"actual": "105"
+						},
+						{
+							"time": "1100",
+							"capacity": "99",
+							"actual": "102"
+						},
+						{
+							"time": "1000",
+							"capacity": "99",
+							"actual": "75"
+						},
+						{
+							"time": "0900",
+							"capacity": "99",
+							"actual": "60"
+						},
+						{
+							"time": "0800",
+							"capacity": "99",
+							"actual": "70"
+						},
+						{
+							"time": "0700",
+							"capacity": "99",
+							"actual": "90"
+						},
+						{
+							"time": "0600",
+							"capacity": "99",
+							"actual": "100"
+						},
+						{
+							"time": "0500",
+							"capacity": "99",
+							"actual": "110"
+						},
+						{
+							"time": "0400",
+							"capacity": "99",
+							"actual": "120"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Surge (last 10 hrs)"
+						},
+						"labels": [
+							"1300",
+							"1200",
+							"1100",
+							"1000",
+							"0900",
+							"0800",
+							"0700",
+							"0600",
+							"0500",
+							"0400"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									80,
+									105,
+									102,
+									75,
+									60,
+									70,
+									90,
+									100,
+									110,
+									120
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									99,
+									99,
+									99,
+									99,
+									99,
+									99,
+									99,
+									99,
+									99,
+									99
+								],
+								"fill": false
+							}
+						]
+					}
+				},
+				{
+					"timeline": "Last 10 days",
+					"data2": [
+						{
+							"time": "Feb-5",
+							"capacity": "99",
+							"actual": "120"
+						},
+						{
+							"time": "Feb-4",
+							"capacity": "99",
+							"actual": "110"
+						},
+						{
+							"time": "Feb-3",
+							"capacity": "99",
+							"actual": "100"
+						},
+						{
+							"time": "Feb-2",
+							"capacity": "99",
+							"actual": "90"
+						},
+						{
+							"time": "Feb-1",
+							"capacity": "120",
+							"actual": "125"
+						},
+						{
+							"time": "Jan-31",
+							"capacity": "120",
+							"actual": "115"
+						},
+						{
+							"time": "Jan-30",
+							"capacity": "99",
+							"actual": "75"
+						},
+						{
+							"time": "Jan-29",
+							"capacity": "99",
+							"actual": "102"
+						},
+						{
+							"time": "Jan-28",
+							"capacity": "99",
+							"actual": "105"
+						},
+						{
+							"time": "Jan-27",
+							"capacity": "99",
+							"actual": "80"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Surge (last 10 days)"
+						},
+						"labels": [
+							"Feb-5",
+							"Feb-4",
+							"Feb-3",
+							"Feb-2",
+							"Feb-1",
+							"Jan-31",
+							"Jan-30",
+							"Jan-29",
+							"Jan-28",
+							"Jan-27"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									120,
+									110,
+									100,
+									125,
+									115,
+									75,
+									90,
+									102,
+									105,
+									80
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									99,
+									99,
+									99,
+									99,
+									120,
+									120,
+									99,
+									99,
+									99,
+									99
+								],
+								"fill": false
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"label": "Capacity",
+			"UoM": "(GB)",
+			"labelData": [
+				{
+					"timeline": "Last 10 hour",
+					"data": [
+						{
+							"time": "1300",
+							"capacity": "10",
+							"actual": "8"
+						},
+						{
+							"time": "1200",
+							"capacity": "10",
+							"actual": "12"
+						},
+						{
+							"time": "1100",
+							"capacity": "10",
+							"actual": "11"
+						},
+						{
+							"time": "1000",
+							"capacity": "10",
+							"actual": "7"
+						},
+						{
+							"time": "0900",
+							"capacity": "10",
+							"actual": "6"
+						},
+						{
+							"time": "0800",
+							"capacity": "10",
+							"actual": "9"
+						},
+						{
+							"time": "0700",
+							"capacity": "10",
+							"actual": "12"
+						},
+						{
+							"time": "0600",
+							"capacity": "10",
+							"actual": "10"
+						},
+						{
+							"time": "0500",
+							"capacity": "10",
+							"actual": "11"
+						},
+						{
+							"time": "0400",
+							"capacity": "10",
+							"actual": "5"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Capacity (last 10 hrs)"
+						},
+						"labels": [
+							"1300",
+							"1200",
+							"1100",
+							"1000",
+							"0900",
+							"0800",
+							"0700",
+							"0600",
+							"0500",
+							"0400"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									8,
+									12,
+									11,
+									7,
+									6,
+									9,
+									12,
+									10,
+									11,
+									5
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									10,
+									10,
+									10,
+									10,
+									10,
+									10,
+									10,
+									10,
+									10,
+									10
+								],
+								"fill": false
+							}
+						]
+					}
+				},
+				{
+					"timeline": "Last 10 days",
+					"data2": [
+						{
+							"time": "Feb-5",
+							"capacity": "250",
+							"actual": "120"
+						},
+						{
+							"time": "Feb-4",
+							"capacity": "250",
+							"actual": "264"
+						},
+						{
+							"time": "Feb-3",
+							"capacity": "250",
+							"actual": "240"
+						},
+						{
+							"time": "Feb-2",
+							"capacity": "250",
+							"actual": "288"
+						},
+						{
+							"time": "Feb-1",
+							"capacity": "250",
+							"actual": "216"
+						},
+						{
+							"time": "Jan-31",
+							"capacity": "250",
+							"actual": "155"
+						},
+						{
+							"time": "Jan-30",
+							"capacity": "250",
+							"actual": "168"
+						},
+						{
+							"time": "Jan-29",
+							"capacity": "250",
+							"actual": "264"
+						},
+						{
+							"time": "Jan-28",
+							"capacity": "250",
+							"actual": "288"
+						},
+						{
+							"time": "Jan-27",
+							"capacity": "250",
+							"actual": "192"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Capacity (last 10 days)"
+						},
+						"labels": [
+							"Feb-5",
+							"Feb-4",
+							"Feb-3",
+							"Feb-2",
+							"Feb-1",
+							"Jan-31",
+							"Jan-30",
+							"Jan-29",
+							"Jan-28",
+							"Jan-27"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									120,
+									264,
+									240,
+									288,
+									216,
+									155,
+									168,
+									264,
+									288,
+									192
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									250,
+									250,
+									250,
+									250,
+									250,
+									250,
+									250,
+									250,
+									250,
+									250
+								],
+								"fill": false
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"label": "Bandwidth",
+			"UoM": "(Mbps)",
+			"labelData": [
+				{
+					"timeline": "Last 10 hour",
+					"data": [
+						{
+							"time": "1300",
+							"capacity": "300",
+							"actual": "280"
+						},
+						{
+							"time": "1200",
+							"capacity": "300",
+							"actual": "420"
+						},
+						{
+							"time": "1100",
+							"capacity": "300",
+							"actual": "385"
+						},
+						{
+							"time": "1000",
+							"capacity": "300",
+							"actual": "245"
+						},
+						{
+							"time": "0900",
+							"capacity": "300",
+							"actual": "210"
+						},
+						{
+							"time": "0800",
+							"capacity": "300",
+							"actual": "315"
+						},
+						{
+							"time": "0700",
+							"capacity": "300",
+							"actual": "420"
+						},
+						{
+							"time": "0600",
+							"capacity": "300",
+							"actual": "350"
+						},
+						{
+							"time": "0500",
+							"capacity": "300",
+							"actual": "385"
+						},
+						{
+							"time": "0400",
+							"capacity": "300",
+							"actual": "175"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Bandwidth (last 10 hrs)"
+						},
+						"labels": [
+							"1300",
+							"1200",
+							"1100",
+							"1000",
+							"0900",
+							"0800",
+							"0700",
+							"0600",
+							"0500",
+							"0400"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									280,
+									420,
+									385,
+									245,
+									210,
+									315,
+									420,
+									350,
+									385,
+									175
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									300,
+									300,
+									300,
+									300,
+									300,
+									300,
+									300,
+									300,
+									300,
+									300
+								],
+								"fill": false
+							}
+						]
+					}
+				},
+				{
+					"timeline": "Last 10 days",
+					"data2": [
+						{
+							"time": "Feb-5",
+							"capacity": "300",
+							"actual": "175"
+						},
+						{
+							"time": "Feb-4",
+							"capacity": "300",
+							"actual": "385"
+						},
+						{
+							"time": "Feb-3",
+							"capacity": "300",
+							"actual": "350"
+						},
+						{
+							"time": "Feb-2",
+							"capacity": "300",
+							"actual": "420"
+						},
+						{
+							"time": "Feb-1",
+							"capacity": "300",
+							"actual": "315"
+						},
+						{
+							"time": "Jan-31",
+							"capacity": "300",
+							"actual": "226"
+						},
+						{
+							"time": "Jan-30",
+							"capacity": "300",
+							"actual": "245"
+						},
+						{
+							"time": "Jan-29",
+							"capacity": "300",
+							"actual": "385"
+						},
+						{
+							"time": "Jan-28",
+							"capacity": "300",
+							"actual": "420"
+						},
+						{
+							"time": "Jan-27",
+							"capacity": "300",
+							"actual": "280"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Bandwidth (last 10 days)"
+						},
+						"labels": [
+							"Feb-5",
+							"Feb-4",
+							"Feb-3",
+							"Feb-2",
+							"Feb-1",
+							"Jan-31",
+							"Jan-30",
+							"Jan-29",
+							"Jan-28",
+							"Jan-27"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									175,
+									385,
+									350,
+									420,
+									315,
+									226,
+									245,
+									385,
+									420,
+									280
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									300,
+									300,
+									300,
+									300,
+									300,
+									300,
+									300,
+									300,
+									300,
+									300
+								],
+								"fill": false
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"label": "Composite Alarms",
+			"UoM": "(Density)",
+			"labelData": [
+				{
+					"timeline": "Last 10 hour",
+					"data": [
+						{
+							"time": "1300",
+							"capacity": "12",
+							"actual": "2"
+						},
+						{
+							"time": "1200",
+							"capacity": "12",
+							"actual": "3"
+						},
+						{
+							"time": "1100",
+							"capacity": "12",
+							"actual": "7"
+						},
+						{
+							"time": "1000",
+							"capacity": "12",
+							"actual": "8"
+						},
+						{
+							"time": "0900",
+							"capacity": "12",
+							"actual": "4"
+						},
+						{
+							"time": "0800",
+							"capacity": "12",
+							"actual": "3"
+						},
+						{
+							"time": "0700",
+							"capacity": "12",
+							"actual": "2"
+						},
+						{
+							"time": "0600",
+							"capacity": "12",
+							"actual": "1"
+						},
+						{
+							"time": "0500",
+							"capacity": "12",
+							"actual": "5"
+						},
+						{
+							"time": "0400",
+							"capacity": "12",
+							"actual": "6"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Composite Alarms (last 10 hrs)"
+						},
+						"labels": [
+							"1300",
+							"1200",
+							"1100",
+							"1000",
+							"0900",
+							"0800",
+							"0700",
+							"0600",
+							"0500",
+							"0400"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									2,
+									3,
+									7,
+									8,
+									4,
+									3,
+									2,
+									1,
+									5,
+									6
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									12,
+									12,
+									12,
+									12,
+									12,
+									12,
+									12,
+									12,
+									12,
+									12
+								],
+								"fill": false
+							}
+						]
+					}
+				},
+				{
+					"timeline": "Last 10 days",
+					"data2": [
+						{
+							"time": "Feb-5",
+							"capacity": "12",
+							"actual": "6"
+						},
+						{
+							"time": "Feb-4",
+							"capacity": "12",
+							"actual": "5"
+						},
+						{
+							"time": "Feb-3",
+							"capacity": "12",
+							"actual": "1"
+						},
+						{
+							"time": "Feb-2",
+							"capacity": "12",
+							"actual": "2"
+						},
+						{
+							"time": "Feb-1",
+							"capacity": "12",
+							"actual": "3"
+						},
+						{
+							"time": "Jan-31",
+							"capacity": "12",
+							"actual": "4"
+						},
+						{
+							"time": "Jan-30",
+							"capacity": "12",
+							"actual": "8"
+						},
+						{
+							"time": "Jan-29",
+							"capacity": "12",
+							"actual": "7"
+						},
+						{
+							"time": "Jan-28",
+							"capacity": "12",
+							"actual": "3"
+						},
+						{
+							"time": "Jan-27",
+							"capacity": "12",
+							"actual": "2"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Composite Alarms (last 10 days)"
+						},
+						"labels": [
+							"Feb-5",
+							"Feb-4",
+							"Feb-3",
+							"Feb-2",
+							"Feb-1",
+							"Jan-31",
+							"Jan-30",
+							"Jan-29",
+							"Jan-28",
+							"Jan-27"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									6,
+									5,
+									1,
+									2,
+									3,
+									4,
+									8,
+									7,
+									3,
+									2
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									12,
+									12,
+									12,
+									12,
+									12,
+									12,
+									12,
+									12,
+									12,
+									12
+								],
+								"fill": false
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"label": "Service Incidents",
+			"UoM": "MTTR(<30m)",
+			"labelData": [
+				{
+					"timeline": "Last 10 hour",
+					"data": [
+						{
+							"time": "1300",
+							"capacity": "97%",
+							"actual": "99%"
+						},
+						{
+							"time": "1200",
+							"capacity": "97%",
+							"actual": "99%"
+						},
+						{
+							"time": "1100",
+							"capacity": "97%",
+							"actual": "100%"
+						},
+						{
+							"time": "1000",
+							"capacity": "97%",
+							"actual": "96%"
+						},
+						{
+							"time": "0900",
+							"capacity": "97%",
+							"actual": "99%"
+						},
+						{
+							"time": "0800",
+							"capacity": "97%",
+							"actual": "97%"
+						},
+						{
+							"time": "0700",
+							"capacity": "97%",
+							"actual": "98%"
+						},
+						{
+							"time": "0600",
+							"capacity": "97%",
+							"actual": "99%"
+						},
+						{
+							"time": "0500",
+							"capacity": "97%",
+							"actual": "100%"
+						},
+						{
+							"time": "0400",
+							"capacity": "97%",
+							"actual": "100%"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Service Incidents (last 10 hrs)"
+						},
+						"labels": [
+							"1300",
+							"1200",
+							"1100",
+							"1000",
+							"0900",
+							"0800",
+							"0700",
+							"0600",
+							"0500",
+							"0400"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									99,
+									99,
+									100,
+									96,
+									99,
+									97,
+									98,
+									99,
+									100,
+									100
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									97,
+									97,
+									97,
+									97,
+									97,
+									97,
+									97,
+									97,
+									97,
+									97
+								],
+								"fill": false
+							}
+						]
+					}
+				},
+				{
+					"timeline": "Last 10 days",
+					"data2": [
+						{
+							"time": "Feb-5",
+							"capacity": "12",
+							"actual": "100%"
+						},
+						{
+							"time": "Feb-4",
+							"capacity": "12",
+							"actual": "100%"
+						},
+						{
+							"time": "Feb-3",
+							"capacity": "12",
+							"actual": "99%"
+						},
+						{
+							"time": "Feb-2",
+							"capacity": "12",
+							"actual": "98%"
+						},
+						{
+							"time": "Feb-1",
+							"capacity": "12",
+							"actual": "97%"
+						},
+						{
+							"time": "Jan-31",
+							"capacity": "12",
+							"actual": "99%"
+						},
+						{
+							"time": "Jan-30",
+							"capacity": "12",
+							"actual": "96%"
+						},
+						{
+							"time": "Jan-29",
+							"capacity": "12",
+							"actual": "100%"
+						},
+						{
+							"time": "Jan-28",
+							"capacity": "12",
+							"actual": "99%"
+						},
+						{
+							"time": "Jan-27",
+							"capacity": "12",
+							"actual": "99%"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Service Incidents (last 10 days)"
+						},
+						"labels": [
+							"Feb-5",
+							"Feb-4",
+							"Feb-3",
+							"Feb-2",
+							"Feb-1",
+							"Jan-31",
+							"Jan-30",
+							"Jan-29",
+							"Jan-28",
+							"Jan-27"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									100,
+									100,
+									99,
+									98,
+									97,
+									99,
+									98,
+									100,
+									99,
+									99
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									12,
+									12,
+									12,
+									12,
+									12,
+									12,
+									12,
+									12,
+									12,
+									12
+								],
+								"fill": false
+							}
+						]
+					}
+				}
+			]
+		}
+	],
+	"voice": [
+		{
+			"label": "Surge",
+			"UoM": "(Users)",
+			"labelData": [
+				{
+					"timeline": "Last 10 hour",
+					"data": [
+						{
+							"time": "1300",
+							"capacity": "30",
+							"actual": "27"
+						},
+						{
+							"time": "1200",
+							"capacity": "30",
+							"actual": "35"
+						},
+						{
+							"time": "1100",
+							"capacity": "30",
+							"actual": "34"
+						},
+						{
+							"time": "1000",
+							"capacity": "30",
+							"actual": "25"
+						},
+						{
+							"time": "0900",
+							"capacity": "30",
+							"actual": "20"
+						},
+						{
+							"time": "0800",
+							"capacity": "30",
+							"actual": "23"
+						},
+						{
+							"time": "0700",
+							"capacity": "30",
+							"actual": "30"
+						},
+						{
+							"time": "0600",
+							"capacity": "30",
+							"actual": "33"
+						},
+						{
+							"time": "0500",
+							"capacity": "30",
+							"actual": "37"
+						},
+						{
+							"time": "0400",
+							"capacity": "30",
+							"actual": "40"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Surge (last 10 hrs)"
+						},
+						"labels": [
+							"1300",
+							"1200",
+							"1100",
+							"1000",
+							"0900",
+							"0800",
+							"0700",
+							"0600",
+							"0500",
+							"0400"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									27,
+									35,
+									34,
+									25,
+									20,
+									23,
+									30,
+									33,
+									37,
+									40
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									30,
+									30,
+									30,
+									30,
+									30,
+									30,
+									30,
+									30,
+									30,
+									30
+								],
+								"fill": false
+							}
+						]
+					}
+				},
+				{
+					"timeline": "Last 10 days",
+					"data2": [
+						{
+							"time": "Feb-5",
+							"capacity": "30",
+							"actual": "40"
+						},
+						{
+							"time": "Feb-4",
+							"capacity": "30",
+							"actual": "37"
+						},
+						{
+							"time": "Feb-3",
+							"capacity": "30",
+							"actual": "33"
+						},
+						{
+							"time": "Feb-2",
+							"capacity": "30",
+							"actual": "30"
+						},
+						{
+							"time": "Feb-1",
+							"capacity": "30",
+							"actual": "42"
+						},
+						{
+							"time": "Jan-31",
+							"capacity": "30",
+							"actual": "38"
+						},
+						{
+							"time": "Jan-30",
+							"capacity": "30",
+							"actual": "25"
+						},
+						{
+							"time": "Jan-29",
+							"capacity": "30",
+							"actual": "34"
+						},
+						{
+							"time": "Jan-28",
+							"capacity": "30",
+							"actual": "35"
+						},
+						{
+							"time": "Jan-27",
+							"capacity": "30",
+							"actual": "27"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Surge (last 10 days)"
+						},
+						"labels": [
+							"Feb-5",
+							"Feb-4",
+							"Feb-3",
+							"Feb-2",
+							"Feb-1",
+							"Jan-31",
+							"Jan-30",
+							"Jan-29",
+							"Jan-28",
+							"Jan-27"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									40,
+									37,
+									33,
+									30,
+									42,
+									38,
+									25,
+									34,
+									35,
+									27
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									30,
+									30,
+									30,
+									30,
+									30,
+									30,
+									30,
+									30,
+									30,
+									30
+								],
+								"fill": false
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"label": "Call Drops",
+			"UoM": "(%)",
+			"labelData": [
+				{
+					"timeline": "Last 10 hour",
+					"data": [
+						{
+							"time": "1300",
+							"capacity": "10",
+							"actual": "8"
+						},
+						{
+							"time": "1200",
+							"capacity": "10",
+							"actual": "12"
+						},
+						{
+							"time": "1100",
+							"capacity": "10",
+							"actual": "11"
+						},
+						{
+							"time": "1000",
+							"capacity": "10",
+							"actual": "7"
+						},
+						{
+							"time": "0900",
+							"capacity": "10",
+							"actual": "6"
+						},
+						{
+							"time": "0800",
+							"capacity": "10",
+							"actual": "9"
+						},
+						{
+							"time": "0700",
+							"capacity": "10",
+							"actual": "12"
+						},
+						{
+							"time": "0600",
+							"capacity": "10",
+							"actual": "10"
+						},
+						{
+							"time": "0500",
+							"capacity": "10",
+							"actual": "11"
+						},
+						{
+							"time": "0400",
+							"capacity": "10",
+							"actual": "5"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Call Drops (last 10 hrs)"
+						},
+						"labels": [
+							"1300",
+							"1200",
+							"1100",
+							"1000",
+							"0900",
+							"0800",
+							"0700",
+							"0600",
+							"0500",
+							"0400"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									8,
+									12,
+									11,
+									7,
+									6,
+									9,
+									12,
+									10,
+									11,
+									5
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									10,
+									10,
+									10,
+									10,
+									10,
+									10,
+									10,
+									10,
+									10,
+									10
+								],
+								"fill": false
+							}
+						]
+					}
+				},
+				{
+					"timeline": "Last 10 days",
+					"data2": [
+						{
+							"time": "Feb-5",
+							"capacity": "10",
+							"actual": "4"
+						},
+						{
+							"time": "Feb-4",
+							"capacity": "10",
+							"actual": "9"
+						},
+						{
+							"time": "Feb-3",
+							"capacity": "10",
+							"actual": "6"
+						},
+						{
+							"time": "Feb-2",
+							"capacity": "10",
+							"actual": "7"
+						},
+						{
+							"time": "Feb-1",
+							"capacity": "10",
+							"actual": "6"
+						},
+						{
+							"time": "Jan-31",
+							"capacity": "10",
+							"actual": "9"
+						},
+						{
+							"time": "Jan-30",
+							"capacity": "10",
+							"actual": "12"
+						},
+						{
+							"time": "Jan-29",
+							"capacity": "10",
+							"actual": "10"
+						},
+						{
+							"time": "Jan-28",
+							"capacity": "10",
+							"actual": "11"
+						},
+						{
+							"time": "Jan-27",
+							"capacity": "10",
+							"actual": "5"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Call Drops (last 10 days)"
+						},
+						"labels": [
+							"Feb-5",
+							"Feb-4",
+							"Feb-3",
+							"Feb-2",
+							"Feb-1",
+							"Jan-31",
+							"Jan-30",
+							"Jan-29",
+							"Jan-28",
+							"Jan-27"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									4,
+									9,
+									6,
+									7,
+									6,
+									9,
+									12,
+									10,
+									11,
+									5
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									10,
+									10,
+									10,
+									10,
+									10,
+									10,
+									10,
+									10,
+									10,
+									10
+								],
+								"fill": false
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"label": "Latency",
+			"UoM": "(avg ms)",
+			"labelData": [
+				{
+					"timeline": "Last 10 hour",
+					"data": [
+						{
+							"time": "1300",
+							"capacity": "400",
+							"actual": "200"
+						},
+						{
+							"time": "1200",
+							"capacity": "400",
+							"actual": "300"
+						},
+						{
+							"time": "1100",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "1000",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "0900",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "0800",
+							"capacity": "400",
+							"actual": "300"
+						},
+						{
+							"time": "0700",
+							"capacity": "400",
+							"actual": "200"
+						},
+						{
+							"time": "0600",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "0500",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "0400",
+							"capacity": "400",
+							"actual": "300"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Latency (last 10 hrs)"
+						},
+						"labels": [
+							"1300",
+							"1200",
+							"1100",
+							"1000",
+							"0900",
+							"0800",
+							"0700",
+							"0600",
+							"0500",
+							"0400"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									200,
+									300,
+									225,
+									225,
+									225,
+									300,
+									200,
+									225,
+									225,
+									300
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400
+								],
+								"fill": false
+							}
+						]
+					}
+				},
+				{
+					"timeline": "Last 10 days",
+					"data2": [
+						{
+							"time": "Feb-5",
+							"capacity": "400",
+							"actual": "300"
+						},
+						{
+							"time": "Feb-4",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "Feb-3",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "Feb-2",
+							"capacity": "400",
+							"actual": "200"
+						},
+						{
+							"time": "Feb-1",
+							"capacity": "400",
+							"actual": "300"
+						},
+						{
+							"time": "Jan-31",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "Jan-30",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "Jan-29",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "Jan-28",
+							"capacity": "400",
+							"actual": "300"
+						},
+						{
+							"time": "Jan-27",
+							"capacity": "400",
+							"actual": "200"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Latency (last 10 days)"
+						},
+						"labels": [
+							"Feb-5",
+							"Feb-4",
+							"Feb-3",
+							"Feb-2",
+							"Feb-1",
+							"Jan-31",
+							"Jan-30",
+							"Jan-29",
+							"Jan-28",
+							"Jan-27"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									300,
+									225,
+									225,
+									200,
+									300,
+									225,
+									225,
+									225,
+									300,
+									200
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400
+								],
+								"fill": false
+							}
+						]
+					}
+				}
+			]
+		}
+	],
+	"cloudApp": [
+		{
+			"label": "Surge",
+			"UoM": "(Users)",
+			"labelData": [
+				{
+					"timeline": "Last 10 hour",
+					"data": [
+						{
+							"time": "1300",
+							"capacity": "99",
+							"actual": "120"
+						},
+						{
+							"time": "1200",
+							"capacity": "99",
+							"actual": "110"
+						},
+						{
+							"time": "1100",
+							"capacity": "99",
+							"actual": "100"
+						},
+						{
+							"time": "1000",
+							"capacity": "99",
+							"actual": "90"
+						},
+						{
+							"time": "0900",
+							"capacity": "99",
+							"actual": "125"
+						},
+						{
+							"time": "0800",
+							"capacity": "99",
+							"actual": "115"
+						},
+						{
+							"time": "0700",
+							"capacity": "99",
+							"actual": "75"
+						},
+						{
+							"time": "0600",
+							"capacity": "99",
+							"actual": "102"
+						},
+						{
+							"time": "0500",
+							"capacity": "99",
+							"actual": "105"
+						},
+						{
+							"time": "0400",
+							"capacity": "99",
+							"actual": "80"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Surge (last 10 hrs)"
+						},
+						"labels": [
+							"1300",
+							"1200",
+							"1100",
+							"1000",
+							"0900",
+							"0800",
+							"0700",
+							"0600",
+							"0500",
+							"0400"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									120,
+									110,
+									100,
+									90,
+									125,
+									115,
+									75,
+									102,
+									105,
+									80
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									99,
+									99,
+									99,
+									99,
+									99,
+									99,
+									99,
+									99,
+									99,
+									99
+								],
+								"fill": false
+							}
+						]
+					}
+				},
+				{
+					"timeline": "Last 10 days",
+					"data2": [
+						{
+							"time": "Feb-5",
+							"capacity": "99",
+							"actual": "80"
+						},
+						{
+							"time": "Feb-4",
+							"capacity": "99",
+							"actual": "105"
+						},
+						{
+							"time": "Feb-3",
+							"capacity": "99",
+							"actual": "102"
+						},
+						{
+							"time": "Feb-2",
+							"capacity": "99",
+							"actual": "75"
+						},
+						{
+							"time": "Feb-1",
+							"capacity": "120",
+							"actual": "60"
+						},
+						{
+							"time": "Jan-31",
+							"capacity": "120",
+							"actual": "70"
+						},
+						{
+							"time": "Jan-30",
+							"capacity": "99",
+							"actual": "90"
+						},
+						{
+							"time": "Jan-29",
+							"capacity": "99",
+							"actual": "100"
+						},
+						{
+							"time": "Jan-28",
+							"capacity": "99",
+							"actual": "110"
+						},
+						{
+							"time": "Jan-27",
+							"capacity": "99",
+							"actual": "120"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Surge (last 10 days)"
+						},
+						"labels": [
+							"Feb-5",
+							"Feb-4",
+							"Feb-3",
+							"Feb-2",
+							"Feb-1",
+							"Jan-31",
+							"Jan-30",
+							"Jan-29",
+							"Jan-28",
+							"Jan-27"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									80,
+									105,
+									102,
+									75,
+									60,
+									70,
+									90,
+									100,
+									110,
+									120
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									99,
+									99,
+									99,
+									99,
+									120,
+									120,
+									99,
+									99,
+									99,
+									99
+								],
+								"fill": false
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"label": "Time To Load",
+			"UoM": "(ms)",
+			"labelData": [
+				{
+					"timeline": "Last 10 hour",
+					"data": [
+						{
+							"time": "1300",
+							"capacity": "400",
+							"actual": "200"
+						},
+						{
+							"time": "1200",
+							"capacity": "400",
+							"actual": "300"
+						},
+						{
+							"time": "1100",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "1000",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "0900",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "0800",
+							"capacity": "400",
+							"actual": "300"
+						},
+						{
+							"time": "0700",
+							"capacity": "400",
+							"actual": "200"
+						},
+						{
+							"time": "0600",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "0500",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "0400",
+							"capacity": "400",
+							"actual": "300"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Time To Load (last 10 hrs)"
+						},
+						"labels": [
+							"1300",
+							"1200",
+							"1100",
+							"1000",
+							"0900",
+							"0800",
+							"0700",
+							"0600",
+							"0500",
+							"0400"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									200,
+									300,
+									225,
+									225,
+									225,
+									300,
+									200,
+									225,
+									225,
+									300
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400
+								],
+								"fill": false
+							}
+						]
+					}
+				},
+				{
+					"timeline": "Last 10 days",
+					"data2": [
+						{
+							"time": "Feb-5",
+							"capacity": "400",
+							"actual": "300"
+						},
+						{
+							"time": "Feb-4",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "Feb-3",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "Feb-2",
+							"capacity": "400",
+							"actual": "200"
+						},
+						{
+							"time": "Feb-1",
+							"capacity": "400",
+							"actual": "300"
+						},
+						{
+							"time": "Jan-31",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "Jan-30",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "Jan-29",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "Jan-28",
+							"capacity": "400",
+							"actual": "300"
+						},
+						{
+							"time": "Jan-27",
+							"capacity": "400",
+							"actual": "200"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Time To Load (last 10 days)"
+						},
+						"labels": [
+							"Feb-5",
+							"Feb-4",
+							"Feb-3",
+							"Feb-2",
+							"Feb-1",
+							"Jan-31",
+							"Jan-30",
+							"Jan-29",
+							"Jan-28",
+							"Jan-27"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									300,
+									225,
+									225,
+									200,
+									300,
+									225,
+									225,
+									225,
+									300,
+									200
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400
+								],
+								"fill": false
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"label": "Page Load Time",
+			"UoM": "(ms)",
+			"labelData": [
+				{
+					"timeline": "Last 10 hour",
+					"data": [
+						{
+							"time": "1300",
+							"capacity": "400",
+							"actual": "300"
+						},
+						{
+							"time": "1200",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "1100",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "1000",
+							"capacity": "400",
+							"actual": "200"
+						},
+						{
+							"time": "0900",
+							"capacity": "400",
+							"actual": "300"
+						},
+						{
+							"time": "0800",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "0700",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "0600",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "0500",
+							"capacity": "400",
+							"actual": "300"
+						},
+						{
+							"time": "0400",
+							"capacity": "400",
+							"actual": "200"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Page Load Time (last 10 hrs)"
+						},
+						"labels": [
+							"1300",
+							"1200",
+							"1100",
+							"1000",
+							"0900",
+							"0800",
+							"0700",
+							"0600",
+							"0500",
+							"0400"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									300,
+									225,
+									225,
+									200,
+									300,
+									225,
+									225,
+									225,
+									300,
+									200
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400
+								],
+								"fill": false
+							}
+						]
+					}
+				},
+				{
+					"timeline": "Last 10 days",
+					"data2": [
+						{
+							"time": "1300",
+							"capacity": "400",
+							"actual": "200"
+						},
+						{
+							"time": "1200",
+							"capacity": "400",
+							"actual": "300"
+						},
+						{
+							"time": "1100",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "1000",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "0900",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "0800",
+							"capacity": "400",
+							"actual": "300"
+						},
+						{
+							"time": "0700",
+							"capacity": "400",
+							"actual": "200"
+						},
+						{
+							"time": "0600",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "0500",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "0400",
+							"capacity": "400",
+							"actual": "300"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Page Load Time (last 10 days)"
+						},
+						"labels": [
+							"Feb-5",
+							"Feb-4",
+							"Feb-3",
+							"Feb-2",
+							"Feb-1",
+							"Jan-31",
+							"Jan-30",
+							"Jan-29",
+							"Jan-28",
+							"Jan-27"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									200,
+									300,
+									225,
+									225,
+									225,
+									300,
+									200,
+									225,
+									225,
+									300
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400
+								],
+								"fill": false
+							}
+						]
+					}
+				}
+			]
+		}
+	],
+	"dcApp": [
+		{
+			"label": "Surge",
+			"UoM": "(Users)",
+			"labelData": [
+				{
+					"timeline": "Last 10 hour",
+					"data": [
+						{
+							"time": "1300",
+							"capacity": "99",
+							"actual": "120"
+						},
+						{
+							"time": "1200",
+							"capacity": "99",
+							"actual": "110"
+						},
+						{
+							"time": "1100",
+							"capacity": "99",
+							"actual": "100"
+						},
+						{
+							"time": "1000",
+							"capacity": "99",
+							"actual": "90"
+						},
+						{
+							"time": "0900",
+							"capacity": "99",
+							"actual": "125"
+						},
+						{
+							"time": "0800",
+							"capacity": "99",
+							"actual": "115"
+						},
+						{
+							"time": "0700",
+							"capacity": "99",
+							"actual": "75"
+						},
+						{
+							"time": "0600",
+							"capacity": "99",
+							"actual": "102"
+						},
+						{
+							"time": "0500",
+							"capacity": "99",
+							"actual": "105"
+						},
+						{
+							"time": "0400",
+							"capacity": "99",
+							"actual": "80"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Surge (last 10 hrs)"
+						},
+						"labels": [
+							"1300",
+							"1200",
+							"1100",
+							"1000",
+							"0900",
+							"0800",
+							"0700",
+							"0600",
+							"0500",
+							"0400"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									120,
+									110,
+									100,
+									90,
+									125,
+									115,
+									75,
+									102,
+									105,
+									80
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									99,
+									99,
+									99,
+									99,
+									99,
+									99,
+									99,
+									99,
+									99,
+									99
+								],
+								"fill": false
+							}
+						]
+					}
+				},
+				{
+					"timeline": "Last 10 days",
+					"data2": [
+						{
+							"time": "Feb-5",
+							"capacity": "99",
+							"actual": "80"
+						},
+						{
+							"time": "Feb-4",
+							"capacity": "99",
+							"actual": "105"
+						},
+						{
+							"time": "Feb-3",
+							"capacity": "99",
+							"actual": "102"
+						},
+						{
+							"time": "Feb-2",
+							"capacity": "99",
+							"actual": "75"
+						},
+						{
+							"time": "Feb-1",
+							"capacity": "120",
+							"actual": "60"
+						},
+						{
+							"time": "Jan-31",
+							"capacity": "120",
+							"actual": "70"
+						},
+						{
+							"time": "Jan-30",
+							"capacity": "99",
+							"actual": "90"
+						},
+						{
+							"time": "Jan-29",
+							"capacity": "99",
+							"actual": "100"
+						},
+						{
+							"time": "Jan-28",
+							"capacity": "99",
+							"actual": "110"
+						},
+						{
+							"time": "Jan-27",
+							"capacity": "99",
+							"actual": "120"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Surge (last 10 days)"
+						},
+						"labels": [
+							"Feb-5",
+							"Feb-4",
+							"Feb-3",
+							"Feb-2",
+							"Feb-1",
+							"Jan-31",
+							"Jan-30",
+							"Jan-29",
+							"Jan-28",
+							"Jan-27"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									80,
+									105,
+									102,
+									75,
+									60,
+									70,
+									90,
+									100,
+									110,
+									120
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									99,
+									99,
+									99,
+									99,
+									120,
+									120,
+									99,
+									99,
+									99,
+									99
+								],
+								"fill": false
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"label": "Time To Load",
+			"UoM": "(ms)",
+			"labelData": [
+				{
+					"timeline": "Last 10 hour",
+					"data": [
+						{
+							"time": "1300",
+							"capacity": "400",
+							"actual": "200"
+						},
+						{
+							"time": "1200",
+							"capacity": "400",
+							"actual": "300"
+						},
+						{
+							"time": "1100",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "1000",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "0900",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "0800",
+							"capacity": "400",
+							"actual": "300"
+						},
+						{
+							"time": "0700",
+							"capacity": "400",
+							"actual": "200"
+						},
+						{
+							"time": "0600",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "0500",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "0400",
+							"capacity": "400",
+							"actual": "300"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Time To Load (last 10 hrs)"
+						},
+						"labels": [
+							"1300",
+							"1200",
+							"1100",
+							"1000",
+							"0900",
+							"0800",
+							"0700",
+							"0600",
+							"0500",
+							"0400"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									200,
+									300,
+									225,
+									225,
+									225,
+									300,
+									200,
+									225,
+									225,
+									300
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400
+								],
+								"fill": false
+							}
+						]
+					}
+				},
+				{
+					"timeline": "Last 10 days",
+					"data2": [
+						{
+							"time": "Feb-5",
+							"capacity": "400",
+							"actual": "300"
+						},
+						{
+							"time": "Feb-4",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "Feb-3",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "Feb-2",
+							"capacity": "400",
+							"actual": "200"
+						},
+						{
+							"time": "Feb-1",
+							"capacity": "400",
+							"actual": "300"
+						},
+						{
+							"time": "Jan-31",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "Jan-30",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "Jan-29",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "Jan-28",
+							"capacity": "400",
+							"actual": "300"
+						},
+						{
+							"time": "Jan-27",
+							"capacity": "400",
+							"actual": "200"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Time To Load (last 10 days)"
+						},
+						"labels": [
+							"Feb-5",
+							"Feb-4",
+							"Feb-3",
+							"Feb-2",
+							"Feb-1",
+							"Jan-31",
+							"Jan-30",
+							"Jan-29",
+							"Jan-28",
+							"Jan-27"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									300,
+									225,
+									225,
+									200,
+									300,
+									225,
+									225,
+									225,
+									300,
+									200
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400
+								],
+								"fill": false
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"label": "Page Load Time",
+			"UoM": "(ms)",
+			"labelData": [
+				{
+					"timeline": "Last 10 hour",
+					"data": [
+						{
+							"time": "1300",
+							"capacity": "400",
+							"actual": "300"
+						},
+						{
+							"time": "1200",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "1100",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "1000",
+							"capacity": "400",
+							"actual": "200"
+						},
+						{
+							"time": "0900",
+							"capacity": "400",
+							"actual": "300"
+						},
+						{
+							"time": "0800",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "0700",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "0600",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "0500",
+							"capacity": "400",
+							"actual": "300"
+						},
+						{
+							"time": "0400",
+							"capacity": "400",
+							"actual": "200"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Page Load Time (last 10 hrs)"
+						},
+						"labels": [
+							"1300",
+							"1200",
+							"1100",
+							"1000",
+							"0900",
+							"0800",
+							"0700",
+							"0600",
+							"0500",
+							"0400"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									300,
+									225,
+									225,
+									200,
+									300,
+									225,
+									225,
+									225,
+									300,
+									200
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400
+								],
+								"fill": false
+							}
+						]
+					}
+				},
+				{
+					"timeline": "Last 10 days",
+					"data2": [
+						{
+							"time": "1300",
+							"capacity": "400",
+							"actual": "200"
+						},
+						{
+							"time": "1200",
+							"capacity": "400",
+							"actual": "300"
+						},
+						{
+							"time": "1100",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "1000",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "0900",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "0800",
+							"capacity": "400",
+							"actual": "300"
+						},
+						{
+							"time": "0700",
+							"capacity": "400",
+							"actual": "200"
+						},
+						{
+							"time": "0600",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "0500",
+							"capacity": "400",
+							"actual": "225"
+						},
+						{
+							"time": "0400",
+							"capacity": "400",
+							"actual": "300"
+						}
+					],
+					"ngChartGraphData": {
+						"chart": {
+							"caption": "Page Load Time (last 10 days)"
+						},
+						"labels": [
+							"Feb-5",
+							"Feb-4",
+							"Feb-3",
+							"Feb-2",
+							"Feb-1",
+							"Jan-31",
+							"Jan-30",
+							"Jan-29",
+							"Jan-28",
+							"Jan-27"
+						],
+						"chartData": [
+							{
+								"label": "Actual",
+								"type": "bar",
+								"data": [
+									200,
+									300,
+									225,
+									225,
+									225,
+									300,
+									200,
+									225,
+									225,
+									300
+								]
+							},
+							{
+								"label": "Threshold",
+								"type": "line",
+								"data": [
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400,
+									400
+								],
+								"fill": false
+							}
+						]
+					}
+				}
+			]
+		}
+	]
+}

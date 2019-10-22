@@ -1,0 +1,22 @@
+<div class="panel p-b-20 panel-default panel-custom products-widget review-style-data" style="background-color:#eee">
+   <div class="heading">Notifications
+           <console-integration-modal-widget></console-integration-modal-widget>
+    </div>
+   <div class="m-b-8" style="background-color:#eee;padding-left: 25px;
+      padding-right: 25px;">
+      <table class="pad-6" style="margin-top: 28px;     background-color: #fff;">
+         <thead>
+            <tr>
+               <th>Policy Executed</th>
+               <th>Conditions Met</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr *ngFor="let item of items">
+               <td>{{item.SelectedRules}}</td>
+               <td [ngStyle]="{'border-left': '3px solid '+item.color}">{{item.Notifications}}</td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+</div>

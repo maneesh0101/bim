@@ -1,0 +1,46 @@
+:host{
+    display: block;
+    height: 600px;
+    position: relative;
+    width: 100%;
+}
+:host >>> .gantt_row.row-family-log {
+    background-color:#0088CE;
+}
+:host >>>  .gantt_row.row-family-log:hover, .gantt_row.row-family-log.odd:hover{
+    background-color:#ABD8EF;
+}
+:host >>>  .gantt_row.row-family-log .gantt_tree_content {
+    color:#fff;
+}
+:host >>>  .gantt_task_line.family-log {
+    background-color:#0088CE;
+}
+:host >>> .gantt_task_line {
+    height: 20px!important;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+:host >>> .gantt_task_content {
+    height: 25px;
+    top: -5px;
+    font-size: 10px;
+}
+:host >>> .gantt_tree_icon.gantt_folder_open {
+    display:none;
+}
+:host >>> .gantt_tree_icon.gantt_folder_closed {
+    display:none;
+}
+
+:host >>> .gantt_side_content.gantt_right {
+    height: 25px;
+    top: -5px;
+    font-size: 12px;
+}
+
+:host >>> .gantt_side_content.gantt_left {
+    height: 25px;
+    top: -5px;
+    font-size: 12px;
+}

@@ -1,0 +1,53 @@
+.server-img {
+    width:273px;
+  }
+  .verizon-service {
+    color: #333333;
+  }
+  .verizon-service .panel-body{
+    padding-top:0px;
+  }
+  .verizon-service .links a{
+    font-size: 16px;
+    text-decoration: underline;
+    padding-left: 10px;
+  }
+  .verizon-service .searchInputGroup {
+    width:80%;
+    padding-left: 0px;
+  }
+  .verizon-service .searchInputGroup .search-input  {
+    box-shadow: none;
+  }
+  
+  .verizon-service .accordian {
+    padding-top: 20px;
+  }
+  
+  .verizon-service .accordian a {
+    text-decoration:none;
+    font-size: 16px;
+    color: #333333;
+    font-family: 'Arial';
+    font-weight: 400;
+  }
+  .verizon-service .accordian a.accr-a {
+    margin-left: -3px;
+  }
+  .verizon-service .accordian a.accr-link {
+    color: #337AC6;
+  }
+  .verizon-service .accordian .accr-data {
+    padding: 20px 0px;
+  }
+  .verizon-service .accordian img.accr-img {
+    margin-bottom: 5px;
+  }
+.table{
+  vertical-align: middle;
+}
+th{
+  background-color: #747676;
+  color: whitesmoke;
+  vertical-align: middle;
+}

@@ -1,0 +1,65 @@
+<div class="panel panel-default panel-custom products-widget review-style-data my-organization-table" 
+style="background-color:#eee" >
+   <div >
+      <p class="heading col-xs-12">My Organization 
+    <console-integration-modal-widget></console-integration-modal-widget></p>
+      
+   </div>
+   <div class="panel-body">
+       <div class="col-xs-12">
+        <div class="pull-right " >
+                <i class="fa fa-15x fa-upload" aria-hidden="true"></i>
+                <i class="fa fa-trash-o fa-15x" aria-hidden="true"></i>
+             </div></div>
+      <div class="col-xs-12 tableOrg">
+          <div class="alert alert-success" *ngIf="success">
+              <p>{{successMsg}}</p>
+            </div>
+         <div class="panel panel-default">
+                <table class="table table-striped dataTable table-responsive" 
+                      [mfData]="data | dataFilter : filterQuery"
+                       #mf="mfDataTable"  >
+                      <thead>
+                         <tr>
+                            <th style="width: 15%">
+                               <input type="checkbox" [(ngModel)]="selectedAll" (change)="selectAll();" />
+                            </th>
+                            <th style="width: 25%">                              
+                               <mfDefaultSorter by="ID">ID</mfDefaultSorter> 
+                            </th>
+                            <th style="width: 35%">                              
+                              <mfDefaultSorter by="Name">Name</mfDefaultSorter>
+                            <th style="width: 15%">
+                               <mfDefaultSorter [by]="Role">Role</mfDefaultSorter> 
+                            </th>
+                            <th style="width: 10%"><i class="fa fa-plus-circle fa-2x" aria-hidden="true" (click)="addRow()"></i></th>
+                         </tr>
+                      </thead>
+                      <tbody>
+                         <tr *ngFor="let item of mf.data">
+                            <td>
+                               <input type="checkbox" [(ngModel)]="item.selected" (change)="checkIfAllSelected();">
+                            </td>
+                            <td><inline-editor type="text" [(ngModel)]="item.ID"  name="editableText1" size="8"></inline-editor></td>
+                            <td>
+                               <inline-editor type="text" [(ngModel)]="item.Name"  name="editableText1" size="8"></inline-editor>
+                            </td>
+                            <td>
+                               <select>
+                                  <option *ngFor="let roles of item.Role" value={{roles}}>
+                                     {{roles}}
+                                  </option>
+                               </select>
+                            </td>
+                            <td>
+                               <i class="fa fa-trash-o fa-2x" aria-hidden="true" (click)="removeItem(item)"></i>
+                            </td>
+                         </tr>
+                      </tbody>
+                      </table>
+         </div>
+         <span  class="col-xs-8 inviteText">(Send invite to members of the organization to create an account)</span>
+         <button  class="btn btn-default contButton red-button col-xs-4 inviteBtn" (click)="sendInvite()">Send Invite</button>
+        </div>
+   </div>
+</div>

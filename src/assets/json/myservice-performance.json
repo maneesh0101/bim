@@ -1,0 +1,47 @@
+[
+	
+	{
+		"services": "10",
+		"material": "Good",
+        "shipping":"Fast",
+        "quality":"Okay"
+	},
+	{
+		"services": "7",
+		"material": "Okay",
+        "shipping":"Slow",
+        "quality":"Good"
+	},
+	{
+		"services": "9",
+		"material": "Okay",
+        "shipping":"Fast",
+        "quality":"Good"
+	},
+	{
+		"services": "6",
+		"material": "Good",
+        "shipping":"Slow",
+        "quality":"Okay"
+	},
+	{
+		"services": "7",
+		"material": "Good",
+        "shipping":"Slow",
+        "quality":"Okay"
+	},
+	{
+		"services": "4",
+		"material": "Okay",
+        "shipping":"Fast",
+        "quality":"Good"
+	},
+	{
+		"services": "8",
+		"material": "Good",
+        "shipping":"Fast",
+        "quality":"Okay"
+	}
+	
+	
+]
