@@ -28,7 +28,7 @@
     "core-js": "^2.4.1",
     "dhtmlx-gantt": "^5.0.5",
     "font-awesome": "^4.7.0",
-    "highcharts": "^6.0.4",
+    "highcharts": "^7.2.2",
     "highcharts-more": "^0.1.7",
     "highcharts-more-node": "^5.0.13",
     "highcharts-solid-gauge": "^0.1.7",
