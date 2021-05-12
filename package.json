@@ -24,7 +24,7 @@
     "@types/dhtmlxgantt": "^4.0.34",
     "angular2-datatable": "^0.6.0",
     "bootstrap": "^3.3.7",
-    "chart.js": "^2.7.1",
+    "chart.js": "^2.9.4",
     "core-js": "^2.4.1",
     "dhtmlx-gantt": "^5.0.5",
     "font-awesome": "^4.7.0",
