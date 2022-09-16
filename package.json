@@ -23,7 +23,7 @@
     "@angular/router": "^5.0.0",
     "@types/dhtmlxgantt": "^4.0.34",
     "angular2-datatable": "^0.6.0",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.1",
     "chart.js": "^2.7.1",
     "core-js": "^2.4.1",
     "dhtmlx-gantt": "^5.0.5",
